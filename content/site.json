@@ -1,0 +1,18 @@
+{
+  "nome_publico": "GDECOM – Grupo de Desenvolvimento Comunitário",
+  "razao_social": "GRUPO DE DESENVOLVIMENTO COMUNITARIO - GDECOM",
+  "natureza_juridica": "Associação Privada",
+  "cnpj": "21.516.315/0001-66",
+  "endereco": {
+    "logradouro": "Rua Cajuí, 100",
+    "bairro": "Bairro Suzana",
+    "cidade": "Belo Horizonte",
+    "uf": "MG",
+    "cep": "31260-480"
+  },
+  "telefone": "(31) 3497-7255",
+  "email": "gdecom@gdecom.org.br",
+  "instagram": "@gdecom",
+  "instagram_url": "https://www.instagram.com/gdecom/",
+  "rodape_texto": "© 2026 GDECOM – Organização da Sociedade Civil sem fins lucrativos"
+}

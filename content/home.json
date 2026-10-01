@@ -1,0 +1,181 @@
+{
+  "seo": {
+    "titulo": "GDECOM | Organização sem fins lucrativos em Belo Horizonte",
+    "descricao": "Organização da sociedade civil sem fins lucrativos que promove desenvolvimento social com crianças, adolescentes, jovens e famílias em Belo Horizonte desde 1980.",
+    "titulo_social": "GDECOM – Grupo de Desenvolvimento Comunitário – Organização da Sociedade Civil sem fins lucrativos"
+  },
+  "hero": {
+    "titulo": "Desenvolvimento que nasce da comunidade.",
+    "texto": "O GDECOM é uma Organização da Sociedade Civil sem fins lucrativos que promove desenvolvimento social com crianças, adolescentes, jovens e suas famílias — construído pela própria comunidade, há mais de quatro décadas."
+  },
+  "quem_somos": {
+    "titulo": "Uma organização feita pela ",
+    "titulo_destaque": "força coletiva",
+    "texto": "O GDECOM acredita no poder das pessoas e das comunidades para transformar realidades. Atuamos pelo desenvolvimento social, oferecendo cuidado, educação e oportunidades para crianças, adolescentes, jovens e famílias em situação de vulnerabilidade.",
+    "selo": "Pessoas com pessoas constroem amanhãs melhores."
+  },
+  "servicos": {
+    "titulo": "Frentes de cuidado que fortalecem vínculos e ampliam oportunidades.",
+    "texto": "Conheça os principais programas, serviços e ações sociais do GDECOM voltados a crianças, adolescentes, jovens e famílias, unindo educação, proteção social, convivência e desenvolvimento."
+  },
+  "programas": {
+    "atendimento": {
+      "imagem": {
+        "imagem": "/atendimentointegrado-inicial.png.png",
+        "texto_alternativo": "Atendimento Educacional Integrado"
+      },
+      "titulo": "Atendimento Educacional Integrado",
+      "descricao": "Acompanhamento educacional que contribui para aprendizagem, inclusão, desenvolvimento e fortalecimento dos percursos das crianças."
+    },
+    "creche": {
+      "imagem": {
+        "imagem": "/creche-inicial.png.png",
+        "texto_alternativo": "Creche Patatí-Patatá"
+      },
+      "titulo": "Creche Patatí-Patatá",
+      "descricao": "A Creche Patatí-Patatá realiza atendimento à infância com práticas pedagógicas, convivência, rotina, afeto e estímulos para o desenvolvimento integral."
+    },
+    "maior_cuidado": {
+      "imagem": {
+        "imagem": "/maiorcuidado-inicial.png.png",
+        "texto_alternativo": "Programa Maior Cuidado"
+      },
+      "titulo": "Programa Maior Cuidado",
+      "descricao": "Ações voltadas ao cuidado, acompanhamento e fortalecimento da proteção social junto às famílias e pessoas atendidas."
+    },
+    "qualificacao": {
+      "imagem": {
+        "imagem": "/qualificacao-inicial.png.png",
+        "texto_alternativo": "Cursos de Qualificação Profissional do GDECOM"
+      },
+      "titulo": "Qualificação Profissional",
+      "descricao": "Cursos e iniciativas que desenvolvem habilidades, autonomia, geração de renda e acesso ao mundo do trabalho."
+    },
+    "scfv": {
+      "imagem": {
+        "imagem": "/scfv-inicial.png.png",
+        "texto_alternativo": "Programa SCFV"
+      },
+      "titulo": "SCFV para adolescentes",
+      "descricao": "<b>Serviço de Convivência e Fortalecimento de Vínculos – 15 a 17 anos</b>, com atividades coletivas, cidadania e participação."
+    }
+  },
+  "projetos": {
+    "titulo": "Projetos que abrem caminhos para novos futuros.",
+    "volei": {
+      "imagem": {
+        "imagem": "/assets/wp-content/uploads/elementor/thumbs/WhatsApp-Image-2025-04-09-at-21.49.56-2-rp3kzbravou8oivrj7ieihy51cw0si3m1mfjl6g40c.jpeg",
+        "texto_alternativo": "Equipe de vôlei do GDECOM reunida em quadra, com adolescentes e educadores usando uniformes verdes"
+      },
+      "categoria": "Esporte e convivência",
+      "titulo": "Vôlei",
+      "descricao": "Projeto de incentivo ao esporte, disciplina, convivência e desenvolvimento de adolescentes e jovens por meio da prática esportiva."
+    },
+    "conecsons": {
+      "imagem": {
+        "imagem": "/assets/wp-content/uploads/elementor/thumbs/WhatsApp-Image-2026-08-31-at-19.51.50-rssaobewrnr4hvnnwuqtinnn5hm6m08a3ooldssmrw.jpeg",
+        "texto_alternativo": "Ilustração artística do projeto CONECSONS-CRJ, com grafite colorido, caixas de som e duas mãos se tocando sobre um fundo de prédios"
+      },
+      "categoria": "Juventude, cultura e música",
+      "titulo": "CONECSONS-CRJ",
+      "descricao": "Projeto voltado à formação e gravação musical de jovens artistas de Belo Horizonte, conectando cultura, expressão, juventude e oportunidade."
+    }
+  },
+  "parcerias": {
+    "titulo": "Parcerias que Fortalecem as Comunidades",
+    "texto": "O GDECOM acredita que transformações duradouras são construídas coletivamente. Por meio da articulação com comunidades, poder público, organizações e parceiros, ampliamos oportunidades, fortalecemos projetos e aproximamos direitos de quem mais precisa."
+  },
+  "vozes": [
+    {
+      "artigo": "projetos-com-impacto-social-parcerias-que-fortalecem-comunidades",
+      "imagem": {
+        "imagem": "/assets/wp-content/uploads/2026/05/ChatGPT-Image-2-de-mai.-de-2026-19_04_28-300x169.png",
+        "texto_alternativo": "Ilustração representando parcerias e projetos com impacto social do GDECOM"
+      },
+      "resumo": "Quando comunidade, poder público e parceiros caminham juntos, necessidades viram respostas concretas e projetos ganham força para transformar vidas."
+    },
+    {
+      "artigo": "parcerias-que-geram-transformacao-o-trabalho-do-gdecom-em-rede",
+      "imagem": {
+        "imagem": "/assets/wp-content/uploads/2026/05/ChatGPT-Image-2-de-mai.-de-2026-19_03_52-300x169.png",
+        "texto_alternativo": "Ilustração representando o trabalho em rede do GDECOM"
+      },
+      "resumo": "Nenhuma comunidade se transforma sozinha. Conheça como parcerias ampliam projetos, fortalecem serviços e aproximam direitos das pessoas."
+    }
+  ],
+  "galeria": {
+    "titulo": "A vida do GDECOM em movimento. ",
+    "texto": "Um recorte vivo das ações, encontros e projetos que mostram o GDECOM acontecendo na prática, com crianças, adolescentes, jovens, famílias e comunidades construindo caminhos de cuidado, pertencimento e transformação.",
+    "fotos": [
+      {
+        "titulo": "Creche Patati-Patatá: pintura coletiva",
+        "foto": {
+          "imagem": "/assets/wp-content/uploads/2026/09/creche/creche-pintura.jpg",
+          "texto_alternativo": "Crianças da Creche Patati-Patatá pintando coletivamente com tinta guache sobre papel no chão, acompanhadas por uma educadora"
+        }
+      },
+      {
+        "titulo": "Programa Maior Cuidado: encontro comunitário",
+        "foto": {
+          "imagem": "/artigos/programa-maior-cuidado-atencao-vinculo-e-protecao-no-cotidiano/maiorcuidado7.png",
+          "texto_alternativo": "Grande grupo reunido ao ar livre, formado por integrantes da equipe do Programa Maior Cuidado, vestindo camisetas do programa, e por pessoas idosas participantes, todos sorrindo"
+        }
+      },
+      {
+        "titulo": "SCFV: oficina de percussão",
+        "foto": {
+          "imagem": "/assets/wp-content/uploads/2026/09/scfv/scfv-percussao.jpg",
+          "texto_alternativo": "Grupo de adolescentes do SCFV tocando instrumentos de percussão em fileira, ao ar livre, com uma educadora à frente"
+        }
+      },
+      {
+        "titulo": "Qualificação Profissional: oficina de informática",
+        "foto": {
+          "imagem": "/artigos/qualificacao-profissional-cursos-gratuitos-que-ampliam-oportunidades/qualificacao1.png.png",
+          "texto_alternativo": "Alunos do curso de informática do Programa de Qualificação Profissional montando e reparando computadores em bancadas de trabalho"
+        }
+      },
+      {
+        "titulo": "Creche Patati-Patatá: berçário",
+        "foto": {
+          "imagem": "/assets/wp-content/uploads/2026/09/creche/creche-bercario-1.jpg",
+          "texto_alternativo": "Educadora sentada no chão cantando e interagindo com um grupo de bebês do berçário da Creche Patati-Patatá"
+        }
+      },
+      {
+        "titulo": "Programa Maior Cuidado: cuidado domiciliar",
+        "foto": {
+          "imagem": "/artigos/programa-maior-cuidado-atencao-vinculo-e-protecao-no-cotidiano/maiorcuidado5.png",
+          "texto_alternativo": "Profissional do Programa Maior Cuidado prestando atendimento domiciliar a uma pessoa idosa, com as mãos apoiadas gentilmente sobre ela"
+        }
+      },
+      {
+        "titulo": "SCFV: dinâmica em grupo",
+        "foto": {
+          "imagem": "/assets/wp-content/uploads/2026/09/scfv/scfv-dinamica.jpg",
+          "texto_alternativo": "Grupo de adolescentes do SCFV participando de uma dinâmica em roda, sorrindo e interagindo em uma sala ampla"
+        }
+      },
+      {
+        "titulo": "Qualificação Profissional: curso de barbearia",
+        "foto": {
+          "imagem": "/artigos/qualificacao-profissional-cursos-gratuitos-que-ampliam-oportunidades/qualificacao2.png.png",
+          "texto_alternativo": "Profissional do curso de barbearia do Programa de Qualificação Profissional cortando o cabelo de um cliente em frente ao espelho"
+        }
+      }
+    ]
+  },
+  "chamada_historia": {
+    "chamada": "COLA COM A GENTE",
+    "titulo_linha_1": "Pequenas ações.",
+    "titulo_linha_2": "Grandes transformações.",
+    "texto": "Há mais de quatro décadas, o GDECOM cria oportunidades e fortalece vínculos por meio da educação, da convivência e do desenvolvimento comunitário.",
+    "botao": "Conheça nossa história"
+  },
+  "contato": {
+    "titulo": "Quer conhecer, visitar ou falar com o GDECOM?",
+    "texto": "Estamos aqui para receber você, tirar dúvidas e aproximar pessoas das nossas ações.",
+    "cartao_titulo": "Encontre o GDECOM",
+    "cartao_subtitulo": "Estamos perto de você."
+  }
+}

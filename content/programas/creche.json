@@ -1,0 +1,103 @@
+{
+  "seo": {
+    "titulo": "Creche Patatí-Patatá | Educação infantil | GDECOM",
+    "descricao": "A Creche Patatí-Patatá, um dos primeiros programas do GDECOM, cuida e educa crianças em um ambiente seguro, acolhedor e estimulante.",
+    "titulo_social": "Creche Patatí-Patatá – GDECOM"
+  },
+  "topo": {
+    "hero_eyebrow": "Educação e cuidado",
+    "h1": "Creche Patatí-Patatá",
+    "hero_tagline": "Primeira infância, cuidado que transforma."
+  },
+  "imagem_principal": {
+    "imagem": "/assets/wp-content/uploads/2026/09/creche/creche-maio-laranja-2.jpg",
+    "texto_alternativo": "Crianças e educadoras da Creche Patatí Patatá reunidas em atividade"
+  },
+  "conteudo": {
+    "texto_1": "<p>A Creche Patatí-Patatá tem como principal objetivo cuidar, educar e promover o desenvolvimento integral das crianças, oferecendo um ambiente seguro, acolhedor e estimulante.</p>\n    <p>Mais do que um espaço de cuidado, a creche é um local de aprendizagem, descobertas e construção de vínculos, onde a criança começa a desenvolver suas habilidades físicas, emocionais, cognitivas e sociais. O GDECOM reconhece e valoriza a importância da primeira infância e por isto trabalha para que seja feliz e plena para nossas crianças!</p>",
+    "split": {
+      "split": {
+        "imagem": "/assets/wp-content/uploads/2026/09/creche/creche-jardinagem.jpg",
+        "texto_alternativo": "Turma da Creche fazendo atividade de jardinagem no pátio"
+      },
+      "texto": "Aprender brincando e experimentando",
+      "p": "Na Creche Patatí-Patatá, a aprendizagem acontece também por meio da experiência. As crianças participam de atividades que envolvem cores, texturas, movimentos, brincadeiras e exploração de diferentes materiais, permitindo que aprendam de forma ativa, divertida e significativa.",
+      "p_2": "Atividades de pintura, experiências sensoriais e propostas realizadas coletivamente contribuem para o desenvolvimento da coordenação motora, criatividade, percepção, concentração e expressão, respeitando o ritmo e as possibilidades de cada criança."
+    },
+    "texto_2": "<h2>Descobrir o mundo ao redor</h2>\n    <p>Os momentos realizados em espaços externos ampliam as possibilidades de aprendizagem. O contato com diferentes ambientes permite que as crianças observem, experimentem, interajam e descubram o mundo de maneira natural.</p>\n    <p>Essas experiências estimulam a curiosidade, a autonomia e a convivência, transformando situações simples do cotidiano em oportunidades de desenvolvimento e construção de conhecimento.</p>",
+    "subtitulo": {
+      "texto": "Conviver, compartilhar e aprender com o outro"
+    },
+    "texto_3": "<p>A convivência ocupa um lugar importante no desenvolvimento infantil. Nas atividades coletivas, as crianças aprendem gradualmente a compartilhar espaços e materiais, esperar, participar, comunicar-se e respeitar o outro.</p>\n    <p>As rodas de atividades, brincadeiras em grupo e momentos conduzidos pelas educadoras fortalecem a socialização e ajudam na construção de vínculos afetivos entre crianças e profissionais.</p>",
+    "split_2": {
+      "texto": "Cuidado e estímulo desde os primeiros anos",
+      "p": "Os bebês e as crianças menores também encontram espaços preparados para brincar, interagir e explorar com segurança. Brinquedos, objetos, músicas, movimentos e atividades adequadas à faixa etária contribuem para estimular os sentidos e favorecer as primeiras descobertas.",
+      "p_2": "O olhar atento das profissionais acompanha esses momentos, conciliando cuidado, acolhimento, proteção e estímulo ao desenvolvimento.",
+      "split": {
+        "imagem": "/assets/wp-content/uploads/2026/09/creche/creche-bercario-1.jpg",
+        "texto_alternativo": "Bebés do berçário em roda de música com a educadora"
+      }
+    },
+    "split_3": {
+      "split": {
+        "imagem": "/assets/wp-content/uploads/2026/09/creche/creche-dia-fantasia.jpg",
+        "texto_alternativo": "Crianças fantasiadas em dia temático na Creche"
+      },
+      "texto": "Educação para a convivência e para a vida",
+      "p": "A Educação Infantil também oferece oportunidades para trabalhar valores e atitudes importantes para a vida em sociedade. Por meio de atividades educativas e experiências adequadas à idade, as crianças começam a compreender conceitos relacionados a respeito, convivência, cuidado consigo mesmas e com o próximo.",
+      "p_2": "Esses aprendizados acontecem de forma gradual e integrada à rotina, contribuindo para a formação social e emocional das crianças."
+    },
+    "texto_4": "<h2>Momentos que também viram lembranças</h2>\n    <p>Comemorações, atividades temáticas, apresentações e momentos de encerramento fazem parte da trajetória vivida pelas crianças na creche. Além de proporcionar alegria e integração, essas experiências valorizam as conquistas alcançadas ao longo do processo educativo.</p>\n    <p>Cada atividade, brincadeira e descoberta ajuda a construir memórias afetivas e marca diferentes etapas do desenvolvimento infantil.</p>\n    <hr>\n    <h2>Um pouco do nosso dia a dia</h2>",
+    "gallery": {
+      "imagem": {
+        "imagem": "/assets/wp-content/uploads/2026/09/creche/creche-pintura.jpg",
+        "texto_alternativo": "Crianças da Creche Patatí Patatá em atividade de pintura coletiva"
+      },
+      "img_2": {
+        "imagem": "/assets/wp-content/uploads/2026/09/creche/creche-jardinagem.jpg",
+        "texto_alternativo": "Turma da Creche fazendo atividade de jardinagem no pátio"
+      },
+      "img_3": {
+        "imagem": "/assets/wp-content/uploads/2026/09/creche/creche-maio-laranja-1.jpg",
+        "texto_alternativo": "Crianças participando da campanha Maio Laranja"
+      },
+      "img_4": {
+        "imagem": "/assets/wp-content/uploads/2026/09/creche/creche-bercario-1.jpg",
+        "texto_alternativo": "Bebés do berçário em roda de música com a educadora"
+      },
+      "img_5": {
+        "imagem": "/assets/wp-content/uploads/2026/09/creche/creche-bercario-2.jpg",
+        "texto_alternativo": "Bebés do berçário brincando com a cuidadora"
+      },
+      "img_6": {
+        "imagem": "/assets/wp-content/uploads/2026/09/creche/creche-formatura-1.jpg",
+        "texto_alternativo": "Formatura da turma da Educação Infantil"
+      },
+      "img_7": {
+        "imagem": "/assets/wp-content/uploads/2026/09/creche/creche-formatura-2.jpg",
+        "texto_alternativo": "Turma da formatura reunida com as educadoras"
+      },
+      "img_8": {
+        "imagem": "/assets/wp-content/uploads/2026/09/creche/creche-dia-fantasia.jpg",
+        "texto_alternativo": "Crianças fantasiadas em dia temático na Creche"
+      }
+    },
+    "texto_5": "<hr>\n    <h2>Uma infância vivida por inteiro</h2>\n    <p>Na Creche Patatí-Patatá, cuidar e educar caminham juntos. A rotina busca proporcionar às crianças oportunidades para brincar, descobrir, conviver, criar, aprender e desenvolver sua autonomia em um ambiente de acolhimento e respeito.</p>\n    <p>Para o GDECOM, valorizar a primeira infância significa reconhecer cada criança como protagonista de suas descobertas e oferecer condições para que possa crescer cercada de afeto, experiências, aprendizado e possibilidades.</p>",
+    "cta": {
+      "texto": "Fale com a creche",
+      "cta_titulo": "Quer saber mais sobre a Creche Patatí-Patatá?",
+      "cta_desc": "Nossa equipe está à disposição para tirar dúvidas, fornecer mais informações sobre o atendimento e apresentar melhor o nosso trabalho.",
+      "cta_fone_label": "WhatsApp da Creche",
+      "cta_fone_num": "(31) 99013-3982",
+      "whatsapp_link": "https://wa.me/5531990133982?text=Ol%C3%A1%21%20Gostaria%20de%20saber%20mais%20sobre%20a%20Creche%20Patat%C3%AD-Patat%C3%A1.",
+      "texto_2": "Conversar pelo WhatsApp",
+      "texto_3": "Estamos aqui para conversar com você!",
+      "cta_foto": {
+        "imagem": "/assets/wp-content/uploads/2026/09/creche/creche-pintura.jpg",
+        "texto_alternativo": "Crianças da Creche Patatí-Patatá pintando com as mãos em uma atividade coletiva"
+      },
+      "cta_selo": "Pequenas infâncias, grandes futuros!",
+      "cta_selo_2": "Cuidar hoje para um amanhã melhor."
+    }
+  }
+}

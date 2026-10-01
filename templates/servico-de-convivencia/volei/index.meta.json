@@ -1,0 +1,32 @@
+{
+ "page": "volei",
+ "depth": 2,
+ "entities": {
+  "seo.titulo_social": {
+   "–": "&#8211;"
+  }
+ },
+ "slots": {
+  "imagem_principal": {
+   "label": "Imagem principal",
+   "originalTag": "<img class=\"artigo-img\" width=\"1280\" height=\"1089\" src=\"../../assets/wp-content/uploads/2026/06/WhatsApp-Image-2025-04-09-at-21.49.56-2.jpeg\" alt=\"Equipe de vôlei do GDECOM reunida em quadra, com adolescentes e educadores usando uniformes verdes\">",
+   "originalSrc": "/assets/wp-content/uploads/2026/06/WhatsApp-Image-2025-04-09-at-21.49.56-2.jpeg",
+   "originalAltDecoded": "Equipe de vôlei do GDECOM reunida em quadra, com adolescentes e educadores usando uniformes verdes",
+   "altEntities": {},
+   "widths": [],
+   "sizes": null,
+   "dims": "natural"
+  },
+  "conteudo.split.split": {
+   "label": "Bloco texto e imagem — Imagem Bloco texto e imagem",
+   "originalTag": "<img width=\"580\" height=\"699\" class=\"volei-split-img\" src=\"../../assets/wp-content/uploads/2026/09/volei/coordenadora-soraya-veiga.jpg\" alt=\"Educadora do GDECOM sorrindo durante atividade com adolescentes\" loading=\"lazy\">",
+   "originalSrc": "/assets/wp-content/uploads/2026/09/volei/coordenadora-soraya-veiga.jpg",
+   "originalAltDecoded": "Educadora do GDECOM sorrindo durante atividade com adolescentes",
+   "altEntities": {},
+   "widths": [],
+   "sizes": null,
+   "dims": "natural"
+  }
+ },
+ "computed": {}
+}

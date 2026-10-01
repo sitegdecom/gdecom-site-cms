@@ -1,0 +1,16 @@
+{
+  "name": "gdecom-site",
+  "version": "1.0.0",
+  "private": true,
+  "description": "GDECOM institutional website: Pages CMS content + minimal Node.js static build (no framework).",
+  "license": "UNLICENSED",
+  "engines": { "node": ">=18" },
+  "scripts": {
+    "build": "node build/build.js",
+    "test": "npm run build && npm --prefix qa test"
+  },
+  "dependencies": {
+    "js-yaml": "4.1.0",
+    "sharp": "0.34.4"
+  }
+}

@@ -1,0 +1,22 @@
+{
+ "page": "artigo:arte-como-caminho-de-pertencimento-e-transformacao-social",
+ "depth": 2,
+ "entities": {
+  "seo.titulo_social": {
+   "–": "&#8211;"
+  }
+ },
+ "slots": {
+  "imagem": {
+   "label": "Imagem principal",
+   "originalTag": "<img width=\"493\" height=\"334\" class=\"artigo-img\" src=\"../../assets/wp-content/uploads/elementor/thumbs/WhatsApp-Image-2026-08-31-at-19.51.50-rssaobewrnr4hvnnwuqtinnn5hm6m08a3ooldssmrw.jpeg\" alt=\"Ilustração colorida em grafite de um bairro popular, com duas mãos se tocando ao centro, caixas de som estilizadas ao fundo e as palavras 'Conecsons' e 'Direito' em destaque\">",
+   "originalSrc": "/assets/wp-content/uploads/elementor/thumbs/WhatsApp-Image-2026-08-31-at-19.51.50-rssaobewrnr4hvnnwuqtinnn5hm6m08a3ooldssmrw.jpeg",
+   "originalAltDecoded": "Ilustração colorida em grafite de um bairro popular, com duas mãos se tocando ao centro, caixas de som estilizadas ao fundo e as palavras 'Conecsons' e 'Direito' em destaque",
+   "altEntities": {},
+   "widths": [],
+   "sizes": null,
+   "dims": "natural"
+  }
+ },
+ "computed": {}
+}

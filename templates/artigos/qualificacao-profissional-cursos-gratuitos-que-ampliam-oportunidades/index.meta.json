@@ -1,0 +1,94 @@
+{
+ "page": "qualificacao",
+ "depth": 2,
+ "entities": {
+  "seo.titulo_social": {
+   "–": "&#8211;"
+  }
+ },
+ "slots": {
+  "conteudo.split.split": {
+   "label": "Bloco texto e imagem — Imagem Bloco texto e imagem",
+   "originalTag": "<img width=\"1448\" height=\"1086\" class=\"qualif-split-img\" src=\"qualificacao6.png.png\" srcset=\"qualificacao6-480.webp 480w, qualificacao6-720.webp 720w, qualificacao6-1050.webp 1050w, qualificacao6-1424.webp 1424w\" sizes=\"(max-width: 820px) min(calc(100vw - 48px), 712px), 380px\" alt=\"Profissional realizando um tratamento capilar em uma cliente em um salão de beleza\" loading=\"lazy\">",
+   "originalSrc": "/artigos/qualificacao-profissional-cursos-gratuitos-que-ampliam-oportunidades/qualificacao6.png.png",
+   "originalAltDecoded": "Profissional realizando um tratamento capilar em uma cliente em um salão de beleza",
+   "altEntities": {},
+   "widths": [
+    480,
+    720,
+    1050,
+    1424
+   ],
+   "sizes": "(max-width: 820px) min(calc(100vw - 48px), 712px), 380px",
+   "dims": "natural"
+  },
+  "conteudo.gallery.imagem": {
+   "label": "Galeria — Imagem ",
+   "originalTag": "<img width=\"1254\" height=\"1254\" src=\"qualificacao2.png.png\" srcset=\"qualificacao2-600.webp 600w, qualificacao2-1050.webp 1050w\" sizes=\"(max-width: 700px) calc(100vw - 48px), 420px\" alt=\"Profissional cortando o cabelo de um cliente em uma barbearia, com espelho refletindo o ambiente\" loading=\"lazy\">",
+   "originalSrc": "/artigos/qualificacao-profissional-cursos-gratuitos-que-ampliam-oportunidades/qualificacao2.png.png",
+   "originalAltDecoded": "Profissional cortando o cabelo de um cliente em uma barbearia, com espelho refletindo o ambiente",
+   "altEntities": {},
+   "widths": [
+    600,
+    1050
+   ],
+   "sizes": "(max-width: 700px) calc(100vw - 48px), 420px",
+   "dims": "natural"
+  },
+  "conteudo.gallery.img_2": {
+   "label": "Galeria — Imagem Img 2",
+   "originalTag": "<img width=\"1536\" height=\"1024\" src=\"qualificacao3.png.png\" srcset=\"qualificacao3-600.webp 600w, qualificacao3-1050.webp 1050w\" sizes=\"(max-width: 700px) calc(100vw - 48px), 420px\" alt=\"Profissionais realizando atendimento de manicure e pedicure em clientes sentadas em um salão\" loading=\"lazy\">",
+   "originalSrc": "/artigos/qualificacao-profissional-cursos-gratuitos-que-ampliam-oportunidades/qualificacao3.png.png",
+   "originalAltDecoded": "Profissionais realizando atendimento de manicure e pedicure em clientes sentadas em um salão",
+   "altEntities": {},
+   "widths": [
+    600,
+    1050
+   ],
+   "sizes": "(max-width: 700px) calc(100vw - 48px), 420px",
+   "dims": "natural"
+  },
+  "conteudo.gallery.img_3": {
+   "label": "Galeria — Imagem Img 3",
+   "originalTag": "<img width=\"1019\" height=\"1543\" src=\"qualificacao4.png.png\" srcset=\"qualificacao4-600.webp 600w, qualificacao4-1019.webp 1019w\" sizes=\"(max-width: 700px) calc(100vw - 48px), 420px\" alt=\"Grupo de pessoas observando uma demonstração de tratamento facial de estética em um treinamento prático\" loading=\"lazy\">",
+   "originalSrc": "/artigos/qualificacao-profissional-cursos-gratuitos-que-ampliam-oportunidades/qualificacao4.png.png",
+   "originalAltDecoded": "Grupo de pessoas observando uma demonstração de tratamento facial de estética em um treinamento prático",
+   "altEntities": {},
+   "widths": [
+    600,
+    1019
+   ],
+   "sizes": "(max-width: 700px) calc(100vw - 48px), 420px",
+   "dims": "natural"
+  },
+  "conteudo.split_2.split": {
+   "label": "Bloco texto e imagem 2 — Imagem Bloco texto e imagem",
+   "originalTag": "<img width=\"1448\" height=\"1086\" class=\"qualif-split-img\" src=\"qualificacao5.png.png\" srcset=\"qualificacao5-480.webp 480w, qualificacao5-720.webp 720w, qualificacao5-1050.webp 1050w, qualificacao5-1424.webp 1424w\" sizes=\"(max-width: 820px) min(calc(100vw - 48px), 712px), 380px\" alt=\"Turma de alunos em uma sala de informática, cada um utilizando um computador individual\" loading=\"lazy\">",
+   "originalSrc": "/artigos/qualificacao-profissional-cursos-gratuitos-que-ampliam-oportunidades/qualificacao5.png.png",
+   "originalAltDecoded": "Turma de alunos em uma sala de informática, cada um utilizando um computador individual",
+   "altEntities": {},
+   "widths": [
+    480,
+    720,
+    1050,
+    1424
+   ],
+   "sizes": "(max-width: 820px) min(calc(100vw - 48px), 712px), 380px",
+   "dims": "natural"
+  },
+  "conteudo.final_visual.imagem": {
+   "label": "Imagem final Ilustração — Imagem ",
+   "originalTag": "<img width=\"1448\" height=\"1086\" src=\"qualificacao7.png.png\" srcset=\"qualificacao7-420.webp 420w, qualificacao7-840.webp 840w\" sizes=\"(max-width: 600px) 320px, 420px\" alt=\"Cursos de qualificação profissional do GDECOM nas áreas de informática, manicure, barbearia e portaria.\" loading=\"lazy\">",
+   "originalSrc": "/artigos/qualificacao-profissional-cursos-gratuitos-que-ampliam-oportunidades/qualificacao7.png.png",
+   "originalAltDecoded": "Cursos de qualificação profissional do GDECOM nas áreas de informática, manicure, barbearia e portaria.",
+   "altEntities": {},
+   "widths": [
+    420,
+    840
+   ],
+   "sizes": "(max-width: 600px) 320px, 420px",
+   "dims": "natural"
+  }
+ },
+ "computed": {}
+}

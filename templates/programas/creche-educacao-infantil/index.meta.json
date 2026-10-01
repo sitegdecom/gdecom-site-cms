@@ -1,0 +1,142 @@
+{
+ "page": "creche",
+ "depth": 2,
+ "entities": {
+  "seo.titulo_social": {
+   "–": "&#8211;"
+  }
+ },
+ "slots": {
+  "imagem_principal": {
+   "label": "Imagem principal",
+   "originalTag": "<img class=\"artigo-img\" width=\"1280\" height=\"720\" src=\"../../assets/wp-content/uploads/2026/09/creche/creche-maio-laranja-2.jpg\" alt=\"Crianças e educadoras da Creche Patatí Patatá reunidas em atividade\">",
+   "originalSrc": "/assets/wp-content/uploads/2026/09/creche/creche-maio-laranja-2.jpg",
+   "originalAltDecoded": "Crianças e educadoras da Creche Patatí Patatá reunidas em atividade",
+   "altEntities": {},
+   "widths": [],
+   "sizes": null,
+   "dims": "natural"
+  },
+  "conteudo.split.split": {
+   "label": "Bloco texto e imagem — Imagem Bloco texto e imagem",
+   "originalTag": "<img width=\"960\" height=\"1280\" class=\"creche-split-img\" src=\"../../assets/wp-content/uploads/2026/09/creche/creche-jardinagem.jpg\" alt=\"Turma da Creche fazendo atividade de jardinagem no pátio\" loading=\"lazy\">",
+   "originalSrc": "/assets/wp-content/uploads/2026/09/creche/creche-jardinagem.jpg",
+   "originalAltDecoded": "Turma da Creche fazendo atividade de jardinagem no pátio",
+   "altEntities": {},
+   "widths": [],
+   "sizes": null,
+   "dims": "natural"
+  },
+  "conteudo.split_2.split": {
+   "label": "Bloco texto e imagem 2 — Imagem Bloco texto e imagem",
+   "originalTag": "<img width=\"1280\" height=\"960\" class=\"creche-split-img\" src=\"../../assets/wp-content/uploads/2026/09/creche/creche-bercario-1.jpg\" alt=\"Bebés do berçário em roda de música com a educadora\" loading=\"lazy\">",
+   "originalSrc": "/assets/wp-content/uploads/2026/09/creche/creche-bercario-1.jpg",
+   "originalAltDecoded": "Bebés do berçário em roda de música com a educadora",
+   "altEntities": {},
+   "widths": [],
+   "sizes": null,
+   "dims": "natural"
+  },
+  "conteudo.split_3.split": {
+   "label": "Bloco texto e imagem 3 — Imagem Bloco texto e imagem",
+   "originalTag": "<img width=\"960\" height=\"1280\" class=\"creche-split-img\" src=\"../../assets/wp-content/uploads/2026/09/creche/creche-dia-fantasia.jpg\" alt=\"Crianças fantasiadas em dia temático na Creche\" loading=\"lazy\">",
+   "originalSrc": "/assets/wp-content/uploads/2026/09/creche/creche-dia-fantasia.jpg",
+   "originalAltDecoded": "Crianças fantasiadas em dia temático na Creche",
+   "altEntities": {},
+   "widths": [],
+   "sizes": null,
+   "dims": "natural"
+  },
+  "conteudo.gallery.imagem": {
+   "label": "Galeria — Imagem ",
+   "originalTag": "<img width=\"1280\" height=\"960\" src=\"../../assets/wp-content/uploads/2026/09/creche/creche-pintura.jpg\" alt=\"Crianças da Creche Patatí Patatá em atividade de pintura coletiva\" loading=\"lazy\">",
+   "originalSrc": "/assets/wp-content/uploads/2026/09/creche/creche-pintura.jpg",
+   "originalAltDecoded": "Crianças da Creche Patatí Patatá em atividade de pintura coletiva",
+   "altEntities": {},
+   "widths": [],
+   "sizes": null,
+   "dims": "natural"
+  },
+  "conteudo.gallery.img_2": {
+   "label": "Galeria — Imagem Img 2",
+   "originalTag": "<img width=\"960\" height=\"1280\" src=\"../../assets/wp-content/uploads/2026/09/creche/creche-jardinagem.jpg\" alt=\"Turma da Creche fazendo atividade de jardinagem no pátio\" loading=\"lazy\">",
+   "originalSrc": "/assets/wp-content/uploads/2026/09/creche/creche-jardinagem.jpg",
+   "originalAltDecoded": "Turma da Creche fazendo atividade de jardinagem no pátio",
+   "altEntities": {},
+   "widths": [],
+   "sizes": null,
+   "dims": "natural"
+  },
+  "conteudo.gallery.img_3": {
+   "label": "Galeria — Imagem Img 3",
+   "originalTag": "<img width=\"720\" height=\"1280\" src=\"../../assets/wp-content/uploads/2026/09/creche/creche-maio-laranja-1.jpg\" alt=\"Crianças participando da campanha Maio Laranja\" loading=\"lazy\">",
+   "originalSrc": "/assets/wp-content/uploads/2026/09/creche/creche-maio-laranja-1.jpg",
+   "originalAltDecoded": "Crianças participando da campanha Maio Laranja",
+   "altEntities": {},
+   "widths": [],
+   "sizes": null,
+   "dims": "natural"
+  },
+  "conteudo.gallery.img_4": {
+   "label": "Galeria — Imagem Img 4",
+   "originalTag": "<img width=\"1280\" height=\"960\" src=\"../../assets/wp-content/uploads/2026/09/creche/creche-bercario-1.jpg\" alt=\"Bebés do berçário em roda de música com a educadora\" loading=\"lazy\">",
+   "originalSrc": "/assets/wp-content/uploads/2026/09/creche/creche-bercario-1.jpg",
+   "originalAltDecoded": "Bebés do berçário em roda de música com a educadora",
+   "altEntities": {},
+   "widths": [],
+   "sizes": null,
+   "dims": "natural"
+  },
+  "conteudo.gallery.img_5": {
+   "label": "Galeria — Imagem Img 5",
+   "originalTag": "<img width=\"1280\" height=\"960\" src=\"../../assets/wp-content/uploads/2026/09/creche/creche-bercario-2.jpg\" alt=\"Bebés do berçário brincando com a cuidadora\" loading=\"lazy\">",
+   "originalSrc": "/assets/wp-content/uploads/2026/09/creche/creche-bercario-2.jpg",
+   "originalAltDecoded": "Bebés do berçário brincando com a cuidadora",
+   "altEntities": {},
+   "widths": [],
+   "sizes": null,
+   "dims": "natural"
+  },
+  "conteudo.gallery.img_6": {
+   "label": "Galeria — Imagem Img 6",
+   "originalTag": "<img width=\"1280\" height=\"960\" src=\"../../assets/wp-content/uploads/2026/09/creche/creche-formatura-1.jpg\" alt=\"Formatura da turma da Educação Infantil\" loading=\"lazy\">",
+   "originalSrc": "/assets/wp-content/uploads/2026/09/creche/creche-formatura-1.jpg",
+   "originalAltDecoded": "Formatura da turma da Educação Infantil",
+   "altEntities": {},
+   "widths": [],
+   "sizes": null,
+   "dims": "natural"
+  },
+  "conteudo.gallery.img_7": {
+   "label": "Galeria — Imagem Img 7",
+   "originalTag": "<img width=\"1280\" height=\"960\" src=\"../../assets/wp-content/uploads/2026/09/creche/creche-formatura-2.jpg\" alt=\"Turma da formatura reunida com as educadoras\" loading=\"lazy\">",
+   "originalSrc": "/assets/wp-content/uploads/2026/09/creche/creche-formatura-2.jpg",
+   "originalAltDecoded": "Turma da formatura reunida com as educadoras",
+   "altEntities": {},
+   "widths": [],
+   "sizes": null,
+   "dims": "natural"
+  },
+  "conteudo.gallery.img_8": {
+   "label": "Galeria — Imagem Img 8",
+   "originalTag": "<img width=\"960\" height=\"1280\" src=\"../../assets/wp-content/uploads/2026/09/creche/creche-dia-fantasia.jpg\" alt=\"Crianças fantasiadas em dia temático na Creche\" loading=\"lazy\">",
+   "originalSrc": "/assets/wp-content/uploads/2026/09/creche/creche-dia-fantasia.jpg",
+   "originalAltDecoded": "Crianças fantasiadas em dia temático na Creche",
+   "altEntities": {},
+   "widths": [],
+   "sizes": null,
+   "dims": "natural"
+  },
+  "conteudo.cta.cta_foto": {
+   "label": "Chamada — Imagem Chamada Foto",
+   "originalTag": "<img class=\"creche-cta-foto\" src=\"../../assets/wp-content/uploads/2026/09/creche/creche-pintura.jpg\" width=\"1280\" height=\"960\" loading=\"lazy\" decoding=\"async\" alt=\"Crianças da Creche Patatí-Patatá pintando com as mãos em uma atividade coletiva\">",
+   "originalSrc": "/assets/wp-content/uploads/2026/09/creche/creche-pintura.jpg",
+   "originalAltDecoded": "Crianças da Creche Patatí-Patatá pintando com as mãos em uma atividade coletiva",
+   "altEntities": {},
+   "widths": [],
+   "sizes": null,
+   "dims": "natural"
+  }
+ },
+ "computed": {}
+}

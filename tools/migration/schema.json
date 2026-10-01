@@ -1,0 +1,2302 @@
+{
+ "schema": {
+  "content/home.json": {
+   "label": "Página inicial",
+   "kind": "home",
+   "fields": [
+    {
+     "path": "seo.titulo",
+     "type": "string",
+     "label": "Título da aba e do Google",
+     "required": true,
+     "description": "Aparece na aba do navegador e nos resultados de busca. Ideal: até 60 caracteres."
+    },
+    {
+     "path": "seo.descricao",
+     "type": "text",
+     "label": "Descrição para o Google e redes sociais",
+     "required": true,
+     "description": "Resumo da página usado pelo Google e no compartilhamento. Ideal: até 160 caracteres."
+    },
+    {
+     "path": "seo.titulo_social",
+     "type": "string",
+     "label": "Título no compartilhamento (redes sociais)",
+     "required": true
+    },
+    {
+     "path": "hero.titulo",
+     "type": "string",
+     "label": "Título principal",
+     "required": true
+    },
+    {
+     "path": "hero.texto",
+     "type": "text",
+     "label": "Texto de apresentação",
+     "required": true
+    },
+    {
+     "path": "quem_somos.titulo",
+     "type": "string",
+     "label": "Quem somos — título (início)",
+     "required": true,
+     "description": "Primeira parte do título, antes do trecho destacado."
+    },
+    {
+     "path": "quem_somos.titulo_destaque",
+     "type": "string",
+     "label": "Quem somos — título (trecho destacado)",
+     "required": true
+    },
+    {
+     "path": "quem_somos.texto",
+     "type": "text",
+     "label": "Quem somos — texto",
+     "required": true
+    },
+    {
+     "path": "quem_somos.selo",
+     "type": "string",
+     "label": "Quem somos — selo amarelo",
+     "required": true
+    },
+    {
+     "path": "servicos.titulo",
+     "type": "string",
+     "label": "Programas — título da seção",
+     "required": true
+    },
+    {
+     "path": "servicos.texto",
+     "type": "text",
+     "label": "Programas — texto da seção",
+     "required": true
+    },
+    {
+     "path": "programas.atendimento.imagem",
+     "type": "image-object",
+     "label": "Cartão Atendimento Educacional Integrado — imagem"
+    },
+    {
+     "path": "programas.atendimento.titulo",
+     "type": "string",
+     "label": "Cartão Atendimento Educacional Integrado — título",
+     "required": true
+    },
+    {
+     "path": "programas.atendimento.descricao",
+     "type": "text",
+     "label": "Cartão Atendimento Educacional Integrado — descrição",
+     "required": true
+    },
+    {
+     "path": "programas.creche.imagem",
+     "type": "image-object",
+     "label": "Cartão Creche Patatí-Patatá — imagem"
+    },
+    {
+     "path": "programas.creche.titulo",
+     "type": "string",
+     "label": "Cartão Creche Patatí-Patatá — título",
+     "required": true
+    },
+    {
+     "path": "programas.creche.descricao",
+     "type": "text",
+     "label": "Cartão Creche Patatí-Patatá — descrição",
+     "required": true
+    },
+    {
+     "path": "programas.maior_cuidado.imagem",
+     "type": "image-object",
+     "label": "Cartão Programa Maior Cuidado — imagem"
+    },
+    {
+     "path": "programas.maior_cuidado.titulo",
+     "type": "string",
+     "label": "Cartão Programa Maior Cuidado — título",
+     "required": true
+    },
+    {
+     "path": "programas.maior_cuidado.descricao",
+     "type": "text",
+     "label": "Cartão Programa Maior Cuidado — descrição",
+     "required": true
+    },
+    {
+     "path": "programas.qualificacao.imagem",
+     "type": "image-object",
+     "label": "Cartão Qualificação Profissional — imagem"
+    },
+    {
+     "path": "programas.qualificacao.titulo",
+     "type": "string",
+     "label": "Cartão Qualificação Profissional — título",
+     "required": true
+    },
+    {
+     "path": "programas.qualificacao.descricao",
+     "type": "text",
+     "label": "Cartão Qualificação Profissional — descrição",
+     "required": true
+    },
+    {
+     "path": "programas.scfv.imagem",
+     "type": "image-object",
+     "label": "Cartão SCFV — imagem"
+    },
+    {
+     "path": "programas.scfv.titulo",
+     "type": "string",
+     "label": "Cartão SCFV — título",
+     "required": true
+    },
+    {
+     "path": "programas.scfv.descricao",
+     "type": "rich-text",
+     "label": "Cartão SCFV — descrição",
+     "required": true
+    },
+    {
+     "path": "projetos.titulo",
+     "type": "string",
+     "label": "Projetos — título da seção",
+     "required": true
+    },
+    {
+     "path": "projetos.volei.imagem",
+     "type": "image-object",
+     "label": "Projeto Vôlei — imagem"
+    },
+    {
+     "path": "projetos.volei.categoria",
+     "type": "string",
+     "label": "Projeto Vôlei — categoria",
+     "required": true
+    },
+    {
+     "path": "projetos.volei.titulo",
+     "type": "string",
+     "label": "Projeto Vôlei — título",
+     "required": true
+    },
+    {
+     "path": "projetos.volei.descricao",
+     "type": "text",
+     "label": "Projeto Vôlei — descrição",
+     "required": true
+    },
+    {
+     "path": "projetos.conecsons.imagem",
+     "type": "image-object",
+     "label": "Projeto CONECSONS-CRJ — imagem"
+    },
+    {
+     "path": "projetos.conecsons.categoria",
+     "type": "string",
+     "label": "Projeto CONECSONS-CRJ — categoria",
+     "required": true
+    },
+    {
+     "path": "projetos.conecsons.titulo",
+     "type": "string",
+     "label": "Projeto CONECSONS-CRJ — título",
+     "required": true
+    },
+    {
+     "path": "projetos.conecsons.descricao",
+     "type": "text",
+     "label": "Projeto CONECSONS-CRJ — descrição",
+     "required": true
+    },
+    {
+     "path": "parcerias.titulo",
+     "type": "string",
+     "label": "Parcerias (Vozes) — título da seção",
+     "required": true
+    },
+    {
+     "path": "parcerias.texto",
+     "type": "text",
+     "label": "Parcerias (Vozes) — texto da seção",
+     "required": true
+    },
+    {
+     "path": "vozes.0.artigo",
+     "type": "reference",
+     "label": "Vozes — artigo 1",
+     "required": true,
+     "description": "Artigo exibido neste cartão (o título e o link vêm do artigo)."
+    },
+    {
+     "path": "vozes.0.imagem",
+     "type": "image-object",
+     "label": "Vozes — imagem do cartão 1"
+    },
+    {
+     "path": "vozes.0.resumo",
+     "type": "text",
+     "label": "Vozes — resumo do cartão 1",
+     "required": true
+    },
+    {
+     "path": "vozes.1.artigo",
+     "type": "reference",
+     "label": "Vozes — artigo 2",
+     "required": true,
+     "description": "Artigo exibido neste cartão (o título e o link vêm do artigo)."
+    },
+    {
+     "path": "vozes.1.imagem",
+     "type": "image-object",
+     "label": "Vozes — imagem do cartão 2"
+    },
+    {
+     "path": "vozes.1.resumo",
+     "type": "text",
+     "label": "Vozes — resumo do cartão 2",
+     "required": true
+    },
+    {
+     "path": "galeria.titulo",
+     "type": "string",
+     "label": "Galeria (carrossel) — título da seção",
+     "required": true
+    },
+    {
+     "path": "galeria.texto",
+     "type": "text",
+     "label": "Galeria (carrossel) — texto da seção",
+     "required": true
+    },
+    {
+     "path": "galeria.fotos.0.titulo",
+     "type": "string",
+     "label": "Foto 1 — legenda",
+     "required": true
+    },
+    {
+     "path": "galeria.fotos.0.foto",
+     "type": "image-object",
+     "label": "Foto 1"
+    },
+    {
+     "path": "galeria.fotos.1.titulo",
+     "type": "string",
+     "label": "Foto 2 — legenda",
+     "required": true
+    },
+    {
+     "path": "galeria.fotos.1.foto",
+     "type": "image-object",
+     "label": "Foto 2"
+    },
+    {
+     "path": "galeria.fotos.2.titulo",
+     "type": "string",
+     "label": "Foto 3 — legenda",
+     "required": true
+    },
+    {
+     "path": "galeria.fotos.2.foto",
+     "type": "image-object",
+     "label": "Foto 3"
+    },
+    {
+     "path": "galeria.fotos.3.titulo",
+     "type": "string",
+     "label": "Foto 4 — legenda",
+     "required": true
+    },
+    {
+     "path": "galeria.fotos.3.foto",
+     "type": "image-object",
+     "label": "Foto 4"
+    },
+    {
+     "path": "galeria.fotos.4.titulo",
+     "type": "string",
+     "label": "Foto 5 — legenda",
+     "required": true
+    },
+    {
+     "path": "galeria.fotos.4.foto",
+     "type": "image-object",
+     "label": "Foto 5"
+    },
+    {
+     "path": "galeria.fotos.5.titulo",
+     "type": "string",
+     "label": "Foto 6 — legenda",
+     "required": true
+    },
+    {
+     "path": "galeria.fotos.5.foto",
+     "type": "image-object",
+     "label": "Foto 6"
+    },
+    {
+     "path": "galeria.fotos.6.titulo",
+     "type": "string",
+     "label": "Foto 7 — legenda",
+     "required": true
+    },
+    {
+     "path": "galeria.fotos.6.foto",
+     "type": "image-object",
+     "label": "Foto 7"
+    },
+    {
+     "path": "galeria.fotos.7.titulo",
+     "type": "string",
+     "label": "Foto 8 — legenda",
+     "required": true
+    },
+    {
+     "path": "galeria.fotos.7.foto",
+     "type": "image-object",
+     "label": "Foto 8"
+    },
+    {
+     "path": "chamada_historia.chamada",
+     "type": "string",
+     "label": "Faixa com foto — chamada acima do título",
+     "required": true
+    },
+    {
+     "path": "chamada_historia.titulo_linha_1",
+     "type": "string",
+     "label": "Faixa com foto — título (linha 1)",
+     "required": true
+    },
+    {
+     "path": "chamada_historia.titulo_linha_2",
+     "type": "string",
+     "label": "Faixa com foto — título (linha 2)",
+     "required": true
+    },
+    {
+     "path": "chamada_historia.texto",
+     "type": "text",
+     "label": "Faixa com foto — texto",
+     "required": true
+    },
+    {
+     "path": "chamada_historia.botao",
+     "type": "string",
+     "label": "Faixa com foto — texto do botão",
+     "required": true
+    },
+    {
+     "path": "contato.titulo",
+     "type": "string",
+     "label": "Contato — título",
+     "required": true
+    },
+    {
+     "path": "contato.texto",
+     "type": "text",
+     "label": "Contato — texto",
+     "required": true
+    },
+    {
+     "path": "contato.cartao_titulo",
+     "type": "string",
+     "label": "Contato — título do cartão",
+     "required": true
+    },
+    {
+     "path": "contato.cartao_subtitulo",
+     "type": "string",
+     "label": "Contato — subtítulo do cartão",
+     "required": true
+    }
+   ]
+  },
+  "content/historia.json": {
+   "label": "Nossa história",
+   "kind": "generic",
+   "fields": [
+    {
+     "path": "seo.titulo",
+     "type": "string",
+     "label": "Título da aba e do Google",
+     "required": true,
+     "description": "Aparece na aba do navegador e nos resultados de busca. Ideal: até 60 caracteres."
+    },
+    {
+     "path": "seo.descricao",
+     "type": "text",
+     "label": "Descrição para o Google e redes sociais",
+     "required": true,
+     "description": "Resumo da página usado pelo Google e no compartilhamento. Ideal: até 160 caracteres."
+    },
+    {
+     "path": "seo.titulo_social",
+     "type": "string",
+     "label": "Título no compartilhamento (redes sociais)",
+     "required": true
+    },
+    {
+     "path": "topo.hero_eyebrow",
+     "type": "text",
+     "label": "Topo — Topo da página Chamada acima do título",
+     "required": true
+    },
+    {
+     "path": "topo.h1",
+     "type": "string",
+     "label": "Topo — H1",
+     "required": true
+    },
+    {
+     "path": "topo.hero_tagline",
+     "type": "text",
+     "label": "Topo — Topo da página Frase de destaque",
+     "required": true
+    },
+    {
+     "path": "conteudo.split.texto",
+     "type": "string",
+     "label": "Bloco texto e imagem — Texto",
+     "required": true
+    },
+    {
+     "path": "conteudo.split.p",
+     "type": "text",
+     "label": "Bloco texto e imagem — P",
+     "required": true
+    },
+    {
+     "path": "conteudo.split.p_2",
+     "type": "text",
+     "label": "Bloco texto e imagem — P 2",
+     "required": true
+    },
+    {
+     "path": "conteudo.split.p_3",
+     "type": "text",
+     "label": "Bloco texto e imagem — P 3",
+     "required": true
+    },
+    {
+     "path": "conteudo.split.p_4",
+     "type": "text",
+     "label": "Bloco texto e imagem — P 4",
+     "required": true
+    },
+    {
+     "path": "conteudo.texto_1",
+     "type": "rich-text",
+     "label": "Texto 1",
+     "required": true,
+     "description": "Parágrafos, subtítulos e listas desta parte da página."
+    },
+    {
+     "path": "conteudo.split_2.texto",
+     "type": "string",
+     "label": "Bloco texto e imagem 2 — Texto",
+     "required": true
+    },
+    {
+     "path": "conteudo.split_2.p",
+     "type": "text",
+     "label": "Bloco texto e imagem 2 — P",
+     "required": true
+    },
+    {
+     "path": "conteudo.split_2.split",
+     "type": "image-object",
+     "label": "Bloco texto e imagem 2 — Imagem Bloco texto e imagem"
+    },
+    {
+     "path": "conteudo.texto_2",
+     "type": "rich-text",
+     "label": "Texto 2",
+     "required": true,
+     "description": "Parágrafos, subtítulos e listas desta parte da página."
+    },
+    {
+     "path": "conteudo.split_3.texto",
+     "type": "string",
+     "label": "Bloco texto e imagem 3 — Texto",
+     "required": true
+    },
+    {
+     "path": "conteudo.split_3.p",
+     "type": "text",
+     "label": "Bloco texto e imagem 3 — P",
+     "required": true
+    },
+    {
+     "path": "conteudo.split_3.p_2",
+     "type": "text",
+     "label": "Bloco texto e imagem 3 — P 2",
+     "required": true
+    },
+    {
+     "path": "conteudo.split_3.p_3",
+     "type": "text",
+     "label": "Bloco texto e imagem 3 — P 3",
+     "required": true
+    },
+    {
+     "path": "conteudo.texto_3",
+     "type": "rich-text",
+     "label": "Texto 3",
+     "required": true,
+     "description": "Parágrafos, subtítulos e listas desta parte da página."
+    }
+   ]
+  },
+  "content/contato.json": {
+   "label": "Fale com a gente",
+   "kind": "contato",
+   "fields": [
+    {
+     "path": "seo.titulo",
+     "type": "string",
+     "label": "Título da aba e do Google",
+     "required": true,
+     "description": "Aparece na aba do navegador e nos resultados de busca. Ideal: até 60 caracteres."
+    },
+    {
+     "path": "seo.descricao",
+     "type": "text",
+     "label": "Descrição para o Google e redes sociais",
+     "required": true,
+     "description": "Resumo da página usado pelo Google e no compartilhamento. Ideal: até 160 caracteres."
+    },
+    {
+     "path": "seo.titulo_social",
+     "type": "string",
+     "label": "Título no compartilhamento (redes sociais)",
+     "required": true
+    },
+    {
+     "path": "topo.fcg_hero_eyebrow",
+     "type": "text",
+     "label": "Topo — Fcg Topo da página Chamada acima do título",
+     "required": true
+    },
+    {
+     "path": "topo.h1",
+     "type": "string",
+     "label": "Topo — H1",
+     "required": true
+    },
+    {
+     "path": "topo.p",
+     "type": "text",
+     "label": "Topo — P",
+     "required": true
+    },
+    {
+     "path": "topo.fcg_hero_tagline",
+     "type": "text",
+     "label": "Topo — Fcg Topo da página Frase de destaque",
+     "required": true
+    },
+    {
+     "path": "cartoes.endereco_rotulo",
+     "type": "string",
+     "label": "Cartão Endereço — rótulo",
+     "required": true
+    },
+    {
+     "path": "cartoes.telefone_rotulo",
+     "type": "string",
+     "label": "Cartão Telefone — rótulo",
+     "required": true
+    },
+    {
+     "path": "cartoes.email_rotulo",
+     "type": "string",
+     "label": "Cartão E-mail — rótulo",
+     "required": true
+    },
+    {
+     "path": "cartoes.instagram_rotulo",
+     "type": "string",
+     "label": "Cartão Instagram — rótulo",
+     "required": true
+    },
+    {
+     "path": "formulario.titulo",
+     "type": "string",
+     "label": "Formulário — título",
+     "required": true
+    },
+    {
+     "path": "formulario.explicacao",
+     "type": "text",
+     "label": "Formulário — texto explicativo",
+     "required": true
+    },
+    {
+     "path": "chamada_final.h2",
+     "type": "string",
+     "label": "Chamada final — H2",
+     "required": true
+    },
+    {
+     "path": "chamada_final.p",
+     "type": "text",
+     "label": "Chamada final — P",
+     "required": true
+    },
+    {
+     "path": "chamada_final.p_2",
+     "type": "text",
+     "label": "Chamada final — P 2",
+     "required": true
+    },
+    {
+     "path": "chamada_final.a",
+     "type": "string",
+     "label": "Chamada final — A",
+     "required": true
+    }
+   ]
+  },
+  "content/volei.json": {
+   "label": "Vôlei",
+   "kind": "generic",
+   "fields": [
+    {
+     "path": "seo.titulo",
+     "type": "string",
+     "label": "Título da aba e do Google",
+     "required": true,
+     "description": "Aparece na aba do navegador e nos resultados de busca. Ideal: até 60 caracteres."
+    },
+    {
+     "path": "seo.descricao",
+     "type": "text",
+     "label": "Descrição para o Google e redes sociais",
+     "required": true,
+     "description": "Resumo da página usado pelo Google e no compartilhamento. Ideal: até 160 caracteres."
+    },
+    {
+     "path": "seo.titulo_social",
+     "type": "string",
+     "label": "Título no compartilhamento (redes sociais)",
+     "required": true
+    },
+    {
+     "path": "topo.hero_eyebrow",
+     "type": "text",
+     "label": "Topo — Topo da página Chamada acima do título",
+     "required": true
+    },
+    {
+     "path": "topo.h1",
+     "type": "string",
+     "label": "Topo — H1",
+     "required": true
+    },
+    {
+     "path": "topo.hero_tagline",
+     "type": "text",
+     "label": "Topo — Topo da página Frase de destaque",
+     "required": true
+    },
+    {
+     "path": "imagem_principal",
+     "type": "image-object",
+     "label": "Imagem principal"
+    },
+    {
+     "path": "conteudo.texto_1",
+     "type": "rich-text",
+     "label": "Texto 1",
+     "required": true,
+     "description": "Parágrafos, subtítulos e listas desta parte da página."
+    },
+    {
+     "path": "conteudo.split.split",
+     "type": "image-object",
+     "label": "Bloco texto e imagem — Imagem Bloco texto e imagem"
+    },
+    {
+     "path": "conteudo.split.h2",
+     "type": "string",
+     "label": "Bloco texto e imagem — H2",
+     "required": true
+    },
+    {
+     "path": "conteudo.split.p",
+     "type": "text",
+     "label": "Bloco texto e imagem — P",
+     "required": true
+    },
+    {
+     "path": "conteudo.split.p_2",
+     "type": "text",
+     "label": "Bloco texto e imagem — P 2",
+     "required": true
+    },
+    {
+     "path": "conteudo.split.p_3",
+     "type": "text",
+     "label": "Bloco texto e imagem — P 3",
+     "required": true
+    },
+    {
+     "path": "conteudo.split.p_4",
+     "type": "text",
+     "label": "Bloco texto e imagem — P 4",
+     "required": true
+    },
+    {
+     "path": "conteudo.split.p_5",
+     "type": "text",
+     "label": "Bloco texto e imagem — P 5",
+     "required": true
+    },
+    {
+     "path": "conteudo.texto_2",
+     "type": "rich-text",
+     "label": "Texto 2",
+     "required": true,
+     "description": "Parágrafos, subtítulos e listas desta parte da página."
+    }
+   ]
+  },
+  "content/programas/creche.json": {
+   "label": "Creche Patatí-Patatá",
+   "kind": "generic",
+   "fields": [
+    {
+     "path": "seo.titulo",
+     "type": "string",
+     "label": "Título da aba e do Google",
+     "required": true,
+     "description": "Aparece na aba do navegador e nos resultados de busca. Ideal: até 60 caracteres."
+    },
+    {
+     "path": "seo.descricao",
+     "type": "text",
+     "label": "Descrição para o Google e redes sociais",
+     "required": true,
+     "description": "Resumo da página usado pelo Google e no compartilhamento. Ideal: até 160 caracteres."
+    },
+    {
+     "path": "seo.titulo_social",
+     "type": "string",
+     "label": "Título no compartilhamento (redes sociais)",
+     "required": true
+    },
+    {
+     "path": "topo.hero_eyebrow",
+     "type": "text",
+     "label": "Topo — Topo da página Chamada acima do título",
+     "required": true
+    },
+    {
+     "path": "topo.h1",
+     "type": "string",
+     "label": "Topo — H1",
+     "required": true
+    },
+    {
+     "path": "topo.hero_tagline",
+     "type": "text",
+     "label": "Topo — Topo da página Frase de destaque",
+     "required": true
+    },
+    {
+     "path": "imagem_principal",
+     "type": "image-object",
+     "label": "Imagem principal"
+    },
+    {
+     "path": "conteudo.texto_1",
+     "type": "rich-text",
+     "label": "Texto 1",
+     "required": true,
+     "description": "Parágrafos, subtítulos e listas desta parte da página."
+    },
+    {
+     "path": "conteudo.split.split",
+     "type": "image-object",
+     "label": "Bloco texto e imagem — Imagem Bloco texto e imagem"
+    },
+    {
+     "path": "conteudo.split.texto",
+     "type": "string",
+     "label": "Bloco texto e imagem — Texto",
+     "required": true
+    },
+    {
+     "path": "conteudo.split.p",
+     "type": "text",
+     "label": "Bloco texto e imagem — P",
+     "required": true
+    },
+    {
+     "path": "conteudo.split.p_2",
+     "type": "text",
+     "label": "Bloco texto e imagem — P 2",
+     "required": true
+    },
+    {
+     "path": "conteudo.texto_2",
+     "type": "rich-text",
+     "label": "Texto 2",
+     "required": true,
+     "description": "Parágrafos, subtítulos e listas desta parte da página."
+    },
+    {
+     "path": "conteudo.subtitulo.texto",
+     "type": "string",
+     "label": "Subtítulo — Texto",
+     "required": true
+    },
+    {
+     "path": "conteudo.texto_3",
+     "type": "rich-text",
+     "label": "Texto 3",
+     "required": true,
+     "description": "Parágrafos, subtítulos e listas desta parte da página."
+    },
+    {
+     "path": "conteudo.split_2.texto",
+     "type": "string",
+     "label": "Bloco texto e imagem 2 — Texto",
+     "required": true
+    },
+    {
+     "path": "conteudo.split_2.p",
+     "type": "text",
+     "label": "Bloco texto e imagem 2 — P",
+     "required": true
+    },
+    {
+     "path": "conteudo.split_2.p_2",
+     "type": "text",
+     "label": "Bloco texto e imagem 2 — P 2",
+     "required": true
+    },
+    {
+     "path": "conteudo.split_2.split",
+     "type": "image-object",
+     "label": "Bloco texto e imagem 2 — Imagem Bloco texto e imagem"
+    },
+    {
+     "path": "conteudo.split_3.split",
+     "type": "image-object",
+     "label": "Bloco texto e imagem 3 — Imagem Bloco texto e imagem"
+    },
+    {
+     "path": "conteudo.split_3.texto",
+     "type": "string",
+     "label": "Bloco texto e imagem 3 — Texto",
+     "required": true
+    },
+    {
+     "path": "conteudo.split_3.p",
+     "type": "text",
+     "label": "Bloco texto e imagem 3 — P",
+     "required": true
+    },
+    {
+     "path": "conteudo.split_3.p_2",
+     "type": "text",
+     "label": "Bloco texto e imagem 3 — P 2",
+     "required": true
+    },
+    {
+     "path": "conteudo.texto_4",
+     "type": "rich-text",
+     "label": "Texto 4",
+     "required": true,
+     "description": "Parágrafos, subtítulos e listas desta parte da página."
+    },
+    {
+     "path": "conteudo.gallery.imagem",
+     "type": "image-object",
+     "label": "Galeria — Imagem "
+    },
+    {
+     "path": "conteudo.gallery.img_2",
+     "type": "image-object",
+     "label": "Galeria — Imagem Img 2"
+    },
+    {
+     "path": "conteudo.gallery.img_3",
+     "type": "image-object",
+     "label": "Galeria — Imagem Img 3"
+    },
+    {
+     "path": "conteudo.gallery.img_4",
+     "type": "image-object",
+     "label": "Galeria — Imagem Img 4"
+    },
+    {
+     "path": "conteudo.gallery.img_5",
+     "type": "image-object",
+     "label": "Galeria — Imagem Img 5"
+    },
+    {
+     "path": "conteudo.gallery.img_6",
+     "type": "image-object",
+     "label": "Galeria — Imagem Img 6"
+    },
+    {
+     "path": "conteudo.gallery.img_7",
+     "type": "image-object",
+     "label": "Galeria — Imagem Img 7"
+    },
+    {
+     "path": "conteudo.gallery.img_8",
+     "type": "image-object",
+     "label": "Galeria — Imagem Img 8"
+    },
+    {
+     "path": "conteudo.texto_5",
+     "type": "rich-text",
+     "label": "Texto 5",
+     "required": true,
+     "description": "Parágrafos, subtítulos e listas desta parte da página."
+    },
+    {
+     "path": "conteudo.cta.texto",
+     "type": "string",
+     "label": "Chamada — Texto",
+     "required": true
+    },
+    {
+     "path": "conteudo.cta.cta_titulo",
+     "type": "string",
+     "label": "Chamada — Chamada Título",
+     "required": true
+    },
+    {
+     "path": "conteudo.cta.cta_desc",
+     "type": "text",
+     "label": "Chamada — Chamada Descrição",
+     "required": true
+    },
+    {
+     "path": "conteudo.cta.cta_fone_label",
+     "type": "string",
+     "label": "Chamada — Chamada Telefone Rótulo",
+     "required": true
+    },
+    {
+     "path": "conteudo.cta.cta_fone_num",
+     "type": "string",
+     "label": "Chamada — Chamada Telefone Número",
+     "required": true
+    },
+    {
+     "path": "conteudo.cta.whatsapp_link",
+     "type": "string",
+     "label": "Chamada — Link do WhatsApp",
+     "required": true,
+     "description": "Link completo do WhatsApp, ex.: https://wa.me/5531999999999"
+    },
+    {
+     "path": "conteudo.cta.texto_2",
+     "type": "string",
+     "label": "Chamada — Texto 2",
+     "required": true
+    },
+    {
+     "path": "conteudo.cta.texto_3",
+     "type": "string",
+     "label": "Chamada — Texto 3",
+     "required": true
+    },
+    {
+     "path": "conteudo.cta.cta_foto",
+     "type": "image-object",
+     "label": "Chamada — Imagem Chamada Foto"
+    },
+    {
+     "path": "conteudo.cta.cta_selo",
+     "type": "string",
+     "label": "Chamada — Chamada Selo",
+     "required": true
+    },
+    {
+     "path": "conteudo.cta.cta_selo_2",
+     "type": "string",
+     "label": "Chamada — Chamada Selo 2",
+     "required": true
+    }
+   ]
+  },
+  "content/programas/atendimento.json": {
+   "label": "Atendimento Educacional Integrado",
+   "kind": "generic",
+   "fields": [
+    {
+     "path": "seo.titulo",
+     "type": "string",
+     "label": "Título da aba e do Google",
+     "required": true,
+     "description": "Aparece na aba do navegador e nos resultados de busca. Ideal: até 60 caracteres."
+    },
+    {
+     "path": "seo.descricao",
+     "type": "text",
+     "label": "Descrição para o Google e redes sociais",
+     "required": true,
+     "description": "Resumo da página usado pelo Google e no compartilhamento. Ideal: até 160 caracteres."
+    },
+    {
+     "path": "seo.titulo_social",
+     "type": "string",
+     "label": "Título no compartilhamento (redes sociais)",
+     "required": true
+    },
+    {
+     "path": "topo.hero_eyebrow",
+     "type": "text",
+     "label": "Topo — Topo da página Chamada acima do título",
+     "required": true
+    },
+    {
+     "path": "topo.h1",
+     "type": "string",
+     "label": "Topo — H1",
+     "required": true
+    },
+    {
+     "path": "topo.hero_tagline",
+     "type": "text",
+     "label": "Topo — Topo da página Frase de destaque",
+     "required": true
+    },
+    {
+     "path": "conteudo.split.split",
+     "type": "image-object",
+     "label": "Bloco texto e imagem — Imagem Bloco texto e imagem"
+    },
+    {
+     "path": "conteudo.split.h2",
+     "type": "string",
+     "label": "Bloco texto e imagem — H2",
+     "required": true
+    },
+    {
+     "path": "conteudo.split.p",
+     "type": "text",
+     "label": "Bloco texto e imagem — P",
+     "required": true
+    },
+    {
+     "path": "conteudo.texto_1",
+     "type": "rich-text",
+     "label": "Texto 1",
+     "required": true,
+     "description": "Parágrafos, subtítulos e listas desta parte da página."
+    },
+    {
+     "path": "conteudo.pillars.h3",
+     "type": "string",
+     "label": "Pilares — H3",
+     "required": true
+    },
+    {
+     "path": "conteudo.pillars.p",
+     "type": "text",
+     "label": "Pilares — P",
+     "required": true
+    },
+    {
+     "path": "conteudo.pillars.h3_2",
+     "type": "string",
+     "label": "Pilares — H3 2",
+     "required": true
+    },
+    {
+     "path": "conteudo.pillars.p_2",
+     "type": "text",
+     "label": "Pilares — P 2",
+     "required": true
+    },
+    {
+     "path": "conteudo.pillars.h3_3",
+     "type": "string",
+     "label": "Pilares — H3 3",
+     "required": true
+    },
+    {
+     "path": "conteudo.pillars.p_3",
+     "type": "text",
+     "label": "Pilares — P 3",
+     "required": true
+    },
+    {
+     "path": "conteudo.pillars.h3_4",
+     "type": "string",
+     "label": "Pilares — H3 4",
+     "required": true
+    },
+    {
+     "path": "conteudo.pillars.p_4",
+     "type": "text",
+     "label": "Pilares — P 4",
+     "required": true
+    },
+    {
+     "path": "conteudo.texto_2",
+     "type": "rich-text",
+     "label": "Texto 2",
+     "required": true,
+     "description": "Parágrafos, subtítulos e listas desta parte da página."
+    },
+    {
+     "path": "conteudo.dimensions.h3",
+     "type": "string",
+     "label": "Dimensões — H3",
+     "required": true
+    },
+    {
+     "path": "conteudo.dimensions.p",
+     "type": "text",
+     "label": "Dimensões — P",
+     "required": true
+    },
+    {
+     "path": "conteudo.dimensions.p_2",
+     "type": "text",
+     "label": "Dimensões — P 2",
+     "required": true
+    },
+    {
+     "path": "conteudo.dimensions.p_3",
+     "type": "text",
+     "label": "Dimensões — P 3",
+     "required": true
+    },
+    {
+     "path": "conteudo.dimensions.h3_2",
+     "type": "string",
+     "label": "Dimensões — H3 2",
+     "required": true
+    },
+    {
+     "path": "conteudo.dimensions.p_4",
+     "type": "text",
+     "label": "Dimensões — P 4",
+     "required": true
+    },
+    {
+     "path": "conteudo.dimensions.p_5",
+     "type": "text",
+     "label": "Dimensões — P 5",
+     "required": true
+    },
+    {
+     "path": "conteudo.dimensions.p_6",
+     "type": "text",
+     "label": "Dimensões — P 6",
+     "required": true
+    },
+    {
+     "path": "conteudo.dimensions.h3_3",
+     "type": "string",
+     "label": "Dimensões — H3 3",
+     "required": true
+    },
+    {
+     "path": "conteudo.dimensions.p_7",
+     "type": "text",
+     "label": "Dimensões — P 7",
+     "required": true
+    },
+    {
+     "path": "conteudo.dimensions.p_8",
+     "type": "text",
+     "label": "Dimensões — P 8",
+     "required": true
+    },
+    {
+     "path": "conteudo.dimensions.p_9",
+     "type": "text",
+     "label": "Dimensões — P 9",
+     "required": true
+    },
+    {
+     "path": "conteudo.texto_3",
+     "type": "rich-text",
+     "label": "Texto 3",
+     "required": true,
+     "description": "Parágrafos, subtítulos e listas desta parte da página."
+    },
+    {
+     "path": "conteudo.split_2.h3",
+     "type": "string",
+     "label": "Bloco texto e imagem 2 — H3",
+     "required": true
+    },
+    {
+     "path": "conteudo.split_2.p",
+     "type": "text",
+     "label": "Bloco texto e imagem 2 — P",
+     "required": true
+    },
+    {
+     "path": "conteudo.split_2.p_2",
+     "type": "rich-text",
+     "label": "Bloco texto e imagem 2 — P 2",
+     "required": true
+    },
+    {
+     "path": "conteudo.split_2.p_3",
+     "type": "text",
+     "label": "Bloco texto e imagem 2 — P 3",
+     "required": true
+    },
+    {
+     "path": "conteudo.split_2.split",
+     "type": "image-object",
+     "label": "Bloco texto e imagem 2 — Imagem Bloco texto e imagem"
+    },
+    {
+     "path": "conteudo.texto_4",
+     "type": "rich-text",
+     "label": "Texto 4",
+     "required": true,
+     "description": "Parágrafos, subtítulos e listas desta parte da página."
+    },
+    {
+     "path": "conteudo.split_3.split",
+     "type": "image-object",
+     "label": "Bloco texto e imagem 3 — Imagem Bloco texto e imagem"
+    },
+    {
+     "path": "conteudo.split_3.h2",
+     "type": "string",
+     "label": "Bloco texto e imagem 3 — H2",
+     "required": true
+    },
+    {
+     "path": "conteudo.split_3.p",
+     "type": "text",
+     "label": "Bloco texto e imagem 3 — P",
+     "required": true
+    },
+    {
+     "path": "conteudo.split_3.p_2",
+     "type": "text",
+     "label": "Bloco texto e imagem 3 — P 2",
+     "required": true
+    },
+    {
+     "path": "conteudo.texto_5",
+     "type": "rich-text",
+     "label": "Texto 5",
+     "required": true,
+     "description": "Parágrafos, subtítulos e listas desta parte da página."
+    },
+    {
+     "path": "conteudo.split_4.h3",
+     "type": "string",
+     "label": "Bloco texto e imagem 4 — H3",
+     "required": true
+    },
+    {
+     "path": "conteudo.split_4.p",
+     "type": "text",
+     "label": "Bloco texto e imagem 4 — P",
+     "required": true
+    },
+    {
+     "path": "conteudo.split_4.p_2",
+     "type": "rich-text",
+     "label": "Bloco texto e imagem 4 — P 2",
+     "required": true
+    },
+    {
+     "path": "conteudo.split_4.split",
+     "type": "image-object",
+     "label": "Bloco texto e imagem 4 — Imagem Bloco texto e imagem"
+    },
+    {
+     "path": "conteudo.texto_6",
+     "type": "rich-text",
+     "label": "Texto 6",
+     "required": true,
+     "description": "Parágrafos, subtítulos e listas desta parte da página."
+    },
+    {
+     "path": "conteudo.split_5.split",
+     "type": "image-object",
+     "label": "Bloco texto e imagem 5 — Imagem Bloco texto e imagem"
+    },
+    {
+     "path": "conteudo.split_5.h2",
+     "type": "string",
+     "label": "Bloco texto e imagem 5 — H2",
+     "required": true
+    },
+    {
+     "path": "conteudo.split_5.h3",
+     "type": "string",
+     "label": "Bloco texto e imagem 5 — H3",
+     "required": true
+    },
+    {
+     "path": "conteudo.split_5.p",
+     "type": "text",
+     "label": "Bloco texto e imagem 5 — P",
+     "required": true
+    },
+    {
+     "path": "conteudo.split_5.p_2",
+     "type": "text",
+     "label": "Bloco texto e imagem 5 — P 2",
+     "required": true
+    },
+    {
+     "path": "conteudo.texto_7",
+     "type": "rich-text",
+     "label": "Texto 7",
+     "required": true,
+     "description": "Parágrafos, subtítulos e listas desta parte da página."
+    },
+    {
+     "path": "conteudo.split_6.h3",
+     "type": "string",
+     "label": "Bloco texto e imagem 6 — H3",
+     "required": true
+    },
+    {
+     "path": "conteudo.split_6.p",
+     "type": "text",
+     "label": "Bloco texto e imagem 6 — P",
+     "required": true
+    },
+    {
+     "path": "conteudo.split_6.p_2",
+     "type": "text",
+     "label": "Bloco texto e imagem 6 — P 2",
+     "required": true
+    },
+    {
+     "path": "conteudo.split_6.p_3",
+     "type": "text",
+     "label": "Bloco texto e imagem 6 — P 3",
+     "required": true
+    },
+    {
+     "path": "conteudo.split_6.split",
+     "type": "image-object",
+     "label": "Bloco texto e imagem 6 — Imagem Bloco texto e imagem"
+    },
+    {
+     "path": "conteudo.texto_8",
+     "type": "rich-text",
+     "label": "Texto 8",
+     "required": true,
+     "description": "Parágrafos, subtítulos e listas desta parte da página."
+    },
+    {
+     "path": "conteudo.final_visual.imagem",
+     "type": "image-object",
+     "label": "Imagem final Ilustração — Imagem "
+    },
+    {
+     "path": "chamada.instagram_link",
+     "type": "string",
+     "label": "Chamada final — Link do Instagram",
+     "required": true,
+     "description": "Endereço completo do perfil, ex.: https://www.instagram.com/perfil/"
+    },
+    {
+     "path": "chamada.back",
+     "type": "string",
+     "label": "Chamada final — Back",
+     "required": true
+    }
+   ]
+  },
+  "content/programas/maior-cuidado.json": {
+   "label": "Programa Maior Cuidado",
+   "kind": "generic",
+   "fields": [
+    {
+     "path": "seo.titulo",
+     "type": "string",
+     "label": "Título da aba e do Google",
+     "required": true,
+     "description": "Aparece na aba do navegador e nos resultados de busca. Ideal: até 60 caracteres."
+    },
+    {
+     "path": "seo.descricao",
+     "type": "text",
+     "label": "Descrição para o Google e redes sociais",
+     "required": true,
+     "description": "Resumo da página usado pelo Google e no compartilhamento. Ideal: até 160 caracteres."
+    },
+    {
+     "path": "seo.titulo_social",
+     "type": "string",
+     "label": "Título no compartilhamento (redes sociais)",
+     "required": true
+    },
+    {
+     "path": "topo.hero_eyebrow",
+     "type": "text",
+     "label": "Topo — Topo da página Chamada acima do título",
+     "required": true
+    },
+    {
+     "path": "topo.h1",
+     "type": "string",
+     "label": "Topo — H1",
+     "required": true
+    },
+    {
+     "path": "topo.hero_tagline",
+     "type": "text",
+     "label": "Topo — Topo da página Frase de destaque",
+     "required": true
+    },
+    {
+     "path": "conteudo.texto_1",
+     "type": "rich-text",
+     "label": "Texto 1",
+     "required": true,
+     "description": "Parágrafos, subtítulos e listas desta parte da página."
+    },
+    {
+     "path": "conteudo.split.split",
+     "type": "image-object",
+     "label": "Bloco texto e imagem — Imagem Bloco texto e imagem"
+    },
+    {
+     "path": "conteudo.split.h2",
+     "type": "string",
+     "label": "Bloco texto e imagem — H2",
+     "required": true
+    },
+    {
+     "path": "conteudo.split.p",
+     "type": "text",
+     "label": "Bloco texto e imagem — P",
+     "required": true
+    },
+    {
+     "path": "conteudo.texto_2",
+     "type": "rich-text",
+     "label": "Texto 2",
+     "required": true,
+     "description": "Parágrafos, subtítulos e listas desta parte da página."
+    },
+    {
+     "path": "conteudo.split_2.h3",
+     "type": "string",
+     "label": "Bloco texto e imagem 2 — H3",
+     "required": true
+    },
+    {
+     "path": "conteudo.split_2.p",
+     "type": "text",
+     "label": "Bloco texto e imagem 2 — P",
+     "required": true
+    },
+    {
+     "path": "conteudo.split_2.p_2",
+     "type": "text",
+     "label": "Bloco texto e imagem 2 — P 2",
+     "required": true
+    },
+    {
+     "path": "conteudo.split_2.split",
+     "type": "image-object",
+     "label": "Bloco texto e imagem 2 — Imagem Bloco texto e imagem"
+    },
+    {
+     "path": "conteudo.texto_3",
+     "type": "rich-text",
+     "label": "Texto 3",
+     "required": true,
+     "description": "Parágrafos, subtítulos e listas desta parte da página."
+    },
+    {
+     "path": "conteudo.pair.h3",
+     "type": "string",
+     "label": "Par de destaques — H3",
+     "required": true
+    },
+    {
+     "path": "conteudo.pair.p",
+     "type": "text",
+     "label": "Par de destaques — P",
+     "required": true
+    },
+    {
+     "path": "conteudo.pair.p_2",
+     "type": "text",
+     "label": "Par de destaques — P 2",
+     "required": true
+    },
+    {
+     "path": "conteudo.pair.p_3",
+     "type": "text",
+     "label": "Par de destaques — P 3",
+     "required": true
+    },
+    {
+     "path": "conteudo.pair.p_4",
+     "type": "text",
+     "label": "Par de destaques — P 4",
+     "required": true
+    },
+    {
+     "path": "conteudo.pair.h3_2",
+     "type": "string",
+     "label": "Par de destaques — H3 2",
+     "required": true
+    },
+    {
+     "path": "conteudo.pair.p_5",
+     "type": "text",
+     "label": "Par de destaques — P 5",
+     "required": true
+    },
+    {
+     "path": "conteudo.pair.p_6",
+     "type": "text",
+     "label": "Par de destaques — P 6",
+     "required": true
+    },
+    {
+     "path": "conteudo.pair.p_7",
+     "type": "text",
+     "label": "Par de destaques — P 7",
+     "required": true
+    },
+    {
+     "path": "conteudo.pair.p_8",
+     "type": "text",
+     "label": "Par de destaques — P 8",
+     "required": true
+    },
+    {
+     "path": "conteudo.texto_4",
+     "type": "rich-text",
+     "label": "Texto 4",
+     "required": true,
+     "description": "Parágrafos, subtítulos e listas desta parte da página."
+    },
+    {
+     "path": "conteudo.split_3.split",
+     "type": "image-object",
+     "label": "Bloco texto e imagem 3 — Imagem Bloco texto e imagem"
+    },
+    {
+     "path": "conteudo.split_3.h3",
+     "type": "string",
+     "label": "Bloco texto e imagem 3 — H3",
+     "required": true
+    },
+    {
+     "path": "conteudo.split_3.p",
+     "type": "text",
+     "label": "Bloco texto e imagem 3 — P",
+     "required": true
+    },
+    {
+     "path": "conteudo.split_3.p_2",
+     "type": "text",
+     "label": "Bloco texto e imagem 3 — P 2",
+     "required": true
+    },
+    {
+     "path": "conteudo.texto_5",
+     "type": "rich-text",
+     "label": "Texto 5",
+     "required": true,
+     "description": "Parágrafos, subtítulos e listas desta parte da página."
+    },
+    {
+     "path": "conteudo.split_4.h3",
+     "type": "string",
+     "label": "Bloco texto e imagem 4 — H3",
+     "required": true
+    },
+    {
+     "path": "conteudo.split_4.p",
+     "type": "text",
+     "label": "Bloco texto e imagem 4 — P",
+     "required": true
+    },
+    {
+     "path": "conteudo.split_4.p_2",
+     "type": "text",
+     "label": "Bloco texto e imagem 4 — P 2",
+     "required": true
+    },
+    {
+     "path": "conteudo.split_4.split",
+     "type": "image-object",
+     "label": "Bloco texto e imagem 4 — Imagem Bloco texto e imagem"
+    },
+    {
+     "path": "conteudo.texto_6",
+     "type": "rich-text",
+     "label": "Texto 6",
+     "required": true,
+     "description": "Parágrafos, subtítulos e listas desta parte da página."
+    },
+    {
+     "path": "conteudo.gallery.imagem",
+     "type": "image-object",
+     "label": "Galeria — Imagem "
+    },
+    {
+     "path": "conteudo.texto_7",
+     "type": "rich-text",
+     "label": "Texto 7",
+     "required": true,
+     "description": "Parágrafos, subtítulos e listas desta parte da página."
+    },
+    {
+     "path": "conteudo.final_visual.imagem",
+     "type": "image-object",
+     "label": "Imagem final Ilustração — Imagem "
+    }
+   ]
+  },
+  "content/programas/qualificacao.json": {
+   "label": "Qualificação Profissional",
+   "kind": "generic",
+   "fields": [
+    {
+     "path": "seo.titulo",
+     "type": "string",
+     "label": "Título da aba e do Google",
+     "required": true,
+     "description": "Aparece na aba do navegador e nos resultados de busca. Ideal: até 60 caracteres."
+    },
+    {
+     "path": "seo.descricao",
+     "type": "text",
+     "label": "Descrição para o Google e redes sociais",
+     "required": true,
+     "description": "Resumo da página usado pelo Google e no compartilhamento. Ideal: até 160 caracteres."
+    },
+    {
+     "path": "seo.titulo_social",
+     "type": "string",
+     "label": "Título no compartilhamento (redes sociais)",
+     "required": true
+    },
+    {
+     "path": "topo.hero_eyebrow",
+     "type": "text",
+     "label": "Topo — Topo da página Chamada acima do título",
+     "required": true
+    },
+    {
+     "path": "topo.h1",
+     "type": "string",
+     "label": "Topo — H1",
+     "required": true
+    },
+    {
+     "path": "topo.hero_tagline",
+     "type": "text",
+     "label": "Topo — Topo da página Frase de destaque",
+     "required": true
+    },
+    {
+     "path": "conteudo.texto_1",
+     "type": "rich-text",
+     "label": "Texto 1",
+     "required": true,
+     "description": "Parágrafos, subtítulos e listas desta parte da página."
+    },
+    {
+     "path": "conteudo.split_text.h2",
+     "type": "string",
+     "label": "Bloco texto e imagem Texto — H2",
+     "required": true
+    },
+    {
+     "path": "conteudo.split_text.h3",
+     "type": "string",
+     "label": "Bloco texto e imagem Texto — H3",
+     "required": true
+    },
+    {
+     "path": "conteudo.split_text.p",
+     "type": "text",
+     "label": "Bloco texto e imagem Texto — P",
+     "required": true
+    },
+    {
+     "path": "conteudo.split_text.p_2",
+     "type": "rich-text",
+     "label": "Bloco texto e imagem Texto — P 2",
+     "required": true
+    },
+    {
+     "path": "conteudo.texto_2",
+     "type": "rich-text",
+     "label": "Texto 2",
+     "required": true,
+     "description": "Parágrafos, subtítulos e listas desta parte da página."
+    },
+    {
+     "path": "conteudo.split.h2",
+     "type": "string",
+     "label": "Bloco texto e imagem — H2",
+     "required": true
+    },
+    {
+     "path": "conteudo.split.h3",
+     "type": "string",
+     "label": "Bloco texto e imagem — H3",
+     "required": true
+    },
+    {
+     "path": "conteudo.split.p",
+     "type": "text",
+     "label": "Bloco texto e imagem — P",
+     "required": true
+    },
+    {
+     "path": "conteudo.split.p_2",
+     "type": "text",
+     "label": "Bloco texto e imagem — P 2",
+     "required": true
+    },
+    {
+     "path": "conteudo.split.split",
+     "type": "image-object",
+     "label": "Bloco texto e imagem — Imagem Bloco texto e imagem"
+    },
+    {
+     "path": "conteudo.texto_3",
+     "type": "rich-text",
+     "label": "Texto 3",
+     "required": true,
+     "description": "Parágrafos, subtítulos e listas desta parte da página."
+    },
+    {
+     "path": "conteudo.gallery.imagem",
+     "type": "image-object",
+     "label": "Galeria — Imagem "
+    },
+    {
+     "path": "conteudo.gallery.img_2",
+     "type": "image-object",
+     "label": "Galeria — Imagem Img 2"
+    },
+    {
+     "path": "conteudo.gallery.img_3",
+     "type": "image-object",
+     "label": "Galeria — Imagem Img 3"
+    },
+    {
+     "path": "conteudo.texto_4",
+     "type": "rich-text",
+     "label": "Texto 4",
+     "required": true,
+     "description": "Parágrafos, subtítulos e listas desta parte da página."
+    },
+    {
+     "path": "conteudo.split_2.split",
+     "type": "image-object",
+     "label": "Bloco texto e imagem 2 — Imagem Bloco texto e imagem"
+    },
+    {
+     "path": "conteudo.split_2.h2",
+     "type": "string",
+     "label": "Bloco texto e imagem 2 — H2",
+     "required": true
+    },
+    {
+     "path": "conteudo.split_2.p",
+     "type": "text",
+     "label": "Bloco texto e imagem 2 — P",
+     "required": true
+    },
+    {
+     "path": "conteudo.split_2.p_2",
+     "type": "text",
+     "label": "Bloco texto e imagem 2 — P 2",
+     "required": true
+    },
+    {
+     "path": "conteudo.texto_5",
+     "type": "rich-text",
+     "label": "Texto 5",
+     "required": true,
+     "description": "Parágrafos, subtítulos e listas desta parte da página."
+    },
+    {
+     "path": "conteudo.final_visual.imagem",
+     "type": "image-object",
+     "label": "Imagem final Ilustração — Imagem "
+    },
+    {
+     "path": "conteudo.cta.texto",
+     "type": "string",
+     "label": "Chamada — Texto",
+     "required": true
+    },
+    {
+     "path": "conteudo.cta.cta_fone_label",
+     "type": "string",
+     "label": "Chamada — Chamada Telefone Rótulo",
+     "required": true
+    },
+    {
+     "path": "conteudo.cta.cta_fone_num",
+     "type": "string",
+     "label": "Chamada — Chamada Telefone Número",
+     "required": true
+    },
+    {
+     "path": "conteudo.cta.whatsapp_link",
+     "type": "string",
+     "label": "Chamada — Link do WhatsApp",
+     "required": true,
+     "description": "Link completo do WhatsApp, ex.: https://wa.me/5531999999999"
+    },
+    {
+     "path": "conteudo.cta.texto_2",
+     "type": "string",
+     "label": "Chamada — Texto 2",
+     "required": true
+    }
+   ]
+  },
+  "content/programas/scfv.json": {
+   "label": "SCFV para adolescentes",
+   "kind": "generic",
+   "fields": [
+    {
+     "path": "seo.titulo",
+     "type": "string",
+     "label": "Título da aba e do Google",
+     "required": true,
+     "description": "Aparece na aba do navegador e nos resultados de busca. Ideal: até 60 caracteres."
+    },
+    {
+     "path": "seo.descricao",
+     "type": "text",
+     "label": "Descrição para o Google e redes sociais",
+     "required": true,
+     "description": "Resumo da página usado pelo Google e no compartilhamento. Ideal: até 160 caracteres."
+    },
+    {
+     "path": "seo.titulo_social",
+     "type": "string",
+     "label": "Título no compartilhamento (redes sociais)",
+     "required": true
+    },
+    {
+     "path": "topo.hero_eyebrow",
+     "type": "text",
+     "label": "Topo — Topo da página Chamada acima do título",
+     "required": true
+    },
+    {
+     "path": "topo.h1",
+     "type": "string",
+     "label": "Topo — H1",
+     "required": true
+    },
+    {
+     "path": "topo.hero_tagline",
+     "type": "text",
+     "label": "Topo — Topo da página Frase de destaque",
+     "required": true
+    },
+    {
+     "path": "conteudo.split.h2",
+     "type": "string",
+     "label": "Bloco texto e imagem — H2",
+     "required": true
+    },
+    {
+     "path": "conteudo.split.p",
+     "type": "text",
+     "label": "Bloco texto e imagem — P",
+     "required": true
+    },
+    {
+     "path": "conteudo.split.split",
+     "type": "image-object",
+     "label": "Bloco texto e imagem — Imagem Bloco texto e imagem"
+    },
+    {
+     "path": "conteudo.texto_1",
+     "type": "rich-text",
+     "label": "Texto 1",
+     "required": true,
+     "description": "Parágrafos, subtítulos e listas desta parte da página."
+    },
+    {
+     "path": "conteudo.gallery.imagem",
+     "type": "image-object",
+     "label": "Galeria — Imagem "
+    },
+    {
+     "path": "conteudo.gallery.img_2",
+     "type": "image-object",
+     "label": "Galeria — Imagem Img 2"
+    },
+    {
+     "path": "conteudo.gallery.img_3",
+     "type": "image-object",
+     "label": "Galeria — Imagem Img 3"
+    },
+    {
+     "path": "conteudo.gallery.img_4",
+     "type": "image-object",
+     "label": "Galeria — Imagem Img 4"
+    },
+    {
+     "path": "conteudo.gallery.img_5",
+     "type": "image-object",
+     "label": "Galeria — Imagem Img 5"
+    },
+    {
+     "path": "conteudo.figure.imagem",
+     "type": "image-object",
+     "label": "Figura — Imagem "
+    },
+    {
+     "path": "conteudo.figure.figcaption",
+     "type": "string",
+     "label": "Figura — Figcaption",
+     "required": true
+    },
+    {
+     "path": "conteudo.final_visual.imagem",
+     "type": "image-object",
+     "label": "Imagem final Ilustração — Imagem "
+    },
+    {
+     "path": "chamada.instagram_link",
+     "type": "string",
+     "label": "Chamada final — Link do Instagram",
+     "required": true,
+     "description": "Endereço completo do perfil, ex.: https://www.instagram.com/perfil/"
+    },
+    {
+     "path": "chamada.back",
+     "type": "string",
+     "label": "Chamada final — Back",
+     "required": true
+    }
+   ]
+  },
+  "content/artigos/arte-como-caminho-de-pertencimento-e-transformacao-social.md": {
+   "kind": "article",
+   "fields": [
+    {
+     "path": "seo.titulo",
+     "type": "string",
+     "label": "Título da aba e do Google",
+     "required": true,
+     "description": "Aparece na aba do navegador e nos resultados de busca. Ideal: até 60 caracteres."
+    },
+    {
+     "path": "seo.descricao",
+     "type": "text",
+     "label": "Descrição para o Google e redes sociais",
+     "required": true,
+     "description": "Resumo da página usado pelo Google e no compartilhamento. Ideal: até 160 caracteres."
+    },
+    {
+     "path": "seo.titulo_social",
+     "type": "string",
+     "label": "Título no compartilhamento (redes sociais)",
+     "required": true
+    },
+    {
+     "path": "chamada",
+     "type": "string",
+     "label": "Chamada acima do título",
+     "required": true
+    },
+    {
+     "path": "titulo",
+     "type": "string",
+     "label": "Título do artigo",
+     "required": true
+    },
+    {
+     "path": "destaque",
+     "type": "text",
+     "label": "Frase de destaque",
+     "required": true
+    },
+    {
+     "path": "imagem",
+     "type": "image-object",
+     "label": "Imagem principal"
+    },
+    {
+     "path": "body",
+     "type": "rich-text",
+     "label": "Texto do artigo",
+     "required": true
+    }
+   ]
+  },
+  "content/artigos/parcerias-que-geram-transformacao-o-trabalho-do-gdecom-em-rede.md": {
+   "kind": "article",
+   "fields": [
+    {
+     "path": "seo.titulo",
+     "type": "string",
+     "label": "Título da aba e do Google",
+     "required": true,
+     "description": "Aparece na aba do navegador e nos resultados de busca. Ideal: até 60 caracteres."
+    },
+    {
+     "path": "seo.descricao",
+     "type": "text",
+     "label": "Descrição para o Google e redes sociais",
+     "required": true,
+     "description": "Resumo da página usado pelo Google e no compartilhamento. Ideal: até 160 caracteres."
+    },
+    {
+     "path": "seo.titulo_social",
+     "type": "string",
+     "label": "Título no compartilhamento (redes sociais)",
+     "required": true
+    },
+    {
+     "path": "chamada",
+     "type": "string",
+     "label": "Chamada acima do título",
+     "required": true
+    },
+    {
+     "path": "titulo",
+     "type": "string",
+     "label": "Título do artigo",
+     "required": true
+    },
+    {
+     "path": "destaque",
+     "type": "text",
+     "label": "Frase de destaque",
+     "required": true
+    },
+    {
+     "path": "imagem",
+     "type": "image-object",
+     "label": "Imagem principal"
+    },
+    {
+     "path": "body",
+     "type": "rich-text",
+     "label": "Texto do artigo",
+     "required": true
+    }
+   ]
+  },
+  "content/artigos/projetos-com-impacto-social-parcerias-que-fortalecem-comunidades.md": {
+   "kind": "article",
+   "fields": [
+    {
+     "path": "seo.titulo",
+     "type": "string",
+     "label": "Título da aba e do Google",
+     "required": true,
+     "description": "Aparece na aba do navegador e nos resultados de busca. Ideal: até 60 caracteres."
+    },
+    {
+     "path": "seo.descricao",
+     "type": "text",
+     "label": "Descrição para o Google e redes sociais",
+     "required": true,
+     "description": "Resumo da página usado pelo Google e no compartilhamento. Ideal: até 160 caracteres."
+    },
+    {
+     "path": "seo.titulo_social",
+     "type": "string",
+     "label": "Título no compartilhamento (redes sociais)",
+     "required": true
+    },
+    {
+     "path": "chamada",
+     "type": "string",
+     "label": "Chamada acima do título",
+     "required": true
+    },
+    {
+     "path": "titulo",
+     "type": "string",
+     "label": "Título do artigo",
+     "required": true
+    },
+    {
+     "path": "destaque",
+     "type": "text",
+     "label": "Frase de destaque",
+     "required": true
+    },
+    {
+     "path": "imagem",
+     "type": "image-object",
+     "label": "Imagem principal"
+    },
+    {
+     "path": "body",
+     "type": "rich-text",
+     "label": "Texto do artigo",
+     "required": true
+    }
+   ]
+  }
+ },
+ "pages": [
+  {
+   "id": "home",
+   "file": "index.html",
+   "template": "templates/index.html",
+   "content": "content/home.json",
+   "kind": "home",
+   "fields": 70,
+   "slots": 17,
+   "tokens": 102
+  },
+  {
+   "id": "historia",
+   "file": "historia/index.html",
+   "template": "templates/historia/index.html",
+   "content": "content/historia.json",
+   "kind": "generic",
+   "fields": 21,
+   "slots": 1,
+   "tokens": 26
+  },
+  {
+   "id": "contato",
+   "file": "fale-com-a-gente/index.html",
+   "template": "templates/fale-com-a-gente/index.html",
+   "content": "content/contato.json",
+   "kind": "contato",
+   "fields": 17,
+   "slots": 0,
+   "tokens": 32
+  },
+  {
+   "id": "volei",
+   "file": "servico-de-convivencia/volei/index.html",
+   "template": "templates/servico-de-convivencia/volei/index.html",
+   "content": "content/volei.json",
+   "kind": "generic",
+   "fields": 16,
+   "slots": 2,
+   "tokens": 21
+  },
+  {
+   "id": "creche",
+   "file": "programas/creche-educacao-infantil/index.html",
+   "template": "templates/programas/creche-educacao-infantil/index.html",
+   "content": "content/programas/creche.json",
+   "kind": "generic",
+   "fields": 44,
+   "slots": 13,
+   "tokens": 49
+  },
+  {
+   "id": "atendimento",
+   "file": "artigos/atendimento-educacional-integrado-inclusao-aprendizagem-e-cuidado-no-territorio/index.html",
+   "template": "templates/artigos/atendimento-educacional-integrado-inclusao-aprendizagem-e-cuidado-no-territorio/index.html",
+   "content": "content/programas/atendimento.json",
+   "kind": "generic",
+   "fields": 63,
+   "slots": 7,
+   "tokens": 68
+  },
+  {
+   "id": "maior-cuidado",
+   "file": "artigos/programa-maior-cuidado-atencao-vinculo-e-protecao-no-cotidiano/index.html",
+   "template": "templates/artigos/programa-maior-cuidado-atencao-vinculo-e-protecao-no-cotidiano/index.html",
+   "content": "content/programas/maior-cuidado.json",
+   "kind": "generic",
+   "fields": 40,
+   "slots": 6,
+   "tokens": 45
+  },
+  {
+   "id": "qualificacao",
+   "file": "artigos/qualificacao-profissional-cursos-gratuitos-que-ampliam-oportunidades/index.html",
+   "template": "templates/artigos/qualificacao-profissional-cursos-gratuitos-que-ampliam-oportunidades/index.html",
+   "content": "content/programas/qualificacao.json",
+   "kind": "generic",
+   "fields": 33,
+   "slots": 6,
+   "tokens": 38
+  },
+  {
+   "id": "scfv",
+   "file": "artigos/scfv-para-adolescentes-de-15-a-17-anos-convivencia-escuta-e-protagonismo/index.html",
+   "template": "templates/artigos/scfv-para-adolescentes-de-15-a-17-anos-convivencia-escuta-e-protagonismo/index.html",
+   "content": "content/programas/scfv.json",
+   "kind": "generic",
+   "fields": 20,
+   "slots": 8,
+   "tokens": 25
+  },
+  {
+   "id": "artigo:arte-como-caminho-de-pertencimento-e-transformacao-social",
+   "file": "artigos/arte-como-caminho-de-pertencimento-e-transformacao-social/index.html",
+   "template": "templates/artigos/arte-como-caminho-de-pertencimento-e-transformacao-social.html",
+   "content": "content/artigos/arte-como-caminho-de-pertencimento-e-transformacao-social.md",
+   "kind": "article",
+   "fields": 8,
+   "slots": 1,
+   "tokens": 15
+  },
+  {
+   "id": "artigo:parcerias-que-geram-transformacao-o-trabalho-do-gdecom-em-rede",
+   "file": "artigos/parcerias-que-geram-transformacao-o-trabalho-do-gdecom-em-rede/index.html",
+   "template": "templates/artigos/parcerias-que-geram-transformacao-o-trabalho-do-gdecom-em-rede.html",
+   "content": "content/artigos/parcerias-que-geram-transformacao-o-trabalho-do-gdecom-em-rede.md",
+   "kind": "article",
+   "fields": 8,
+   "slots": 1,
+   "tokens": 13
+  },
+  {
+   "id": "artigo:projetos-com-impacto-social-parcerias-que-fortalecem-comunidades",
+   "file": "artigos/projetos-com-impacto-social-parcerias-que-fortalecem-comunidades/index.html",
+   "template": "templates/artigos/projetos-com-impacto-social-parcerias-que-fortalecem-comunidades.html",
+   "content": "content/artigos/projetos-com-impacto-social-parcerias-que-fortalecem-comunidades.md",
+   "kind": "article",
+   "fields": 8,
+   "slots": 1,
+   "tokens": 13
+  },
+  {
+   "id": "privacidade",
+   "file": "politica-de-privacidade/index.html",
+   "template": "templates/politica-de-privacidade/index.html",
+   "content": null,
+   "kind": "static",
+   "fields": 0,
+   "slots": 0,
+   "tokens": 2
+  },
+  {
+   "id": "404",
+   "file": "404.html",
+   "template": "templates/404.html",
+   "content": null,
+   "kind": "static",
+   "fields": 0,
+   "slots": 0,
+   "tokens": 2
+  }
+ ]
+}

@@ -8,3 +8,6 @@ qa/output/
 .DS_Store
 Thumbs.db
 desktop.ini
+
+# Generated website (npm run build)
+dist/

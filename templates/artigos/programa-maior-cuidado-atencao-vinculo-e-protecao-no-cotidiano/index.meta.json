@@ -1,0 +1,94 @@
+{
+ "page": "maior-cuidado",
+ "depth": 2,
+ "entities": {
+  "seo.titulo_social": {
+   "–": "&#8211;"
+  }
+ },
+ "slots": {
+  "conteudo.split.split": {
+   "label": "Bloco texto e imagem — Imagem Bloco texto e imagem",
+   "originalTag": "<img width=\"1448\" height=\"1086\" class=\"maior-cuidado-split-img\" src=\"maiorcuidado1.png\" srcset=\"maiorcuidado1-480.webp 480w, maiorcuidado1-720.webp 720w, maiorcuidado1-1050.webp 1050w, maiorcuidado1-1424.webp 1424w\" sizes=\"(max-width: 820px) min(calc(100vw - 48px), 712px), 338px\" alt=\"Grupo de mulheres, uma delas com camiseta do Programa Maior Cuidado, observando um painel decorativo em um ambiente interno\" loading=\"lazy\">",
+   "originalSrc": "/artigos/programa-maior-cuidado-atencao-vinculo-e-protecao-no-cotidiano/maiorcuidado1.png",
+   "originalAltDecoded": "Grupo de mulheres, uma delas com camiseta do Programa Maior Cuidado, observando um painel decorativo em um ambiente interno",
+   "altEntities": {},
+   "widths": [
+    480,
+    720,
+    1050,
+    1424
+   ],
+   "sizes": "(max-width: 820px) min(calc(100vw - 48px), 712px), 338px",
+   "dims": "natural"
+  },
+  "conteudo.split_2.split": {
+   "label": "Bloco texto e imagem 2 — Imagem Bloco texto e imagem",
+   "originalTag": "<img width=\"1586\" height=\"992\" class=\"maior-cuidado-split-img\" src=\"maiorcuidado2.png\" srcset=\"maiorcuidado2-480.webp 480w, maiorcuidado2-720.webp 720w, maiorcuidado2-1050.webp 1050w, maiorcuidado2-1424.webp 1424w\" sizes=\"(max-width: 820px) min(calc(100vw - 48px), 712px), 338px\" alt=\"Profissional do Programa Maior Cuidado preparando materiais de higiene em um quarto durante atendimento domiciliar\" loading=\"lazy\">",
+   "originalSrc": "/artigos/programa-maior-cuidado-atencao-vinculo-e-protecao-no-cotidiano/maiorcuidado2.png",
+   "originalAltDecoded": "Profissional do Programa Maior Cuidado preparando materiais de higiene em um quarto durante atendimento domiciliar",
+   "altEntities": {},
+   "widths": [
+    480,
+    720,
+    1050,
+    1424
+   ],
+   "sizes": "(max-width: 820px) min(calc(100vw - 48px), 712px), 338px",
+   "dims": "natural"
+  },
+  "conteudo.split_3.split": {
+   "label": "Bloco texto e imagem 3 — Imagem Bloco texto e imagem",
+   "originalTag": "<img width=\"1448\" height=\"1086\" class=\"maior-cuidado-split-img\" src=\"maiorcuidado5.png\" srcset=\"maiorcuidado5-600.webp 600w, maiorcuidado5-1050.webp 1050w, maiorcuidado5-1424.webp 1424w\" sizes=\"(max-width: 820px) min(calc(100vw - 48px), 712px), 338px\" alt=\"Profissional do Programa Maior Cuidado cuidando de uma pessoa idosa acamada em casa, com atenção e proximidade\" loading=\"lazy\">",
+   "originalSrc": "/artigos/programa-maior-cuidado-atencao-vinculo-e-protecao-no-cotidiano/maiorcuidado5.png",
+   "originalAltDecoded": "Profissional do Programa Maior Cuidado cuidando de uma pessoa idosa acamada em casa, com atenção e proximidade",
+   "altEntities": {},
+   "widths": [
+    600,
+    1050,
+    1424
+   ],
+   "sizes": "(max-width: 820px) min(calc(100vw - 48px), 712px), 338px",
+   "dims": "natural"
+  },
+  "conteudo.split_4.split": {
+   "label": "Bloco texto e imagem 4 — Imagem Bloco texto e imagem",
+   "originalTag": "<img width=\"1448\" height=\"1086\" class=\"maior-cuidado-split-img\" src=\"maiorcuidado4.png\" srcset=\"maiorcuidado4-480.webp 480w, maiorcuidado4-720.webp 720w, maiorcuidado4-1050.webp 1050w, maiorcuidado4-1424.webp 1424w\" sizes=\"(max-width: 820px) min(calc(100vw - 48px), 712px), 338px\" alt=\"Profissional do Programa Maior Cuidado ajudando um idoso a se levantar do sofá em sua própria casa\" loading=\"lazy\">",
+   "originalSrc": "/artigos/programa-maior-cuidado-atencao-vinculo-e-protecao-no-cotidiano/maiorcuidado4.png",
+   "originalAltDecoded": "Profissional do Programa Maior Cuidado ajudando um idoso a se levantar do sofá em sua própria casa",
+   "altEntities": {},
+   "widths": [
+    480,
+    720,
+    1050,
+    1424
+   ],
+   "sizes": "(max-width: 820px) min(calc(100vw - 48px), 712px), 338px",
+   "dims": "natural"
+  },
+  "conteudo.gallery.imagem": {
+   "label": "Galeria — Imagem ",
+   "originalTag": "<img width=\"792\" height=\"342\" src=\"maiorcuidado6.png\" alt=\"Outro momento do mesmo atendimento, com a equipe auxiliando a pessoa idosa no embarque\" loading=\"lazy\">",
+   "originalSrc": "/artigos/programa-maior-cuidado-atencao-vinculo-e-protecao-no-cotidiano/maiorcuidado6.png",
+   "originalAltDecoded": "Outro momento do mesmo atendimento, com a equipe auxiliando a pessoa idosa no embarque",
+   "altEntities": {},
+   "widths": [],
+   "sizes": null,
+   "dims": "natural"
+  },
+  "conteudo.final_visual.imagem": {
+   "label": "Imagem final Ilustração — Imagem ",
+   "originalTag": "<img width=\"1448\" height=\"1086\" src=\"maiorcuidado7.png\" srcset=\"maiorcuidado7-600.webp 600w, maiorcuidado7-1050.webp 1050w\" sizes=\"(max-width: 600px) 320px, 420px\" alt=\"Grande grupo reunido com profissionais do Programa Maior Cuidado e pessoas idosas atendidas, sorrindo juntos em frente a um prédio\" loading=\"lazy\">",
+   "originalSrc": "/artigos/programa-maior-cuidado-atencao-vinculo-e-protecao-no-cotidiano/maiorcuidado7.png",
+   "originalAltDecoded": "Grande grupo reunido com profissionais do Programa Maior Cuidado e pessoas idosas atendidas, sorrindo juntos em frente a um prédio",
+   "altEntities": {},
+   "widths": [
+    600,
+    1050
+   ],
+   "sizes": "(max-width: 600px) 320px, 420px",
+   "dims": "natural"
+  }
+ },
+ "computed": {}
+}

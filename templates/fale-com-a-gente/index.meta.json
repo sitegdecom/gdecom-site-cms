@@ -1,0 +1,11 @@
+{
+ "page": "contato",
+ "depth": 1,
+ "entities": {
+  "seo.titulo_social": {
+   "–": "&#8211;"
+  }
+ },
+ "slots": {},
+ "computed": {}
+}

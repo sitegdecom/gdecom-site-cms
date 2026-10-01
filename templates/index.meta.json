@@ -1,0 +1,235 @@
+{
+ "page": "home",
+ "depth": 0,
+ "entities": {
+  "seo.titulo_social": {
+   "–": "&#8211;"
+  },
+  "galeria.titulo": {
+   " ": "&nbsp;"
+  }
+ },
+ "slots": {
+  "programas.atendimento.imagem": {
+   "label": "Cartão Atendimento Educacional Integrado — imagem",
+   "originalTag": "<img class=\"servicos-card-img\" src=\"atendimentointegrado-inicial.png.png\" srcset=\"atendimentointegrado-inicial-400.webp 400w, atendimentointegrado-inicial-780.webp 780w\" sizes=\"260px\" alt=\"Atendimento Educacional Integrado\" width=\"1672\" height=\"941\" loading=\"lazy\" decoding=\"async\">",
+   "originalSrc": "/atendimentointegrado-inicial.png.png",
+   "originalAltDecoded": "Atendimento Educacional Integrado",
+   "altEntities": {},
+   "widths": [
+    400,
+    780
+   ],
+   "sizes": "260px",
+   "dims": "natural"
+  },
+  "programas.creche.imagem": {
+   "label": "Cartão Creche Patatí-Patatá — imagem",
+   "originalTag": "<img class=\"servicos-card-img\" src=\"creche-inicial.png.png\" srcset=\"creche-inicial-400.webp 400w, creche-inicial-780.webp 780w\" sizes=\"260px\" alt=\"Creche Patatí-Patatá\" width=\"1672\" height=\"941\" loading=\"lazy\" decoding=\"async\">",
+   "originalSrc": "/creche-inicial.png.png",
+   "originalAltDecoded": "Creche Patatí-Patatá",
+   "altEntities": {},
+   "widths": [
+    400,
+    780
+   ],
+   "sizes": "260px",
+   "dims": "natural"
+  },
+  "programas.maior_cuidado.imagem": {
+   "label": "Cartão Programa Maior Cuidado — imagem",
+   "originalTag": "<img class=\"servicos-card-img\" src=\"maiorcuidado-inicial.png.png\" srcset=\"maiorcuidado-inicial-400.webp 400w, maiorcuidado-inicial-780.webp 780w\" sizes=\"260px\" alt=\"Programa Maior Cuidado\" width=\"1672\" height=\"941\" loading=\"lazy\" decoding=\"async\">",
+   "originalSrc": "/maiorcuidado-inicial.png.png",
+   "originalAltDecoded": "Programa Maior Cuidado",
+   "altEntities": {},
+   "widths": [
+    400,
+    780
+   ],
+   "sizes": "260px",
+   "dims": "natural"
+  },
+  "programas.qualificacao.imagem": {
+   "label": "Cartão Qualificação Profissional — imagem",
+   "originalTag": "<img class=\"servicos-card-img\" src=\"qualificacao-inicial.png.png\" srcset=\"qualificacao-inicial-400.webp 400w, qualificacao-inicial-780.webp 780w\" sizes=\"260px\" alt=\"Cursos de Qualificação Profissional do GDECOM\" width=\"1672\" height=\"941\" loading=\"lazy\" decoding=\"async\">",
+   "originalSrc": "/qualificacao-inicial.png.png",
+   "originalAltDecoded": "Cursos de Qualificação Profissional do GDECOM",
+   "altEntities": {},
+   "widths": [
+    400,
+    780
+   ],
+   "sizes": "260px",
+   "dims": "natural"
+  },
+  "programas.scfv.imagem": {
+   "label": "Cartão SCFV — imagem",
+   "originalTag": "<img class=\"servicos-card-img\" src=\"scfv-inicial.png.png\" srcset=\"scfv-inicial-400.webp 400w, scfv-inicial-780.webp 780w\" sizes=\"260px\" alt=\"Programa SCFV\" width=\"1672\" height=\"941\" loading=\"lazy\" decoding=\"async\">",
+   "originalSrc": "/scfv-inicial.png.png",
+   "originalAltDecoded": "Programa SCFV",
+   "altEntities": {},
+   "widths": [
+    400,
+    780
+   ],
+   "sizes": "260px",
+   "dims": "natural"
+  },
+  "projetos.volei.imagem": {
+   "label": "Projeto Vôlei — imagem",
+   "originalTag": "<img decoding=\"async\" width=\"493\" height=\"334\" src=\"assets/wp-content/uploads/elementor/thumbs/WhatsApp-Image-2025-04-09-at-21.49.56-2-rp3kzbravou8oivrj7ieihy51cw0si3m1mfjl6g40c.jpeg\" title=\"WhatsApp Image 2025-04-09 at 21.49.56-2\" alt=\"Equipe de vôlei do GDECOM reunida em quadra, com adolescentes e educadores usando uniformes verdes\" loading=\"lazy\" />",
+   "originalSrc": "/assets/wp-content/uploads/elementor/thumbs/WhatsApp-Image-2025-04-09-at-21.49.56-2-rp3kzbravou8oivrj7ieihy51cw0si3m1mfjl6g40c.jpeg",
+   "originalAltDecoded": "Equipe de vôlei do GDECOM reunida em quadra, com adolescentes e educadores usando uniformes verdes",
+   "altEntities": {},
+   "widths": [],
+   "sizes": null,
+   "dims": "natural"
+  },
+  "projetos.conecsons.imagem": {
+   "label": "Projeto CONECSONS-CRJ — imagem",
+   "originalTag": "<img decoding=\"async\" width=\"493\" height=\"334\" src=\"assets/wp-content/uploads/elementor/thumbs/WhatsApp-Image-2026-08-31-at-19.51.50-rssaobewrnr4hvnnwuqtinnn5hm6m08a3ooldssmrw.jpeg\" title=\"WhatsApp Image 2026-08-31 at 19.51.50\" alt=\"Ilustração artística do projeto CONECSONS-CRJ, com grafite colorido, caixas de som e duas mãos se tocando sobre um fundo de prédios\" loading=\"lazy\" />",
+   "originalSrc": "/assets/wp-content/uploads/elementor/thumbs/WhatsApp-Image-2026-08-31-at-19.51.50-rssaobewrnr4hvnnwuqtinnn5hm6m08a3ooldssmrw.jpeg",
+   "originalAltDecoded": "Ilustração artística do projeto CONECSONS-CRJ, com grafite colorido, caixas de som e duas mãos se tocando sobre um fundo de prédios",
+   "altEntities": {},
+   "widths": [],
+   "sizes": null,
+   "dims": "natural"
+  },
+  "vozes.0.imagem": {
+   "label": "Vozes — imagem do cartão 1",
+   "originalTag": "<img loading=\"lazy\" decoding=\"async\" width=\"300\" height=\"169\" src=\"assets/wp-content/uploads/2026/05/ChatGPT-Image-2-de-mai.-de-2026-19_04_28-300x169.png\" class=\"attachment-medium size-medium wp-image-287\" alt=\"Ilustração representando parcerias e projetos com impacto social do GDECOM\" srcset=\"assets/wp-content/uploads/2026/05/ChatGPT-Image-2-de-mai.-de-2026-19_04_28-400.webp 400w, assets/wp-content/uploads/2026/05/ChatGPT-Image-2-de-mai.-de-2026-19_04_28-700.webp 700w, assets/wp-content/uploads/2026/05/ChatGPT-Image-2-de-mai.-de-2026-19_04_28-1000.webp 1000w, assets/wp-content/uploads/2026/05/ChatGPT-Image-2-de-mai.-de-2026-19_04_28-1320.webp 1320w\" sizes=\"(max-width: 767px) calc(100vw - 26px), (max-width: 1024px) 54vw, 658px\" />",
+   "originalSrc": "/assets/wp-content/uploads/2026/05/ChatGPT-Image-2-de-mai.-de-2026-19_04_28-300x169.png",
+   "originalAltDecoded": "Ilustração representando parcerias e projetos com impacto social do GDECOM",
+   "altEntities": {},
+   "widths": [
+    400,
+    700,
+    1000,
+    1320
+   ],
+   "sizes": "(max-width: 767px) calc(100vw - 26px), (max-width: 1024px) 54vw, 658px",
+   "dims": "natural"
+  },
+  "vozes.1.imagem": {
+   "label": "Vozes — imagem do cartão 2",
+   "originalTag": "<img loading=\"lazy\" decoding=\"async\" width=\"300\" height=\"169\" src=\"assets/wp-content/uploads/2026/05/ChatGPT-Image-2-de-mai.-de-2026-19_03_52-300x169.png\" class=\"attachment-medium size-medium wp-image-286\" alt=\"Ilustração representando o trabalho em rede do GDECOM\" srcset=\"assets/wp-content/uploads/2026/05/ChatGPT-Image-2-de-mai.-de-2026-19_03_52-400.webp 400w, assets/wp-content/uploads/2026/05/ChatGPT-Image-2-de-mai.-de-2026-19_03_52-700.webp 700w, assets/wp-content/uploads/2026/05/ChatGPT-Image-2-de-mai.-de-2026-19_03_52-1000.webp 1000w, assets/wp-content/uploads/2026/05/ChatGPT-Image-2-de-mai.-de-2026-19_03_52-1320.webp 1320w\" sizes=\"(max-width: 767px) calc(100vw - 26px), (max-width: 1024px) 54vw, 658px\" />",
+   "originalSrc": "/assets/wp-content/uploads/2026/05/ChatGPT-Image-2-de-mai.-de-2026-19_03_52-300x169.png",
+   "originalAltDecoded": "Ilustração representando o trabalho em rede do GDECOM",
+   "altEntities": {},
+   "widths": [
+    400,
+    700,
+    1000,
+    1320
+   ],
+   "sizes": "(max-width: 767px) calc(100vw - 26px), (max-width: 1024px) 54vw, 658px",
+   "dims": "natural"
+  },
+  "galeria.fotos.0.foto": {
+   "label": "Foto 1",
+   "originalTag": "<img decoding=\"async\" loading=\"lazy\" width=\"400\" height=\"300\" class=\"swiper-slide-image\" src=\"assets/wp-content/uploads/2026/09/creche/creche-pintura.jpg\" alt=\"Crianças da Creche Patati-Patatá pintando coletivamente com tinta guache sobre papel no chão, acompanhadas por uma educadora\" />",
+   "originalSrc": "/assets/wp-content/uploads/2026/09/creche/creche-pintura.jpg",
+   "originalAltDecoded": "Crianças da Creche Patati-Patatá pintando coletivamente com tinta guache sobre papel no chão, acompanhadas por uma educadora",
+   "altEntities": {},
+   "widths": [],
+   "sizes": null,
+   "dims": "natural"
+  },
+  "galeria.fotos.1.foto": {
+   "label": "Foto 2",
+   "originalTag": "<img decoding=\"async\" loading=\"lazy\" width=\"400\" height=\"300\" class=\"swiper-slide-image\" src=\"artigos/programa-maior-cuidado-atencao-vinculo-e-protecao-no-cotidiano/maiorcuidado7.png\" srcset=\"artigos/programa-maior-cuidado-atencao-vinculo-e-protecao-no-cotidiano/maiorcuidado7-600.webp 600w, artigos/programa-maior-cuidado-atencao-vinculo-e-protecao-no-cotidiano/maiorcuidado7-1050.webp 1050w\" sizes=\"(max-width: 767px) calc(100vw - 40px), (max-width: 1023px) 47vw, (max-width: 1279px) 24vw, 285px\" alt=\"Grande grupo reunido ao ar livre, formado por integrantes da equipe do Programa Maior Cuidado, vestindo camisetas do programa, e por pessoas idosas participantes, todos sorrindo\" />",
+   "originalSrc": "/artigos/programa-maior-cuidado-atencao-vinculo-e-protecao-no-cotidiano/maiorcuidado7.png",
+   "originalAltDecoded": "Grande grupo reunido ao ar livre, formado por integrantes da equipe do Programa Maior Cuidado, vestindo camisetas do programa, e por pessoas idosas participantes, todos sorrindo",
+   "altEntities": {},
+   "widths": [
+    600,
+    1050
+   ],
+   "sizes": "(max-width: 767px) calc(100vw - 40px), (max-width: 1023px) 47vw, (max-width: 1279px) 24vw, 285px",
+   "dims": "natural"
+  },
+  "galeria.fotos.2.foto": {
+   "label": "Foto 3",
+   "originalTag": "<img decoding=\"async\" loading=\"lazy\" width=\"400\" height=\"300\" class=\"swiper-slide-image\" src=\"assets/wp-content/uploads/2026/09/scfv/scfv-percussao.jpg\" alt=\"Grupo de adolescentes do SCFV tocando instrumentos de percussão em fileira, ao ar livre, com uma educadora à frente\" />",
+   "originalSrc": "/assets/wp-content/uploads/2026/09/scfv/scfv-percussao.jpg",
+   "originalAltDecoded": "Grupo de adolescentes do SCFV tocando instrumentos de percussão em fileira, ao ar livre, com uma educadora à frente",
+   "altEntities": {},
+   "widths": [],
+   "sizes": null,
+   "dims": "keep"
+  },
+  "galeria.fotos.3.foto": {
+   "label": "Foto 4",
+   "originalTag": "<img decoding=\"async\" loading=\"lazy\" width=\"400\" height=\"300\" class=\"swiper-slide-image\" src=\"artigos/qualificacao-profissional-cursos-gratuitos-que-ampliam-oportunidades/qualificacao1.png.png\" srcset=\"artigos/qualificacao-profissional-cursos-gratuitos-que-ampliam-oportunidades/qualificacao1-600.webp 600w, artigos/qualificacao-profissional-cursos-gratuitos-que-ampliam-oportunidades/qualificacao1-1050.webp 1050w\" sizes=\"(max-width: 767px) calc(100vw - 40px), (max-width: 1023px) 47vw, (max-width: 1279px) 24vw, 285px\" alt=\"Alunos do curso de informática do Programa de Qualificação Profissional montando e reparando computadores em bancadas de trabalho\" />",
+   "originalSrc": "/artigos/qualificacao-profissional-cursos-gratuitos-que-ampliam-oportunidades/qualificacao1.png.png",
+   "originalAltDecoded": "Alunos do curso de informática do Programa de Qualificação Profissional montando e reparando computadores em bancadas de trabalho",
+   "altEntities": {},
+   "widths": [
+    600,
+    1050
+   ],
+   "sizes": "(max-width: 767px) calc(100vw - 40px), (max-width: 1023px) 47vw, (max-width: 1279px) 24vw, 285px",
+   "dims": "keep"
+  },
+  "galeria.fotos.4.foto": {
+   "label": "Foto 5",
+   "originalTag": "<img decoding=\"async\" loading=\"lazy\" width=\"400\" height=\"300\" class=\"swiper-slide-image\" src=\"assets/wp-content/uploads/2026/09/creche/creche-bercario-1.jpg\" alt=\"Educadora sentada no chão cantando e interagindo com um grupo de bebês do berçário da Creche Patati-Patatá\" />",
+   "originalSrc": "/assets/wp-content/uploads/2026/09/creche/creche-bercario-1.jpg",
+   "originalAltDecoded": "Educadora sentada no chão cantando e interagindo com um grupo de bebês do berçário da Creche Patati-Patatá",
+   "altEntities": {},
+   "widths": [],
+   "sizes": null,
+   "dims": "natural"
+  },
+  "galeria.fotos.5.foto": {
+   "label": "Foto 6",
+   "originalTag": "<img decoding=\"async\" loading=\"lazy\" width=\"400\" height=\"300\" class=\"swiper-slide-image\" src=\"artigos/programa-maior-cuidado-atencao-vinculo-e-protecao-no-cotidiano/maiorcuidado5.png\" srcset=\"artigos/programa-maior-cuidado-atencao-vinculo-e-protecao-no-cotidiano/maiorcuidado5-600.webp 600w, artigos/programa-maior-cuidado-atencao-vinculo-e-protecao-no-cotidiano/maiorcuidado5-1050.webp 1050w\" sizes=\"(max-width: 767px) calc(100vw - 40px), (max-width: 1023px) 47vw, (max-width: 1279px) 24vw, 285px\" alt=\"Profissional do Programa Maior Cuidado prestando atendimento domiciliar a uma pessoa idosa, com as mãos apoiadas gentilmente sobre ela\" />",
+   "originalSrc": "/artigos/programa-maior-cuidado-atencao-vinculo-e-protecao-no-cotidiano/maiorcuidado5.png",
+   "originalAltDecoded": "Profissional do Programa Maior Cuidado prestando atendimento domiciliar a uma pessoa idosa, com as mãos apoiadas gentilmente sobre ela",
+   "altEntities": {},
+   "widths": [
+    600,
+    1050
+   ],
+   "sizes": "(max-width: 767px) calc(100vw - 40px), (max-width: 1023px) 47vw, (max-width: 1279px) 24vw, 285px",
+   "dims": "natural"
+  },
+  "galeria.fotos.6.foto": {
+   "label": "Foto 7",
+   "originalTag": "<img decoding=\"async\" loading=\"lazy\" width=\"400\" height=\"300\" class=\"swiper-slide-image\" src=\"assets/wp-content/uploads/2026/09/scfv/scfv-dinamica.jpg\" alt=\"Grupo de adolescentes do SCFV participando de uma dinâmica em roda, sorrindo e interagindo em uma sala ampla\" />",
+   "originalSrc": "/assets/wp-content/uploads/2026/09/scfv/scfv-dinamica.jpg",
+   "originalAltDecoded": "Grupo de adolescentes do SCFV participando de uma dinâmica em roda, sorrindo e interagindo em uma sala ampla",
+   "altEntities": {},
+   "widths": [],
+   "sizes": null,
+   "dims": "keep"
+  },
+  "galeria.fotos.7.foto": {
+   "label": "Foto 8",
+   "originalTag": "<img decoding=\"async\" loading=\"lazy\" width=\"400\" height=\"300\" class=\"swiper-slide-image\" src=\"artigos/qualificacao-profissional-cursos-gratuitos-que-ampliam-oportunidades/qualificacao2.png.png\" srcset=\"artigos/qualificacao-profissional-cursos-gratuitos-que-ampliam-oportunidades/qualificacao2-600.webp 600w, artigos/qualificacao-profissional-cursos-gratuitos-que-ampliam-oportunidades/qualificacao2-1050.webp 1050w\" sizes=\"(max-width: 767px) calc(100vw - 40px), (max-width: 1023px) 47vw, (max-width: 1279px) 24vw, 285px\" alt=\"Profissional do curso de barbearia do Programa de Qualificação Profissional cortando o cabelo de um cliente em frente ao espelho\" />",
+   "originalSrc": "/artigos/qualificacao-profissional-cursos-gratuitos-que-ampliam-oportunidades/qualificacao2.png.png",
+   "originalAltDecoded": "Profissional do curso de barbearia do Programa de Qualificação Profissional cortando o cabelo de um cliente em frente ao espelho",
+   "altEntities": {},
+   "widths": [
+    600,
+    1050
+   ],
+   "sizes": "(max-width: 767px) calc(100vw - 40px), (max-width: 1023px) 47vw, (max-width: 1279px) 24vw, 285px",
+   "dims": "keep"
+  }
+ },
+ "computed": {
+  "vozes.0.titulo_raw": "Projetos com impacto social: parcerias que fortalecem comunidades",
+  "vozes.0.aria_raw": "Saiba mais sobre Projetos com impacto social: parcerias que fortalecem comunidades",
+  "vozes.1.titulo_raw": "Parcerias que geram transformação: o trabalho do GDECOM em rede",
+  "vozes.1.aria_raw": "Saiba mais sobre Parcerias que geram transformação: o trabalho do GDECOM em rede",
+  "galeria.fotos.0.hash_raw": "#elementor-action%3Aaction%3Dlightbox%26settings%3DeyJpZCI6MTcxLCJ1cmwiOiJhc3NldHMvd3AtY29udGVudC91cGxvYWRzLzIwMjYvMDkvY3JlY2hlL2NyZWNoZS1waW50dXJhLmpwZyIsInNsaWRlc2hvdyI6IjU2NTM3ZWYifQ%3D%3D",
+  "galeria.fotos.1.hash_raw": "#elementor-action%3Aaction%3Dlightbox%26settings%3DeyJpZCI6MTcyLCJ1cmwiOiJhcnRpZ29zL3Byb2dyYW1hLW1haW9yLWN1aWRhZG8tYXRlbmNhby12aW5jdWxvLWUtcHJvdGVjYW8tbm8tY290aWRpYW5vL21haW9yY3VpZGFkbzcucG5nIiwic2xpZGVzaG93IjoiNTY1MzdlZiJ9",
+  "galeria.fotos.2.hash_raw": "#elementor-action%3Aaction%3Dlightbox%26settings%3DeyJpZCI6MTczLCJ1cmwiOiJhc3NldHMvd3AtY29udGVudC91cGxvYWRzLzIwMjYvMDkvc2Nmdi9zY2Z2LXBlcmN1c3Nhby5qcGciLCJzbGlkZXNob3ciOiI1NjUzN2VmIn0%3D",
+  "galeria.fotos.3.hash_raw": "#elementor-action%3Aaction%3Dlightbox%26settings%3DeyJpZCI6MTc0LCJ1cmwiOiJhcnRpZ29zL3F1YWxpZmljYWNhby1wcm9maXNzaW9uYWwtY3Vyc29zLWdyYXR1aXRvcy1xdWUtYW1wbGlhbS1vcG9ydHVuaWRhZGVzL3F1YWxpZmljYWNhbzEucG5nLnBuZyIsInNsaWRlc2hvdyI6IjU2NTM3ZWYifQ%3D%3D",
+  "galeria.fotos.4.hash_raw": "#elementor-action%3Aaction%3Dlightbox%26settings%3DeyJpZCI6MTc1LCJ1cmwiOiJhc3NldHMvd3AtY29udGVudC91cGxvYWRzLzIwMjYvMDkvY3JlY2hlL2NyZWNoZS1iZXJjYXJpby0xLmpwZyIsInNsaWRlc2hvdyI6IjU2NTM3ZWYifQ%3D%3D",
+  "galeria.fotos.5.hash_raw": "#elementor-action%3Aaction%3Dlightbox%26settings%3DeyJpZCI6MTc2LCJ1cmwiOiJhcnRpZ29zL3Byb2dyYW1hLW1haW9yLWN1aWRhZG8tYXRlbmNhby12aW5jdWxvLWUtcHJvdGVjYW8tbm8tY290aWRpYW5vL21haW9yY3VpZGFkbzUucG5nIiwic2xpZGVzaG93IjoiNTY1MzdlZiJ9",
+  "galeria.fotos.6.hash_raw": "#elementor-action%3Aaction%3Dlightbox%26settings%3DeyJpZCI6MTc3LCJ1cmwiOiJhc3NldHMvd3AtY29udGVudC91cGxvYWRzLzIwMjYvMDkvc2Nmdi9zY2Z2LWRpbmFtaWNhLmpwZyIsInNsaWRlc2hvdyI6IjU2NTM3ZWYifQ%3D%3D",
+  "galeria.fotos.7.hash_raw": "#elementor-action%3Aaction%3Dlightbox%26settings%3DeyJpZCI6MTc4LCJ1cmwiOiJhcnRpZ29zL3F1YWxpZmljYWNhby1wcm9maXNzaW9uYWwtY3Vyc29zLWdyYXR1aXRvcy1xdWUtYW1wbGlhbS1vcG9ydHVuaWRhZGVzL3F1YWxpZmljYWNhbzIucG5nLnBuZyIsInNsaWRlc2hvdyI6IjU2NTM3ZWYifQ%3D%3D"
+ }
+}

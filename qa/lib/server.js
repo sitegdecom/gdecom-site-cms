@@ -6,7 +6,8 @@ const http = require('http');
 const fs = require('fs');
 const path = require('path');
 
-const SITE_ROOT = path.resolve(__dirname, '..', '..');
+// Since the CMS migration the website is generated into dist/ (npm run build). QA_SITE_ROOT can point elsewhere.
+const SITE_ROOT = path.resolve(process.env.QA_SITE_ROOT || path.join(__dirname, '..', '..', 'dist'));
 // Folders that exist in the repository but are not part of the website.
 const NOT_SITE = ['/qa/', '/.git/', '/node_modules/', '/.playwright-mcp/', '/_archive_do_not_deploy/'];
 const TYPES = {

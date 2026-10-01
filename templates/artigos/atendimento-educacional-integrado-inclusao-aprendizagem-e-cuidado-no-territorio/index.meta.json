@@ -1,0 +1,109 @@
+{
+ "page": "atendimento",
+ "depth": 2,
+ "entities": {
+  "seo.titulo_social": {
+   "–": "&#8211;"
+  }
+ },
+ "slots": {
+  "conteudo.split.split": {
+   "label": "Bloco texto e imagem — Imagem Bloco texto e imagem",
+   "originalTag": "<img width=\"1086\" height=\"1448\" class=\"atendimento-split-img\" src=\"../../assets/wp-content/uploads/2026/09/scfv/integrado.ilustracao5.png\" srcset=\"../../assets/wp-content/uploads/2026/09/scfv/integrado.ilustracao5-480.webp 480w, ../../assets/wp-content/uploads/2026/09/scfv/integrado.ilustracao5-720.webp 720w, ../../assets/wp-content/uploads/2026/09/scfv/integrado.ilustracao5-960.webp 960w\" sizes=\"(max-width: 820px) min(calc(100vw - 48px), 480px), 338px\" alt=\"Grupo grande de crianças reunidas e sorrindo em quadra esportiva, algumas fantasiadas em dia temático\" loading=\"lazy\">",
+   "originalSrc": "/assets/wp-content/uploads/2026/09/scfv/integrado.ilustracao5.png",
+   "originalAltDecoded": "Grupo grande de crianças reunidas e sorrindo em quadra esportiva, algumas fantasiadas em dia temático",
+   "altEntities": {},
+   "widths": [
+    480,
+    720,
+    960
+   ],
+   "sizes": "(max-width: 820px) min(calc(100vw - 48px), 480px), 338px",
+   "dims": "natural"
+  },
+  "conteudo.split_2.split": {
+   "label": "Bloco texto e imagem 2 — Imagem Bloco texto e imagem",
+   "originalTag": "<img width=\"1086\" height=\"1448\" class=\"atendimento-split-img\" src=\"../../assets/wp-content/uploads/2026/09/scfv/integrado.ilustracao4.png\" srcset=\"../../assets/wp-content/uploads/2026/09/scfv/integrado.ilustracao4-480.webp 480w, ../../assets/wp-content/uploads/2026/09/scfv/integrado.ilustracao4-720.webp 720w, ../../assets/wp-content/uploads/2026/09/scfv/integrado.ilustracao4-960.webp 960w\" sizes=\"(max-width: 820px) min(calc(100vw - 48px), 480px), 338px\" alt=\"Crianças tocando teclado, violão e bateria em sala de música decorada com quadros coloridos\" loading=\"lazy\">",
+   "originalSrc": "/assets/wp-content/uploads/2026/09/scfv/integrado.ilustracao4.png",
+   "originalAltDecoded": "Crianças tocando teclado, violão e bateria em sala de música decorada com quadros coloridos",
+   "altEntities": {},
+   "widths": [
+    480,
+    720,
+    960
+   ],
+   "sizes": "(max-width: 820px) min(calc(100vw - 48px), 480px), 338px",
+   "dims": "natural"
+  },
+  "conteudo.split_3.split": {
+   "label": "Bloco texto e imagem 3 — Imagem Bloco texto e imagem",
+   "originalTag": "<img width=\"1086\" height=\"1448\" class=\"atendimento-split-img\" src=\"../../assets/wp-content/uploads/2026/09/scfv/integrado.ilustracao.png\" srcset=\"../../assets/wp-content/uploads/2026/09/scfv/integrado.ilustracao-480.webp 480w, ../../assets/wp-content/uploads/2026/09/scfv/integrado.ilustracao-720.webp 720w, ../../assets/wp-content/uploads/2026/09/scfv/integrado.ilustracao-960.webp 960w\" sizes=\"(max-width: 820px) min(calc(100vw - 48px), 480px), 338px\" alt=\"Crianças colorindo desenhos de mandala em mesa coletiva com uma educadora, cercadas de lápis de cor.\" loading=\"lazy\">",
+   "originalSrc": "/assets/wp-content/uploads/2026/09/scfv/integrado.ilustracao.png",
+   "originalAltDecoded": "Crianças colorindo desenhos de mandala em mesa coletiva com uma educadora, cercadas de lápis de cor.",
+   "altEntities": {},
+   "widths": [
+    480,
+    720,
+    960
+   ],
+   "sizes": "(max-width: 820px) min(calc(100vw - 48px), 480px), 338px",
+   "dims": "natural"
+  },
+  "conteudo.split_4.split": {
+   "label": "Bloco texto e imagem 4 — Imagem Bloco texto e imagem",
+   "originalTag": "<img width=\"1086\" height=\"1448\" class=\"atendimento-split-img\" src=\"../../assets/wp-content/uploads/2026/09/scfv/integrado.ilustracao2.png\" srcset=\"../../assets/wp-content/uploads/2026/09/scfv/integrado.ilustracao2-480.webp 480w, ../../assets/wp-content/uploads/2026/09/scfv/integrado.ilustracao2-720.webp 720w, ../../assets/wp-content/uploads/2026/09/scfv/integrado.ilustracao2-960.webp 960w\" sizes=\"(max-width: 820px) min(calc(100vw - 48px), 480px), 338px\" alt=\"Educador sentado conversando individualmente com uma criança em sala de aula\" loading=\"lazy\">",
+   "originalSrc": "/assets/wp-content/uploads/2026/09/scfv/integrado.ilustracao2.png",
+   "originalAltDecoded": "Educador sentado conversando individualmente com uma criança em sala de aula",
+   "altEntities": {},
+   "widths": [
+    480,
+    720,
+    960
+   ],
+   "sizes": "(max-width: 820px) min(calc(100vw - 48px), 480px), 338px",
+   "dims": "natural"
+  },
+  "conteudo.split_5.split": {
+   "label": "Bloco texto e imagem 5 — Imagem Bloco texto e imagem",
+   "originalTag": "<img width=\"1086\" height=\"1448\" class=\"atendimento-split-img\" src=\"../../assets/wp-content/uploads/2026/09/scfv/integrado.ilustracao6.png\" srcset=\"../../assets/wp-content/uploads/2026/09/scfv/integrado.ilustracao6-480.webp 480w, ../../assets/wp-content/uploads/2026/09/scfv/integrado.ilustracao6-720.webp 720w, ../../assets/wp-content/uploads/2026/09/scfv/integrado.ilustracao6-960.webp 960w\" sizes=\"(max-width: 820px) min(calc(100vw - 48px), 480px), 338px\" alt=\"Crianças cantando em microfones ao lado de educador tocando violão, em evento com faixa 'Festa da Família'\" loading=\"lazy\">",
+   "originalSrc": "/assets/wp-content/uploads/2026/09/scfv/integrado.ilustracao6.png",
+   "originalAltDecoded": "Crianças cantando em microfones ao lado de educador tocando violão, em evento com faixa 'Festa da Família'",
+   "altEntities": {},
+   "widths": [
+    480,
+    720,
+    960
+   ],
+   "sizes": "(max-width: 820px) min(calc(100vw - 48px), 480px), 338px",
+   "dims": "natural"
+  },
+  "conteudo.split_6.split": {
+   "label": "Bloco texto e imagem 6 — Imagem Bloco texto e imagem",
+   "originalTag": "<img width=\"1086\" height=\"1448\" class=\"atendimento-split-img\" src=\"../../assets/wp-content/uploads/2026/09/scfv/integrado.ilustracao3.png\" srcset=\"../../assets/wp-content/uploads/2026/09/scfv/integrado.ilustracao3-480.webp 480w, ../../assets/wp-content/uploads/2026/09/scfv/integrado.ilustracao3-720.webp 720w, ../../assets/wp-content/uploads/2026/09/scfv/integrado.ilustracao3-960.webp 960w\" sizes=\"(max-width: 820px) min(calc(100vw - 48px), 480px), 338px\" alt=\"Crianças em laboratório de informática digitando em computadores, com texto de produção escrita projetado na parede\" loading=\"lazy\">",
+   "originalSrc": "/assets/wp-content/uploads/2026/09/scfv/integrado.ilustracao3.png",
+   "originalAltDecoded": "Crianças em laboratório de informática digitando em computadores, com texto de produção escrita projetado na parede",
+   "altEntities": {},
+   "widths": [
+    480,
+    720,
+    960
+   ],
+   "sizes": "(max-width: 820px) min(calc(100vw - 48px), 480px), 338px",
+   "dims": "natural"
+  },
+  "conteudo.final_visual.imagem": {
+   "label": "Imagem final Ilustração — Imagem ",
+   "originalTag": "<img width=\"1448\" height=\"1086\" src=\"../../assets/wp-content/uploads/2026/09/scfv/integrado.ensino.png\" srcset=\"../../assets/wp-content/uploads/2026/09/scfv/integrado.ensino-420.webp 420w, ../../assets/wp-content/uploads/2026/09/scfv/integrado.ensino-840.webp 840w\" sizes=\"(max-width: 600px) 320px, 420px\" alt=\"Ilustração de educadora e crianças reunidas em mesa de atividades, com cartazes sobre inclusão e frases 'Aprender, brincar e crescer juntos!' e 'Conclusão: educação integrada é cuidado que fortalece caminhos'\" loading=\"lazy\">",
+   "originalSrc": "/assets/wp-content/uploads/2026/09/scfv/integrado.ensino.png",
+   "originalAltDecoded": "Ilustração de educadora e crianças reunidas em mesa de atividades, com cartazes sobre inclusão e frases 'Aprender, brincar e crescer juntos!' e 'Conclusão: educação integrada é cuidado que fortalece caminhos'",
+   "altEntities": {},
+   "widths": [
+    420,
+    840
+   ],
+   "sizes": "(max-width: 600px) 320px, 420px",
+   "dims": "natural"
+  }
+ },
+ "computed": {}
+}

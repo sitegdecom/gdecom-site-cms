@@ -1,0 +1,45 @@
+# GDECOM website — technical README (administrator)
+
+Static website generated from structured content, edited by staff through **Pages CMS**.
+No framework, no static-site generator: a small Node.js build fills templates with content.
+
+Staff guide (Portuguese): [`CMS.md`](CMS.md).
+
+## Layout of the repository
+| Path | What it is | Edited by |
+|---|---|---|
+| `content/` | Structured content: `site.json`, `home.json`, `historia.json`, `contato.json`, `volei.json`, `programas/*.json`, `artigos/*.md` (YAML front matter + HTML body) | Staff, via Pages CMS |
+| `media/` | New images uploaded through Pages CMS | Staff, via Pages CMS |
+| `.pages.yml` | Pages CMS configuration (which fields staff can see and edit) | Administrator |
+| `templates/` | The approved HTML pages with `{{…}}` slots, plus `*.meta.json` (image slots, entity spellings). `templates/artigos/_modelo.html` is the layout used by new articles | Administrator |
+| `build/` | `build.js` + `lib/` (renderer, image slots, HTML utilities) | Administrator |
+| `assets/`, root images, `artigos/*/` images | Approved CSS, JavaScript, fonts and images (copied as-is) | Administrator |
+| `qa/` | Permanent regression suite (see `qa/README.md`) | Administrator |
+| `tools/migration/` | One-time migration scripts (kept for audit; `extract.js` refuses to run once `content/` exists) | — |
+| `dist/` | Generated website (git-ignored) | Build |
+
+## Commands
+```
+npm install          # build dependencies: js-yaml, sharp
+npm run build        # content/ + templates/ -> dist/
+npm test             # build, then the full QA suite against dist/ (needs: cd qa && npm install, Google Chrome)
+```
+Hosting (later): build command `npm run build`, output directory `dist`.
+
+## Template tokens
+`{{t:path}}` text · `{{a:path}}` attribute text · `{{h:path}}` rich text (sanitized) · `{{i:path}}` image slot · `{{s:key}}` `content/site.json` · `{{x:name}}` computed (tel/maps links, Vozes cards, carousel lightbox hash, article social image).
+
+## Guarantees enforced by the build (exit code 1, messages in Portuguese)
+- missing required text, image or alternative text; unknown tokens; unresolved `{{…}}`;
+- image not found, wrong format (JPG/PNG/WebP only) or above 12 MB;
+- invalid or reserved article slug, slug colliding with an existing page;
+- any broken local `src` / `href` / `srcset` in the generated pages.
+
+## Images
+An unchanged image renders its approved `<img>` tag byte-for-byte. A replaced image gets WebP variants at the same widths as the approved slot (generated with `sharp` into `dist/`), `srcset`/`sizes`, and `width`/`height`; `src` points to the full-size image (capped at 2000 px) so lightboxes keep opening the large picture.
+
+## Parity
+With the content as migrated, `dist/` is byte-identical to the approved pre-CMS site (baseline commit `04f5031`): the QA integrity suite checks the SHA-256 of every page.
+
+## Not exposed to staff
+Templates, CSS, JavaScript, build, QA, `.pages.yml`, the Privacy Policy (`templates/politica-de-privacidade/index.html`, static) and the 404 page. Note: the Privacy Policy text contains contact data that is **not** taken from `content/site.json`; update it manually if that data changes.

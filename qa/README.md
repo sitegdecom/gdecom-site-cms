@@ -1,6 +1,10 @@
 # GDECOM — QA harness (pre-CMS baseline)
 
-Test tooling only. Nothing in `qa/` is part of the published website, and it is **not** the future CMS build.
+Test tooling only. Nothing in `qa/` is part of the published website.
+
+**Since the CMS migration the suite tests the generated site in `dist/`**: run `npm run build` at the repository root first
+(or `npm test` at the root, which builds and then runs this suite). `QA_SITE_ROOT=<folder>` tests another folder.
+The baseline still describes the approved pre-CMS site, so with unchanged content `dist/` must match it byte-for-byte.
 
 ## Requirements
 - Node.js 18+

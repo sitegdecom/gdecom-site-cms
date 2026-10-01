@@ -1,0 +1,92 @@
+{
+ "page": "scfv",
+ "depth": 2,
+ "entities": {
+  "seo.titulo_social": {
+   "–": "&#8211;"
+  }
+ },
+ "slots": {
+  "conteudo.split.split": {
+   "label": "Bloco texto e imagem — Imagem Bloco texto e imagem",
+   "originalTag": "<img width=\"497\" height=\"492\" class=\"scfv-split-img\" src=\"../../assets/wp-content/uploads/2026/09/scfv/scfv-dinamica.jpg\" alt=\"Adolescentes em dinâmica de grupo no SCFV\" loading=\"lazy\">",
+   "originalSrc": "/assets/wp-content/uploads/2026/09/scfv/scfv-dinamica.jpg",
+   "originalAltDecoded": "Adolescentes em dinâmica de grupo no SCFV",
+   "altEntities": {},
+   "widths": [],
+   "sizes": null,
+   "dims": "natural"
+  },
+  "conteudo.gallery.imagem": {
+   "label": "Galeria — Imagem ",
+   "originalTag": "<img width=\"774\" height=\"391\" src=\"../../assets/wp-content/uploads/2026/09/scfv/scfv-percussao.jpg\" alt=\"Adolescentes em oficina de percussão no SCFV\" loading=\"lazy\">",
+   "originalSrc": "/assets/wp-content/uploads/2026/09/scfv/scfv-percussao.jpg",
+   "originalAltDecoded": "Adolescentes em oficina de percussão no SCFV",
+   "altEntities": {},
+   "widths": [],
+   "sizes": null,
+   "dims": "natural"
+  },
+  "conteudo.gallery.img_2": {
+   "label": "Galeria — Imagem Img 2",
+   "originalTag": "<img width=\"535\" height=\"742\" src=\"../../assets/wp-content/uploads/2026/09/scfv/scfv-equipe.jpg\" alt=\"Educadora da equipe do SCFV\" loading=\"lazy\">",
+   "originalSrc": "/assets/wp-content/uploads/2026/09/scfv/scfv-equipe.jpg",
+   "originalAltDecoded": "Educadora da equipe do SCFV",
+   "altEntities": {},
+   "widths": [],
+   "sizes": null,
+   "dims": "natural"
+  },
+  "conteudo.gallery.img_3": {
+   "label": "Galeria — Imagem Img 3",
+   "originalTag": "<img width=\"720\" height=\"771\" src=\"../../assets/wp-content/uploads/2026/09/scfv/scfv-atelie.jpg\" alt=\"Adolescentes em atividade de ateliê no SCFV\" loading=\"lazy\">",
+   "originalSrc": "/assets/wp-content/uploads/2026/09/scfv/scfv-atelie.jpg",
+   "originalAltDecoded": "Adolescentes em atividade de ateliê no SCFV",
+   "altEntities": {},
+   "widths": [],
+   "sizes": null,
+   "dims": "natural"
+  },
+  "conteudo.gallery.img_4": {
+   "label": "Galeria — Imagem Img 4",
+   "originalTag": "<img width=\"675\" height=\"544\" src=\"../../assets/wp-content/uploads/2026/09/scfv/scfv-caminhada.jpg\" alt=\"Adolescentes e educadoras em caminhada na rua\" loading=\"lazy\">",
+   "originalSrc": "/assets/wp-content/uploads/2026/09/scfv/scfv-caminhada.jpg",
+   "originalAltDecoded": "Adolescentes e educadoras em caminhada na rua",
+   "altEntities": {},
+   "widths": [],
+   "sizes": null,
+   "dims": "natural"
+  },
+  "conteudo.gallery.img_5": {
+   "label": "Galeria — Imagem Img 5",
+   "originalTag": "<img width=\"497\" height=\"492\" src=\"../../assets/wp-content/uploads/2026/09/scfv/scfv-dinamica.jpg\" alt=\"Adolescentes em dinâmica de grupo no SCFV\" loading=\"lazy\">",
+   "originalSrc": "/assets/wp-content/uploads/2026/09/scfv/scfv-dinamica.jpg",
+   "originalAltDecoded": "Adolescentes em dinâmica de grupo no SCFV",
+   "altEntities": {},
+   "widths": [],
+   "sizes": null,
+   "dims": "natural"
+  },
+  "conteudo.figure.imagem": {
+   "label": "Figura — Imagem ",
+   "originalTag": "<img width=\"580\" height=\"699\" src=\"../../assets/wp-content/uploads/2026/09/scfv/coordenadora-soraya-veiga.jpg\" alt=\"Coordenadora Soraya Veiga\">",
+   "originalSrc": "/assets/wp-content/uploads/2026/09/scfv/coordenadora-soraya-veiga.jpg",
+   "originalAltDecoded": "Coordenadora Soraya Veiga",
+   "altEntities": {},
+   "widths": [],
+   "sizes": null,
+   "dims": "natural"
+  },
+  "conteudo.final_visual.imagem": {
+   "label": "Imagem final Ilustração — Imagem ",
+   "originalTag": "<img width=\"1447\" height=\"1087\" src=\"../../assets/wp-content/uploads/2026/09/scfv/scfv-imagefinal.png.png\" alt=\"Imagem representativa das atividades do Serviço de Convivência e Fortalecimento de Vínculos do GDECOM.\" loading=\"lazy\">",
+   "originalSrc": "/assets/wp-content/uploads/2026/09/scfv/scfv-imagefinal.png.png",
+   "originalAltDecoded": "Imagem representativa das atividades do Serviço de Convivência e Fortalecimento de Vínculos do GDECOM.",
+   "altEntities": {},
+   "widths": [],
+   "sizes": null,
+   "dims": "natural"
+  }
+ },
+ "computed": {}
+}

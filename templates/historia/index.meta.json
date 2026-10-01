@@ -1,0 +1,35 @@
+{
+ "page": "historia",
+ "depth": 1,
+ "entities": {
+  "seo.titulo_social": {
+   "–": "&#8211;"
+  },
+  "topo.hero_eyebrow": {
+   "–": "&#8211;"
+  },
+  "conteudo.split.p": {
+   "–": "&#8211;"
+  },
+  "conteudo.split.p_2": {
+   "–": "&#8211;"
+  },
+  "conteudo.split_2.p": {
+   "“": "&#8220;",
+   "”": "&#8221;"
+  }
+ },
+ "slots": {
+  "conteudo.split_2.split": {
+   "label": "Bloco texto e imagem 2 — Imagem Bloco texto e imagem",
+   "originalTag": "<img width=\"697\" height=\"836\" class=\"historia-split-img\" src=\"../assets/wp-content/uploads/2026/09/encontre-gdecom-foto-v2.jpg\" alt=\"Família e comunidade reunidas em rua com mural sobre sonhos, oportunidades e transformação\" loading=\"lazy\">",
+   "originalSrc": "/assets/wp-content/uploads/2026/09/encontre-gdecom-foto-v2.jpg",
+   "originalAltDecoded": "Família e comunidade reunidas em rua com mural sobre sonhos, oportunidades e transformação",
+   "altEntities": {},
+   "widths": [],
+   "sizes": null,
+   "dims": "natural"
+  }
+ },
+ "computed": {}
+}

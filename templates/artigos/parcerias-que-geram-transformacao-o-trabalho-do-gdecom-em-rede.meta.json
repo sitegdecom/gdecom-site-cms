@@ -1,0 +1,22 @@
+{
+ "page": "artigo:parcerias-que-geram-transformacao-o-trabalho-do-gdecom-em-rede",
+ "depth": 2,
+ "entities": {
+  "seo.titulo_social": {
+   "–": "&#8211;"
+  }
+ },
+ "slots": {
+  "imagem": {
+   "label": "Imagem principal",
+   "originalTag": "<img class=\"artigo-img\" width=\"1672\" height=\"941\" srcset=\"../../assets/wp-content/uploads/2026/05/ChatGPT-Image-2-de-mai.-de-2026-19_03_52-768x432.png 768w, ../../assets/wp-content/uploads/2026/05/ChatGPT-Image-2-de-mai.-de-2026-19_03_52-1024x576.png 1024w, ../../assets/wp-content/uploads/2026/05/ChatGPT-Image-2-de-mai.-de-2026-19_03_52-1536x864.png 1536w, ../../assets/wp-content/uploads/2026/05/ChatGPT-Image-2-de-mai.-de-2026-19_03_52.png 1672w\" sizes=\"(max-width:760px) 100vw, 760px\" src=\"../../assets/wp-content/uploads/2026/05/ChatGPT-Image-2-de-mai.-de-2026-19_03_52-1024x576.png\" alt=\"Grupo de pessoas de diferentes idades reunido ao redor de uma mesa ao ar livre, participando de uma atividade coletiva de desenho com tinta, em frente a um mural azul e amarelo com estrela e lua, com casas de um bairro ao fundo\">",
+   "originalSrc": "/assets/wp-content/uploads/2026/05/ChatGPT-Image-2-de-mai.-de-2026-19_03_52-1024x576.png",
+   "originalAltDecoded": "Grupo de pessoas de diferentes idades reunido ao redor de uma mesa ao ar livre, participando de uma atividade coletiva de desenho com tinta, em frente a um mural azul e amarelo com estrela e lua, com casas de um bairro ao fundo",
+   "altEntities": {},
+   "widths": [],
+   "sizes": "(max-width:760px) 100vw, 760px",
+   "dims": "natural"
+  }
+ },
+ "computed": {}
+}

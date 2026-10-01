@@ -1,0 +1,29 @@
+{
+  "seo": {
+    "titulo": "Contato do GDECOM em Belo Horizonte",
+    "descricao": "Entre em contato com o GDECOM: participe de atividades, tire dúvidas, proponha parcerias ou apoie o trabalho social com famílias em Belo Horizonte.",
+    "titulo_social": "Fale com a gente – GDECOM"
+  },
+  "topo": {
+    "fcg_hero_eyebrow": "Contato",
+    "h1": "A porta está sempre aberta",
+    "p": "Participe das atividades, inscreva-se em um curso, tire dúvidas, proponha uma parceria ou conheça formas de apoiar o GDECOM. Nossos canais estão abertos para receber você, sua família, parceiros e pessoas interessadas em conhecer melhor o nosso trabalho.",
+    "fcg_hero_tagline": "Conversa boa começa com proximidade."
+  },
+  "cartoes": {
+    "endereco_rotulo": "Endereço",
+    "telefone_rotulo": "Telefone",
+    "email_rotulo": "E-mail",
+    "instagram_rotulo": "Instagram"
+  },
+  "formulario": {
+    "titulo": "Mande uma mensagem",
+    "explicacao": "Preencha o formulário e seu e-mail será aberto com a mensagem pronta para envio ao GDECOM."
+  },
+  "chamada_final": {
+    "h2": "Toda ajuda constrói comunidade.",
+    "p": "O GDECOM é uma organização da sociedade civil sem fins lucrativos, e a participação da comunidade contribui para a continuidade e o fortalecimento de suas ações.",
+    "p_2": "Voluntariado, doações, parcerias e outras formas de colaboração também ajudam a fortalecer o trabalho desenvolvido pelo GDECOM. Entre em contato com nossa equipe e conheça as formas de participar.",
+    "a": "Quero ajudar"
+  }
+}
