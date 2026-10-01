@@ -13,13 +13,12 @@ Este guia é para a equipe do GDECOM. Não é preciso saber programar, usar term
 | **Página inicial** | Mensagem principal, "Quem somos", textos e fotos dos 5 cartões de programas, projetos em destaque, os 2 cartões de artigos, as 8 fotos do carrossel (com legenda), a faixa "Nossa história" e os textos do contato |
 | **Artigos** | Artigos existentes e **novos artigos** |
 | **Programa — …** (5 programas) | Topo da página, textos, blocos de texto e imagem, galerias, ilustração final, WhatsApp/Instagram do programa |
-| **Página — Nossa história / Fale com a gente / Vôlei** | Textos e imagens dessas páginas |
-| **⚙ Dados institucionais (administração)** | Endereço, telefone, e-mail, Instagram, CNPJ e texto do rodapé. Usar com cuidado: muda o site inteiro |
+| **Nossa história / Fale com a gente / Vôlei** | Textos e imagens dessas páginas |
 
 ## Editar um texto
 1. Abra a área desejada, altere o campo e clique em **Salvar**.
 2. Em alguns minutos o site é atualizado automaticamente.
-3. Os campos "Texto 1", "Texto 2"… são trechos da página, na ordem em que aparecem. Use **Título 2** e **Título 3** do editor para subtítulos.
+3. Os campos aparecem na mesma ordem da página. Os **Trechos de texto** são os textos corridos entre os blocos (a explicação abaixo de cada um diz onde ele fica). Use **Título 2** e **Título 3** do editor para subtítulos.
 
 ## Trocar uma imagem
 1. No campo **Imagem**, clique para enviar uma nova foto (JPG, PNG ou WebP, até 12 MB).
@@ -32,10 +31,11 @@ Este guia é para a equipe do GDECOM. Não é preciso saber programar, usar term
 2. Preencha: **Título**, **Chamada acima do título**, **Frase de destaque**, **Imagem principal** + texto alternativo e o **Texto do artigo**.
 3. O endereço da página é criado a partir do título no momento da criação (letras minúsculas, sem acento, com hífens). **Depois de publicado, não mude o endereço**: links antigos deixariam de funcionar.
 4. "Busca e compartilhamento" é opcional: em branco, o site usa o título e a frase de destaque.
-5. Para o artigo aparecer na página inicial, abra **Página inicial → Cartões de artigos** e escolha-o em um dos 2 cartões.
+5. **Um artigo novo não aparece sozinho na página inicial.** Para isso, abra **Página inicial → Cartões de artigos** e escolha-o em um dos 2 cartões. Sem essa escolha, ele fica acessível apenas pelo link direto.
 
 ## Se o site não atualizar
 O site confere tudo antes de publicar. Se faltar algo obrigatório (por exemplo, um texto alternativo ou uma imagem que não abre), a publicação é interrompida e **o site continua no ar como estava**. Corrija o campo indicado e salve de novo, ou peça ajuda ao administrador.
 
 ## O que não aparece no CMS (de propósito)
-Layout, cores, menu, rodapé, códigos, Política de Privacidade e configurações técnicas ficam protegidos e só são alterados pelo administrador técnico.
+Layout, cores, menu, rodapé, códigos, Política de Privacidade, página de erro, títulos e descrições de busca das páginas e configurações técnicas ficam protegidos.
+Os **dados institucionais** (CNPJ, razão social, endereço, telefone, e-mail, Instagram e texto do rodapé) também não aparecem no CMS: para mudar algum deles, peça à administração do site.
