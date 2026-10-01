@@ -1,0 +1,18 @@
+{
+  "name": "gdecom-qa",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Permanent QA harness for the GDECOM static site (pre-CMS baseline). Test tooling only - not part of the published website and not the future CMS build.",
+  "license": "UNLICENSED",
+  "scripts": {
+    "test": "node run.js",
+    "test:static": "node run.js static integrity",
+    "test:browser": "node run.js browser",
+    "test:interaction": "node run.js interaction",
+    "baseline:record": "node scripts/record-baseline.js",
+    "serve": "node lib/server.js"
+  },
+  "devDependencies": {
+    "playwright-core": "1.63.0"
+  }
+}
