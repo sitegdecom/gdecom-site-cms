@@ -1,0 +1,124 @@
+/* GDECOM custom overrides (site-authored, not part of the Elementor Pro vendor CSS). */
+
+/* Enlarge the mobile hamburger tap target from ~33x33 to 44x44 (WCAG AAA), icon size/centering unchanged. */
+.elementor-menu-toggle{padding:.5em}
+
+/* Keyboard focus on the navy header bar: the browser's default black ring is ~1.9:1 on #063B7A, so recolour it to brand yellow (width/offset unchanged, :focus-visible only). Top-level items only: the Programas submenu and the mobile dropdown sit on white and keep the default ring. */
+.hdr-navy .hdr-logo-box:focus-visible,.hdr-navy .elementor-nav-menu--main > .elementor-nav-menu > li > .elementor-item:focus-visible,.hdr-navy .elementor-menu-toggle:focus-visible{outline-color:#FFD21F;}
+
+/* Mobile dropdown links are full-bleed, so the default 2px ring (offset 2px) spilled past the viewport edge. Draw it inside the link instead; colour/width unchanged, :focus-visible only. */
+.hdr-navy .elementor-nav-menu--dropdown a:focus-visible{outline-offset:-4px;}
+
+/* Mobile dropdown interactive states: Elementor paints :focus/.highlighted/active #3f444b and the site's desktop hover rule leaks #0a4a99, both under the forced #063B7A text (~1.1-1.5:1). Use the desktop Programas submenu hover tint instead. Extra .elementor-nav-menu__container class only raises specificity above the inline hover rule (this file loads first); outline/offset untouched. */
+.hdr-navy .elementor-nav-menu--dropdown.elementor-nav-menu__container .elementor-item:hover,
+.hdr-navy .elementor-nav-menu--dropdown.elementor-nav-menu__container .elementor-item:focus,
+.hdr-navy .elementor-nav-menu--dropdown.elementor-nav-menu__container .elementor-item.highlighted,
+.hdr-navy .elementor-nav-menu--dropdown.elementor-nav-menu__container .elementor-item.elementor-item-active,
+.hdr-navy .elementor-nav-menu--dropdown.elementor-nav-menu__container .elementor-item.current{background-color:#EEF3FC;}
+
+/* Programas dropdown: the per-program illustrations (4:3 PNGs) replace the yellow SVG icons. Neutralise the old yellow tile and give all five the same 4:3 box so none looks larger; image scales with object-fit:contain (no crop/stretch). li in the selector outranks the inline header rule without !important. */
+.hdr-navy .programas-submenu li .sub-ico{width:48px;height:36px;background:none;box-shadow:none;border-radius:8px;overflow:hidden;}
+.hdr-navy .programas-submenu li .sub-ico img{display:block;width:100%;height:100%;object-fit:contain;}
+
+/* ===== Internal pages - phase 1 standardisation (2026-09-30) =====
+   Every selector below is anchored on classes that exist only on the 11 internal pages (.artigo-*, .fcg-*,
+   per-program galleries/CTAs), so the Home is untouched. This file loads before each page's inline <style>,
+   hence the extra "main"/element qualifier to outrank the inline rules (and Elementor's `.elementor img` reset). */
+
+/* 1-2. Headings: same family as the Home (Nunito Sans). H1 900 on one shared fluid scale (28px phones -> 42px desktop),
+   H2 800 (a notch lighter than the Home's 900 section titles, better for long editorial pages), H3 800. Sizes of H2/H3 unchanged. */
+main .artigo-hero h1,
+main .fcg-hero h1{font-family:'Nunito Sans',Arial,sans-serif;font-weight:900;font-size:clamp(28px, 4vw, 42px);line-height:1.2;text-wrap:balance;}
+main .artigo-content h2,
+main .fcg-form h2,
+main .fcg-cta h2{font-family:'Nunito Sans',Arial,sans-serif;font-weight:800;}
+main .artigo-content h3{font-family:'Nunito Sans',Arial,sans-serif;font-weight:800;}
+
+/* 3. Hero taglines: balanced lines (no single orphan word); browsers without support simply wrap as before. */
+main .artigo-hero p[class$="-hero-tagline"],
+main .fcg-hero p.fcg-hero-tagline{text-wrap:balance;}
+
+/* 4. Yellow CTAs: same weight/height/pill as the Home. .qualif-cta-btn was rendered at 600 because `.artigo-content a` overrode it. */
+main a.artigo-back,
+main a.creche-cta-btn,
+main a.qualif-cta-btn{font-weight:800;min-height:46px;border-radius:30px;}
+main a.creche-cta-btn,
+main a.qualif-cta-btn{padding:12px 24px;}
+
+/* 5. Editorial images: one 16px radius (lead photos, text+image blocks, common galleries, figure photos).
+   Kept as they are: final institutional visuals (18px), CTA photos, logos, lightbox, decorative images. */
+main img.artigo-img,
+main img.qualif-split-img,
+main img.maior-cuidado-split-img,
+main .artigo-figure img{border-radius:16px;}
+main .creche-gallery figure,
+main .scfv-gallery figure,
+main .qualif-gallery figure,
+main .maior-cuidado-gallery figure,
+main .creche-gallery img,
+main .scfv-gallery img,
+main .qualif-gallery img,
+main .maior-cuidado-gallery img{border-radius:16px;}
+
+/* 6. Creche / SCFV galleries: an incomplete last row is centred. Same columns and 14px gap as the original grid
+   (3 / 2 at <=700px / 1 at <=420px), same order and 4:3 tiles; only the flow changes from grid to centred flex-wrap. */
+main .creche-gallery,
+main .scfv-gallery{display:flex;flex-wrap:wrap;justify-content:center;gap:14px;}
+main .creche-gallery > figure,
+main .scfv-gallery > figure{flex:0 0 calc((100% - 28px) / 3);}
+@media (max-width:700px){
+	main .creche-gallery > figure,
+	main .scfv-gallery > figure{flex-basis:calc((100% - 14px) / 2);}
+}
+@media (max-width:420px){
+	main .creche-gallery > figure,
+	main .scfv-gallery > figure{flex-basis:100%;}
+}
+
+/* ===== Program pages - phase 3: shared closing sequence (2026-09-30) =====
+   Only the 5 program pages carry these classes (.programa-fim on .artigo-body-wrap, .programa-fim-voltar on the back row,
+   .programa-cta on Atendimento/SCFV). Sequence: last content -> final institutional image (420x315, r18, unchanged) ->
+   existing CTA (Creche/Qualificação WhatsApp box, Atendimento/SCFV Instagram box; Maior Cuidado has none) -> centred
+   "Voltar" -> gold band. Rhythm: 40 / 40 / 48 / 72px desktop, 32 / 32 / 40 / 56px phones. Links/texts untouched. */
+.artigo-body-wrap.programa-fim{padding-bottom:0;}
+.programa-fim .artigo-content > [class$="-final-visual"]{margin:40px auto 0;}
+.programa-fim .creche-cta,
+.programa-fim .qualif-cta{margin:40px 0 0;}
+.programa-cta-wrap{max-width:760px;margin:0 auto;padding:0 24px;}
+.programa-cta{display:flex;justify-content:center;margin:40px 0 0;padding:30px;background:#EEF3FC;border:1px solid #063B7A1F;border-radius:18px;}
+.programa-cta a.programa-cta-btn{justify-content:center;font-size:16px;padding:12px 24px;text-align:center;text-wrap:balance;}
+.artigo-back-wrap.programa-fim-voltar{display:flex;justify-content:center;margin:48px auto 0;padding:0 24px 72px;}
+@media (max-width:767px){
+	.programa-fim .artigo-content > [class$="-final-visual"]{margin-top:32px;}
+	.programa-fim .creche-cta,
+	.programa-fim .qualif-cta,
+	.programa-cta{margin-top:32px;}
+	.artigo-back-wrap.programa-fim-voltar{margin-top:40px;padding-bottom:56px;}
+}
+/* phones: same one-line treatment as the Creche WhatsApp button; the Instagram button may still wrap (balanced)
+   when its handle is too long for the width (Atendimento) instead of overflowing */
+@media (max-width:480px){
+	.programa-cta{padding:20px 16px;}
+	.programa-cta a.programa-cta-btn{font-size:15px;padding:12px 14px;}
+	.programa-fim a.qualif-cta-btn{white-space:nowrap;gap:8px;padding:12px 14px;font-size:15px;}
+	.programa-fim a.qualif-cta-btn svg{width:18px;height:18px;}
+}
+@media (max-width:380px){
+	.programa-cta a.programa-cta-btn{font-size:14px;padding:12px;}
+	.programa-fim a.qualif-cta-btn{gap:6px;padding-left:12px;padding-right:12px;}
+}
+
+/* ===== Editorial pages: "Voltar para o início" (2026-09-30) =====
+   História, Vôlei and the 3 articles: same centred pill and gap to the gold band as the program pages / Fale com a gente
+   (72px, 56px on phones). Program pages use .programa-fim-voltar and are excluded. */
+main > .artigo-back-wrap:not(.programa-fim-voltar){display:flex;justify-content:center;padding-bottom:72px;}
+@media (max-width:767px){
+	main > .artigo-back-wrap:not(.programa-fim-voltar){padding-bottom:56px;}
+}
+
+/* ===== Footer: "Política de Privacidade" link (2026-10-01) =====
+   Same look as the surrounding footer text (inherits white Inter 200 13px, no underline); underline on hover and the
+   yellow focus ring already used on the navy header for keyboard focus. */
+[data-id="76c30ee"] a.footer-privacidade{color:inherit;text-decoration:none;}
+[data-id="76c30ee"] a.footer-privacidade:hover{color:inherit;text-decoration:underline;text-underline-offset:2px;}
+[data-id="76c30ee"] a.footer-privacidade:focus-visible{outline:2px solid #FFD21F;outline-offset:2px;border-radius:2px;}

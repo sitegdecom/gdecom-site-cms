@@ -1,0 +1,10 @@
+# Temporary browser-test output and local tooling (not part of the website)
+.playwright-mcp/
+node_modules/
+qa/node_modules/
+qa/output/
+
+# Operating-system files
+.DS_Store
+Thumbs.db
+desktop.ini
