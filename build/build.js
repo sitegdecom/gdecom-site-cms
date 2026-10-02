@@ -28,7 +28,7 @@ const PAGES = [
 ];
 const ARTICLE_MODEL = 'artigos/_modelo.html'; // template used by new articles (approved article layout)
 // Repository paths that are not part of the published website.
-const NOT_SITE = new Set(['.git', 'node_modules', 'dist', 'qa', 'build', 'tools', 'templates', 'content', '_archive_do_not_deploy', '.playwright-mcp', '.pages.yml', 'package.json', 'package-lock.json', '.gitignore', 'README.md', 'CMS.md']);
+const NOT_SITE = new Set(['.git', 'node_modules', 'dist', 'qa', 'build', 'tools', 'templates', 'content', '_archive_do_not_deploy', '.playwright-mcp', '.pages.yml', 'design', 'package.json', 'package-lock.json', '.gitignore', 'README.md', 'CMS.md']);
 const SLUG_RE = /^[a-z0-9]+(?:-[a-z0-9]+)*$/;
 
 function copySite(src, dst) {

@@ -16,6 +16,8 @@ Staff guide (Portuguese): [`CMS.md`](CMS.md).
 | `build/` | `build.js` + `lib/` (renderer, image slots, HTML utilities) | Administrator |
 | `assets/`, root images, `artigos/*/` images | Approved CSS, JavaScript, fonts and images (copied as-is) | Administrator |
 | `qa/` | Permanent regression suite (see `qa/README.md`) | Administrator |
+| `design/reference/` | Approved visual references (e.g. `contato-inicial.png` for the Home contact section). Not published: `build.js` skips `design/` | Administrator |
+| `tools/assets/` | Asset derivation scripts (e.g. `derive-contato-comunidade.js`, which crops the Home contact photo from the reference) | Administrator |
 | `tools/migration/` | Migration scripts: `extract.js` (one-time, refuses to run once `content/` exists) and `pages-config.js` (regenerates `.pages.yml`: labels, help texts) | Administrator |
 | `dist/` | Generated website (git-ignored) | Build |
 
