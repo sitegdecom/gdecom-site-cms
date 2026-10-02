@@ -5,7 +5,7 @@
     "titulo_social": "GDECOM – Grupo de Desenvolvimento Comunitário – Organização da Sociedade Civil sem fins lucrativos"
   },
   "hero": {
-    "titulo": "Desenvolvimento que nasce da comunidade.",
+    "titulo": "TESTE CMS — Desenvolvimento que nasce da comunidade.",
     "texto": "O GDECOM é uma Organização da Sociedade Civil sem fins lucrativos que promove desenvolvimento social com crianças, adolescentes, jovens e suas famílias — construído pela própria comunidade, há mais de quatro décadas."
   },
   "quem_somos": {
@@ -57,7 +57,7 @@
         "texto_alternativo": "Programa SCFV"
       },
       "titulo": "SCFV para adolescentes",
-      "descricao": "<b>Serviço de Convivência e Fortalecimento de Vínculos – 15 a 17 anos</b>, com atividades coletivas, cidadania e participação."
+      "descricao": "<p><strong>Serviço de Convivência e Fortalecimento de Vínculos – 15 a 17 anos</strong>, com atividades coletivas, cidadania e participação.</p>"
     }
   },
   "projetos": {
