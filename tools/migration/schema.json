@@ -2268,6 +2268,37 @@
      "description": "Liste aqui os relatórios (com links para os arquivos) quando estiverem disponíveis."
     },
     {
+     "path": "relatorios.relatorio.titulo",
+     "type": "string",
+     "label": "Título do relatório",
+     "required": true
+    },
+    {
+     "path": "relatorios.relatorio.periodo",
+     "type": "string",
+     "label": "Período",
+     "required": true,
+     "description": "Por exemplo: 2º semestre de 2026."
+    },
+    {
+     "path": "relatorios.relatorio.texto",
+     "type": "text",
+     "label": "Texto de apresentação",
+     "required": true
+    },
+    {
+     "path": "relatorios.relatorio.imagem",
+     "type": "image-object",
+     "label": "Imagem do relatório",
+     "description": "Imagem oficial do relatório. Envie o arquivo exatamente como foi emitido; ele abre ampliado ao clicar e também pelo link \"tamanho original\"."
+    },
+    {
+     "path": "relatorios.relatorio.legenda",
+     "type": "text",
+     "label": "Legenda",
+     "required": true
+    },
+    {
      "path": "prestacao_de_contas.titulo",
      "type": "string",
      "label": "Título",

@@ -15,7 +15,17 @@
   },
   "relatorios": {
     "titulo": "Relatórios",
-    "texto": "<p>Registros institucionais, ações realizadas e atualizações periódicas.</p><p>Os relatórios do GDECOM serão publicados nesta seção assim que estiverem disponíveis.</p>"
+    "texto": "<p>Registros institucionais, ações realizadas e atualizações periódicas.</p><p>Os relatórios do GDECOM são publicados nesta seção à medida que ficam disponíveis.</p>",
+    "relatorio": {
+      "titulo": "Relatório de Transparência e Igualdade Salarial",
+      "periodo": "2º semestre de 2026",
+      "texto": "Confira o Relatório de Transparência e Igualdade Salarial de Mulheres e Homens referente ao 2º semestre de 2026.",
+      "imagem": {
+        "imagem": "/assets/wp-content/uploads/2026/10/transparencia/relatorio-igualdade-salarial-2026-2s.png",
+        "texto_alternativo": "Relatório de Transparência e Igualdade Salarial de Mulheres e Homens do GDECOM, 2º semestre de 2026"
+      },
+      "legenda": "Relatório de Transparência e Igualdade Salarial de Mulheres e Homens — 2º semestre de 2026."
+    }
   },
   "prestacao_de_contas": {
     "titulo": "Prestação de Contas",

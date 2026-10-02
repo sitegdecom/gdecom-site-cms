@@ -2,6 +2,17 @@
  "page": "transparencia",
  "depth": 1,
  "entities": {},
- "slots": {},
+ "slots": {
+  "relatorios.relatorio.imagem": {
+   "label": "Relatórios — imagem do relatório",
+   "originalTag": "<img class=\"transp-relatorio-img\" src=\"../assets/wp-content/uploads/2026/10/transparencia/relatorio-igualdade-salarial-2026-2s.png\" width=\"1448\" height=\"1086\" alt=\"Relatório de Transparência e Igualdade Salarial de Mulheres e Homens do GDECOM, 2º semestre de 2026\" loading=\"lazy\" decoding=\"async\">",
+   "originalSrc": "/assets/wp-content/uploads/2026/10/transparencia/relatorio-igualdade-salarial-2026-2s.png",
+   "originalAltDecoded": "Relatório de Transparência e Igualdade Salarial de Mulheres e Homens do GDECOM, 2º semestre de 2026",
+   "altEntities": {},
+   "widths": [],
+   "sizes": null,
+   "dims": "natural"
+  }
+ },
  "computed": {}
 }

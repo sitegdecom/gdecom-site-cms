@@ -79,6 +79,8 @@ function computed(key, meta, content, ctx) {
 	if (key === 'tel') return telHref(site);
 	if (key === 'maps') return 'https://www.google.com/maps?q=' + mapsQuery(site);
 	if (key === 'og_image') return toRel(get(content, 'imagem.imagem') || '', prefix);
+	// link to an image field's uploaded file (e.g. "open the report in full size")
+	if (key.startsWith('src:')) return H.encodeAttr(toRel(get(content, key.slice(4) + '.imagem') || '', prefix));
 	let m;
 	if ((m = key.match(/^vozes\.(\d)\.(href|titulo|aria)$/))) {
 		const slug = refSlug(get(content, `vozes.${m[1]}.artigo`));

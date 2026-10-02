@@ -187,6 +187,21 @@ img:is([sizes=auto i],[sizes^="auto," i]){contain-intrinsic-size:3000px 1500px}
 .transparencia-pagina section{scroll-margin-top:110px;}
 .transparencia-contato{margin-top:44px;padding:22px 24px;border-radius:16px;background:#F5F8FE;border-left:4px solid #FFD21F;}
 .transparencia-contato p{margin:0;}
+/* published report (Relatórios): framed card; the image opens in the site lightbox (.artigo-figure img) */
+.transp-relatorio{margin:30px 0 10px;padding:26px 26px 22px;border:1px solid #E1E9F6;border-radius:16px;background:#fff;box-shadow:0 14px 30px -24px rgba(6,59,122,.35);}
+.artigo-content .transp-relatorio h3{margin:0;}
+.transp-relatorio-periodo{display:inline-block;margin:10px 0 0 !important;padding:4px 12px;border-radius:30px;background:#FFF4CC;font-family:'Nunito Sans',Arial,sans-serif;font-size:13px !important;font-weight:800;line-height:1.4 !important;color:#063B7A;}
+.transp-relatorio-texto{margin:14px 0 0 !important;}
+.transp-relatorio .artigo-figure{margin:20px 0 0;}
+.transp-relatorio .artigo-figure .zoom-wrap{display:block;}
+.transp-relatorio-img{display:block;width:100%;height:auto;object-fit:contain;border:1px solid #E1E9F6;border-radius:10px;background:#fff;}
+/* the zoom badge sits below the report (not over it), so it never hides part of the document */
+.transp-relatorio .zoom-badge{position:static;width:fit-content;margin:12px auto 0;box-shadow:none;}
+.transp-relatorio .zoom-wrap:focus-visible{outline:3px solid #063B7A;outline-offset:3px;border-radius:12px;}
+.transp-relatorio figcaption{margin-top:12px;font-size:14px;line-height:1.5;color:#4A5568;text-align:center;}
+.transp-relatorio-original{margin:14px 0 0 !important;font-size:15px !important;text-align:center;}
+.transp-relatorio-sr{position:absolute;width:1px;height:1px;padding:0;margin:-1px;overflow:hidden;clip:rect(0,0,0,0);white-space:nowrap;border:0;}
+@media (max-width:600px){.transp-relatorio{padding:18px 16px 16px;}}
 </style>
 
 <main id="main-content">
@@ -206,6 +221,16 @@ img:is([sizes=auto i],[sizes^="auto," i]){contain-intrinsic-size:3000px 1500px}
     <section id="relatorios" aria-labelledby="transparencia-relatorios">
       <h2 id="transparencia-relatorios">{{t:relatorios.titulo}}</h2>
       {{h:relatorios.texto}}
+      <article class="transp-relatorio" aria-labelledby="transp-relatorio-titulo">
+        <h3 id="transp-relatorio-titulo">{{t:relatorios.relatorio.titulo}}</h3>
+        <p class="transp-relatorio-periodo">{{t:relatorios.relatorio.periodo}}</p>
+        <p class="transp-relatorio-texto">{{t:relatorios.relatorio.texto}}</p>
+        <figure class="artigo-figure">
+          {{i:relatorios.relatorio.imagem}}
+          <figcaption>{{t:relatorios.relatorio.legenda}}</figcaption>
+        </figure>
+        <p class="transp-relatorio-original"><a href="{{x:src:relatorios.relatorio.imagem}}" target="_blank" rel="noopener" data-elementor-open-lightbox="no">Abrir o relatório em tamanho original<span class="transp-relatorio-sr"> (abre em nova aba)</span></a></p>
+      </article>
     </section>
 
     <section id="prestacao-de-contas" aria-labelledby="transparencia-prestacao">
@@ -218,6 +243,80 @@ img:is([sizes=auto i],[sizes^="auto," i]){contain-intrinsic-size:3000px 1500px}
     </div>
   </div>
 </div>
+<style>
+.zoom-wrap{position:relative;display:inline-block;max-width:100%;cursor:zoom-in;}
+.artigo-body-wrap>.zoom-wrap{display:block;}
+.creche-gallery .zoom-wrap,.scfv-gallery .zoom-wrap{display:block;width:100%;height:100%;}
+.zoom-badge{position:absolute;right:10px;bottom:10px;background:rgba(6,59,122,.82);color:#fff;font-family:'Nunito Sans',Arial,sans-serif;font-size:12px;font-weight:700;padding:6px 12px;border-radius:20px;pointer-events:none;box-shadow:0 4px 10px rgba(0,0,0,.18);display:flex;align-items:center;gap:5px;white-space:nowrap;z-index:2;}
+.zoom-badge svg{width:13px;height:13px;flex:none;}
+@media (max-width:480px){.zoom-badge{font-size:10.5px;padding:5px 9px;right:8px;bottom:8px;gap:4px;}.zoom-badge svg{width:11px;height:11px;}}
+#gdecom-lightbox{position:fixed;inset:0;background:rgba(3,32,73,.92);z-index:99999;display:none;align-items:center;justify-content:center;padding:50px 20px;cursor:zoom-out;}
+#gdecom-lightbox.is-open{display:flex;}
+#gdecom-lightbox img{max-width:100%;max-height:80vh;border-radius:10px;box-shadow:0 30px 70px rgba(0,0,0,.4);cursor:default;}
+#gdecom-lightbox .lightbox-close{position:absolute;top:20px;right:24px;width:44px;height:44px;border-radius:50%;background:rgba(255,255,255,.15);border:none;color:#fff;font-size:26px;line-height:1;cursor:pointer;display:flex;align-items:center;justify-content:center;}
+#gdecom-lightbox .lightbox-close:hover{background:rgba(255,255,255,.28);}
+#gdecom-lightbox figcaption{position:absolute;bottom:22px;left:0;right:0;text-align:center;color:#fff;font-family:'Nunito Sans',Arial,sans-serif;font-size:14px;font-weight:700;}
+</style>
+<div id="gdecom-lightbox" role="dialog" aria-modal="true" aria-label="Imagem ampliada">
+<button class="lightbox-close" type="button" aria-label="Fechar">&times;</button>
+<img src="" alt="">
+<figcaption></figcaption>
+</div>
+<script>
+(function(){
+var targets = document.querySelectorAll('.artigo-img, .creche-gallery img, .scfv-gallery img, .artigo-figure img');
+if(!targets.length) return;
+var lb = document.getElementById('gdecom-lightbox');
+var lbImg = lb.querySelector('img');
+var lbCap = lb.querySelector('figcaption');
+var closeBtn = lb.querySelector('.lightbox-close');
+var lastTrigger = null;
+var icon = '<svg aria-hidden="true" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><circle cx="11" cy="11" r="7" stroke="#fff" stroke-width="2"/><path d="M21 21l-4.35-4.35" stroke="#fff" stroke-width="2" stroke-linecap="round"/></svg>';
+targets.forEach(function(img){
+if(img.closest('.zoom-wrap')) return;
+var wrap = document.createElement('span');
+wrap.className = 'zoom-wrap';
+wrap.setAttribute('role', 'button');
+wrap.setAttribute('tabindex', '0');
+img.parentNode.insertBefore(wrap, img);
+wrap.appendChild(img);
+var badge = document.createElement('span');
+badge.className = 'zoom-badge';
+badge.innerHTML = icon + 'Clique para ampliar';
+wrap.appendChild(badge);
+function openLb(){
+lastTrigger = wrap;
+lbImg.src = img.currentSrc || img.src;
+lbImg.alt = img.alt || '';
+lbCap.textContent = img.alt || '';
+lb.classList.add('is-open');
+closeBtn.focus();
+}
+wrap.addEventListener('click', openLb);
+wrap.addEventListener('keydown', function(e){
+if(e.key==='Enter' || e.key===' ' || e.key==='Spacebar'){
+e.preventDefault();
+openLb();
+}
+});
+});
+function closeLb(){ lb.classList.remove('is-open'); lbImg.src=''; if(lastTrigger){ lastTrigger.focus(); } }
+lb.addEventListener('click', function(e){ if(e.target===lb) closeLb(); });
+closeBtn.addEventListener('click', closeLb);
+document.addEventListener('keydown', function(e){
+if(!lb.classList.contains('is-open')) return;
+if(e.key==='Escape'){ closeLb(); return; }
+if(e.key==='Tab'){
+var f = Array.prototype.filter.call(lb.querySelectorAll('button, [href], [tabindex]:not([tabindex="-1"])'), function(el){ return el.offsetParent !== null; });
+if(!f.length){ e.preventDefault(); return; }
+var first = f[0], last = f[f.length-1];
+if(e.shiftKey && (document.activeElement===first || !lb.contains(document.activeElement))){ e.preventDefault(); last.focus(); }
+else if(!e.shiftKey && (document.activeElement===last || !lb.contains(document.activeElement))){ e.preventDefault(); first.focus(); }
+}
+});
+document.addEventListener('focusin', function(e){ if(lb.classList.contains('is-open') && !lb.contains(e.target)){ closeBtn.focus(); } });
+})();
+</script>
 <div class="artigo-back-wrap">
   <a class="artigo-back" href="../index.html">&larr; Voltar para o início</a>
 </div>

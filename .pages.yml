@@ -923,6 +923,49 @@ content:
             description: Liste aqui os relatórios (com links para os arquivos) quando estiverem disponíveis.
             options:
               format: html
+          - name: relatorio
+            label: Relatório publicado
+            type: object
+            fields:
+              - name: titulo
+                label: Título
+                type: string
+                required: true
+              - name: periodo
+                label: Período
+                type: string
+                required: true
+                description: 'Por exemplo: 2º semestre de 2026.'
+              - name: texto
+                label: Texto
+                type: text
+                required: true
+              - name: imagem
+                label: Imagem
+                type: object
+                description: Imagem oficial do relatório. Envie o arquivo exatamente como foi emitido; ele abre ampliado ao clicar e também pelo link "tamanho original".
+                fields:
+                  - name: imagem
+                    label: Imagem
+                    type: image
+                    required: true
+                    description: 'Envie uma foto em JPG, PNG ou WebP, com até 12 MB. Não precisa diminuir nem converter a foto: o site prepara tudo sozinho.'
+                    options:
+                      extensions:
+                        - jpg
+                        - jpeg
+                        - png
+                        - webp
+                  - name: texto_alternativo
+                    label: Texto alternativo (descrição da imagem)
+                    type: string
+                    required: true
+                    description: 'Obrigatório. Descreva em uma frase o que aparece na foto, por exemplo: "Crianças pintando um painel no pátio". Ajuda quem usa leitor de tela.'
+              - name: legenda
+                label: Legenda
+                type: text
+                required: true
+            description: Relatório exibido na seção Relatórios da página Transparência, com ampliação ao clicar.
       - name: prestacao_de_contas
         label: Prestação de Contas
         type: object

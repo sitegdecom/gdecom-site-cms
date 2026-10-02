@@ -15,7 +15,7 @@ const GROUPS = {
 	programas: 'Cartões dos programas', atendimento: 'Atendimento Educacional Integrado', creche: 'Creche Patatí-Patatá', maior_cuidado: 'Programa Maior Cuidado',
 	qualificacao: 'Qualificação Profissional', scfv: 'SCFV', projetos: 'Projetos em destaque', volei: 'Vôlei', conecsons: 'CONECSONS-CRJ', parcerias: 'Seção Parcerias',
 	vozes: 'Cartões de artigos (Parcerias)', transparencia: 'Seção Transparência', documentos: 'Cartões (Documentos Institucionais, Relatórios, Prestação de Contas)',
-	documentos_institucionais: 'Documentos Institucionais', relatorios: 'Relatórios', prestacao_de_contas: 'Prestação de Contas', galeria: 'Galeria de fotos (carrossel)', fotos: 'Fotos do carrossel', chamada_historia: 'Faixa com foto (Nossa história)',
+	documentos_institucionais: 'Documentos Institucionais', relatorios: 'Relatórios', relatorio: 'Relatório publicado', prestacao_de_contas: 'Prestação de Contas', galeria: 'Galeria de fotos (carrossel)', fotos: 'Fotos do carrossel', chamada_historia: 'Faixa com foto (Nossa história)',
 	contato: 'Contato', conteudo: 'Conteúdo da página', chamada: 'Botão final', cartoes: 'Cartões de contato', formulario: 'Formulário', chamada_final: 'Chamada final',
 	imagem_principal: 'Imagem principal', gallery: 'Galeria de fotos', pillars: 'Pilares', dimensions: 'Dimensões', pair: 'Destaques lado a lado',
 	final_visual: 'Ilustração final', cta: 'Caixa de contato', figure: 'Foto com legenda', split_text: 'Bloco de texto', endereco: 'Endereço'
@@ -29,7 +29,7 @@ const LEAF = {
 	cartao_titulo: 'Título do cartão', cartao_subtitulo: 'Subtítulo do cartão', titulo_linha_1: 'Título — linha 1', titulo_linha_2: 'Título — linha 2',
 	endereco_rotulo: 'Rótulo — Endereço', telefone_rotulo: 'Rótulo — Telefone', email_rotulo: 'Rótulo — E-mail', instagram_rotulo: 'Rótulo — Instagram',
 	titulo_social: 'Título ao compartilhar (redes sociais)', imagem: 'Imagem',
-	introducao: 'Introdução', contato_texto: 'Frase de contato (antes do e-mail)'
+	introducao: 'Introdução', contato_texto: 'Frase de contato (antes do e-mail)', periodo: 'Período', legenda: 'Legenda'
 };
 // siblings: keys of the same object (used to drop the number when an item is unique, e.g. "Título" instead of "Título 1").
 function label(key, parent, siblings = [], isGroup = false) {
@@ -72,6 +72,7 @@ const GROUP_HELP = {
 	chamada: 'Botão no fim da página que leva ao perfil do programa.',
 	cta: 'Quadro no fim da página com o contato do programa pelo WhatsApp.',
 	transparencia: 'Seção da página inicial com os 3 cartões que levam à página Transparência.',
+	relatorio: 'Relatório exibido na seção Relatórios da página Transparência, com ampliação ao clicar.',
 	documentos: 'Os 3 cartões levam, na ordem, às seções Documentos Institucionais, Relatórios e Prestação de Contas da página Transparência.'
 };
 
