@@ -383,12 +383,6 @@
      "required": true
     },
     {
-     "path": "chamada_historia.botao",
-     "type": "string",
-     "label": "Faixa com foto — texto do botão",
-     "required": true
-    },
-    {
      "path": "contato.titulo",
      "type": "string",
      "label": "Contato — título",

@@ -447,10 +447,6 @@ content:
             label: Texto
             type: text
             required: true
-          - name: botao
-            label: Texto do botão
-            type: string
-            required: true
       - name: contato
         label: Contato
         type: object
