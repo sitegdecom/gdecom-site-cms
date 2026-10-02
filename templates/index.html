@@ -742,34 +742,31 @@ img:is([sizes=auto i],[sizes^="auto," i]){contain-intrinsic-size:3000px 1500px}
 	.cta-foto-content .e-b863a2e-ecc5383{font-size:28px;line-height:1.12;margin-bottom:10px;}
 	.cta-foto-content .elementor-element-37e7f66{margin-bottom:10px;}
 }
-/* #contato: support text + approved card grouped in ONE compact panel. The panel is #contato's own inner container
-   (already the 1140px home grid), so its edges line up with the other sections; #052650 barely lifts it off the #032049
-   section, translucent border, minimal shadow, 24px radius. Desktop 41% text / 59% card, 36px gap, vertically centred; <1024px text stacks above the card. */
-/* here Elementor puts the section's vertical padding on the inner container, so the outer spacing is margin on the panel */
-#contato > .e-con-inner{margin-top:24px;margin-bottom:48px;background:#052650;border:1px solid rgba(255,255,255,.07);border-radius:24px;box-shadow:0 8px 20px rgba(0,0,0,.12);padding:26px 40px;gap:20px 36px;box-sizing:border-box;}
+/* #contato: support text on the navy section + ONE light contact panel (no intermediate dark box). #contato's inner
+   container is the 1140px home grid, so the text and panel line up with the other sections.
+   Desktop 41% text / 59% panel, 48px gap, vertically centred; <1024px text stacks above the panel. */
+/* here Elementor puts the section's vertical padding on the inner container, so the outer spacing is margin on it */
+#contato > .e-con-inner{margin-top:40px;margin-bottom:64px;padding:0;gap:20px 48px;box-sizing:border-box;}
 .elementor-element-25bcacf{justify-content:center;}
 /* column padding removed so the text starts exactly at the panel padding */
 .elementor-19 .elementor-element.elementor-element-25bcacf{--padding-top:0px;--padding-right:0px;--padding-bottom:0px;--padding-left:0px;--gap:0px;--row-gap:0px;}
 @media (min-width:1024px){
 	#contato > .e-con-inner{justify-content:space-between;align-items:center;flex-wrap:nowrap;}
-	.elementor-19 .elementor-element.elementor-element-25bcacf{--width:calc(41% - 15px);}
-	.elementor-19 .elementor-element.elementor-element-5ddd060{--width:calc(59% - 21px);}
-	/* optical alignment: lift the support text 7px toward the visual mass of the card (card itself untouched) */
-	.elementor-element-25bcacf{transform:translateY(-7px);}
+	.elementor-19 .elementor-element.elementor-element-25bcacf{--width:calc(41% - 20px);}
+	.elementor-19 .elementor-element.elementor-element-5ddd060{--width:calc(59% - 28px);}
 }
 .contato-apoio{font-family:'Nunito Sans',Arial,sans-serif;font-weight:800;font-size:clamp(20px,2.3vw,30px);line-height:1.2;color:#fff;margin:0;}
 .contato-apoio-txt{font-family:'Inter',Arial,sans-serif;font-weight:300;font-size:16px;line-height:1.6;color:#C9D6EA;margin:14px 0 0;max-width:400px;}
 .contato-apoio::before{content:"";display:block;width:44px;height:4px;border-radius:4px;background:#FFD21F;margin-bottom:18px;}
 @media (max-width:1023px){
-	#contato > .e-con-inner{margin-top:20px;margin-bottom:32px;padding:20px;gap:16px 28px;border-radius:22px;flex-direction:column;flex-wrap:nowrap;}
+	#contato > .e-con-inner{margin-top:28px;margin-bottom:48px;padding:0;gap:24px;flex-direction:column;flex-wrap:nowrap;}
 	.contato-apoio-txt{max-width:none;}
 	.elementor-19 .elementor-element.elementor-element-25bcacf,.elementor-19 .elementor-element.elementor-element-5ddd060{--width:100%;}
 }
 @media (max-width:767px){
-	/* width first: 12px page gutter + 6px panel inset so the card gets ~352px at 390 and ~322px at 360; the support text keeps its own 10px inset */
-	.elementor-19 .elementor-element.elementor-element-f84ebc2{--padding-left:12px;--padding-right:12px;}
-	#contato > .e-con-inner{margin-top:16px;margin-bottom:24px;padding:16px 6px 6px;gap:14px;border-radius:22px;}
-	.elementor-19 .elementor-element.elementor-element-25bcacf{--padding-left:10px;--padding-right:10px;}
+	/* 20px page gutter, like the other Home sections on phones (panel ~350px at 390, ~320px at 360) */
+	.elementor-19 .elementor-element.elementor-element-f84ebc2{--padding-left:20px;--padding-right:20px;}
+	#contato > .e-con-inner{margin-top:20px;margin-bottom:40px;gap:20px;}
 	.contato-apoio::before{margin-bottom:12px;}
 	.contato-apoio-txt{margin-top:10px;font-size:15px;}
 }
@@ -811,110 +808,81 @@ img:is([sizes=auto i],[sizes^="auto," i]){contain-intrinsic-size:3000px 1500px}
 				</div>
 		<div class="elementor-element elementor-element-5ddd060 e-con-full e-flex e-con e-child" data-id="5ddd060" data-element_type="container" data-e-type="container" data-settings="{&quot;background_background&quot;:&quot;classic&quot;}">
 					<style>
-/* "Encontre o GDECOM": semantic, flat HTML/CSS card (replaces the former gdecom-contato-limpo image + transparent
-   hotspots; the image files stay in the project for rollback). Solid fills, thin pale-blue borders, no shadows or
-   gradients. Layout adapts to the card's own width (container queries), not the viewport. */
+/* "Encontre o GDECOM": one light panel on the navy section. No inner boxes: the address leads, phone / Instagram / e-mail
+   sit below a hairline, actions close the panel. Contact values come from content/site.json. Layout adapts to the
+   panel's own width (container queries), not the viewport. */
 .elementor-element-5ddd060{background:none !important;background-image:none !important;box-shadow:none !important;border:0 !important;border-radius:0 !important;padding:0 !important;display:flex !important;flex-direction:column !important;justify-content:center !important;align-items:stretch !important;container-type:inline-size;}
-.gcard{position:relative;z-index:1;box-sizing:border-box;width:100%;background:#F9FBFE;border:1px solid rgba(214,231,247,.9);border-radius:24px;padding:24px;color:#032049;font-family:'Nunito Sans',Arial,sans-serif;}
+.gcard{position:relative;z-index:1;box-sizing:border-box;width:100%;background:#fff;border-radius:16px;padding:28px 30px 26px;color:#032049;font-family:'Nunito Sans',Arial,sans-serif;}
 .gcard *{box-sizing:border-box;}
-.gcard-head{display:flex;align-items:flex-start;gap:12px;margin-bottom:18px;}
-.gcard-star{flex:none;width:28px;height:28px;margin-top:2px;}
-.gcard-title{margin:0;font-family:'Nunito Sans',Arial,sans-serif;font-weight:900;font-size:clamp(20px,2.2vw,26px);line-height:1.15;color:#032049;letter-spacing:-.01em;}
+.gcard-title{margin:0;font-family:'Nunito Sans',Arial,sans-serif;font-weight:900;font-size:clamp(20px,2vw,24px);line-height:1.2;color:#032049;letter-spacing:-.01em;}
 .gcard-sub{margin:4px 0 0;font-size:15px;font-weight:600;line-height:1.4;color:#4A5F80;}
-.gcard-sub::after{content:"";display:block;width:40px;height:3px;border-radius:3px;background:#FFD21F;margin-top:10px;}
-.gcard-deco{flex:none;width:54px;height:34px;margin-left:auto;color:#9CC3EC;}
-.gcard-list{display:grid;gap:10px;}
-.gcard-row{display:grid;grid-template-columns:1fr 1fr;gap:10px;}
-.gcard-item{display:flex;align-items:center;gap:12px;min-width:0;padding:12px 14px;background:#fff;border:1px solid #D6E7F7;border-radius:14px;color:#032049;text-decoration:none;transition:border-color .15s,background-color .15s;}
-a.gcard-item:hover{border-color:#9CC3EC;background:#F3F8FE;}
-.gcard-item--addr{border-left:4px solid #FFD21F;padding-left:12px;}
-.gcard-ico{flex:none;display:inline-flex;align-items:center;justify-content:center;width:40px;height:40px;border-radius:50%;background:#063B7A;color:#FFD21F;}
-.gcard-ico svg{width:20px;height:20px;}
-.gcard-ico--soft{background:#FFF1B8;color:#032049;}
-.gcard-text{display:flex;flex-direction:column;min-width:0;}
-.gcard-label{font-size:11.5px;font-weight:700;letter-spacing:.08em;text-transform:uppercase;color:#56698A;line-height:1.3;}
-.gcard-value{font-size:15px;font-weight:800;line-height:1.35;color:#032049;overflow-wrap:anywhere;}
-.gcard-value--nowrap,.gcard-nw{white-space:nowrap;overflow-wrap:normal;}
-.gcard-actions{display:grid;grid-template-columns:1fr 1fr;gap:10px;margin-top:14px;}
-.gcard-btn{display:inline-flex;align-items:center;justify-content:center;gap:8px;min-height:46px;padding:10px 16px;border-radius:999px;font-family:'Nunito Sans',Arial,sans-serif;font-size:15px;font-weight:800;line-height:1.2;text-decoration:none;text-align:center;transition:background-color .15s,border-color .15s,color .15s;}
-.gcard-btn svg{flex:none;width:18px;height:18px;}
-.gcard-btn--sec{background:#fff;color:#032049;border:2px solid #032049;}
-.gcard-btn--sec:hover{background:#EEF3FC;color:#032049;}
-.gcard-btn--pri{background:#FFD21F;color:#032049;border:2px solid #FFD21F;}
+.gcard-sub::after{content:"";display:block;width:32px;height:3px;border-radius:3px;background:#FFD21F;margin-top:12px;}
+.gcard-ico{flex:none;width:18px;height:18px;margin-top:2px;color:#063B7A;}
+.gcard-label{display:block;font-size:11.5px;font-weight:700;letter-spacing:.08em;text-transform:uppercase;color:#56698A;line-height:1.3;}
+.gcard-addr{display:flex;align-items:flex-start;gap:12px;margin-top:20px;}
+.gcard-addr-value{margin:4px 0 0;font-size:17px;font-weight:800;line-height:1.45;color:#032049;}
+.gcard-nw{white-space:nowrap;}
+.gcard-contacts{list-style:none;margin:20px 0 0;padding:16px 0 0;border-top:1px solid #E3EBF5;display:grid;grid-template-columns:1fr 1fr;gap:4px 24px;}
+.gcard-contacts li{margin:0;padding:0;min-width:0;}
+.gcard-contacts li:last-child{grid-column:1 / -1;}
+.gcard-link{display:flex;align-items:flex-start;gap:10px;min-height:44px;padding:4px 0;color:#032049;text-decoration:none;}
+.gcard-link .gcard-ico{width:16px;height:16px;margin-top:3px;}
+.gcard-link .gcard-text{min-width:0;}
+.gcard-value{display:block;margin-top:2px;font-size:15px;font-weight:700;line-height:1.35;color:#032049;overflow-wrap:anywhere;}
+.gcard-value--nowrap{white-space:nowrap;overflow-wrap:normal;}
+a.gcard-link:hover .gcard-value{text-decoration:underline;text-decoration-color:#FFD21F;text-decoration-thickness:2px;text-underline-offset:4px;}
+.gcard-actions{display:flex;flex-wrap:wrap;gap:10px;margin-top:20px;}
+.gcard-btn{display:inline-flex;align-items:center;justify-content:center;gap:8px;min-height:42px;padding:9px 20px;border-radius:999px;font-family:'Nunito Sans',Arial,sans-serif;font-size:14.5px;font-weight:800;line-height:1.2;text-decoration:none;text-align:center;transition:background-color .15s,border-color .15s,color .15s;}
+.gcard-btn svg{flex:none;width:16px;height:16px;}
+.gcard-btn--sec{background:transparent;color:#063B7A;border:1px solid #C5D6EC;}
+.gcard-btn--sec:hover{background:#F3F7FD;border-color:#9CC3EC;color:#063B7A;}
+.gcard-btn--pri{background:#FFD21F;color:#032049;border:1px solid #FFD21F;}
 .gcard-btn--pri:hover{background:#FFC700;border-color:#FFC700;color:#032049;}
-.gcard a:focus-visible{outline:3px solid #063B7A;outline-offset:2px;}
+.gcard a:focus-visible{outline:3px solid #063B7A;outline-offset:2px;border-radius:6px;}
+.gcard a.gcard-btn:focus-visible{border-radius:999px;}
 .gcard-sr{position:absolute;width:1px;height:1px;padding:0;margin:-1px;overflow:hidden;clip:rect(0,0,0,0);white-space:nowrap;border:0;}
-/* breakpoints are the card (column) width */
-@container (max-width:539px){
-	.gcard-item{padding:10px 11px;gap:10px;}
-	.gcard-ico{width:34px;height:34px;}
-	.gcard-ico svg{width:18px;height:18px;}
-	.gcard-value{font-size:14px;}
+/* breakpoints are the panel width */
+@container (min-width:620px){
+	.gcard-contacts{grid-template-columns:auto auto 1fr;column-gap:32px;}
+	.gcard-contacts li:last-child{grid-column:auto;}
 }
-/* phones (~320-360px card): compact spacing first, type stays 14px values / 11px labels; only Telefone + Instagram
-   stack (the phone number cannot sit beside Instagram at this width without breaking); buttons stay side by side */
 @container (max-width:439px){
-	.gcard{padding:14px;border-radius:20px;}
-	.gcard-head{gap:10px;margin-bottom:12px;}
-	.gcard-star{width:24px;height:24px;}
+	.gcard{padding:22px 20px 20px;border-radius:14px;}
 	.gcard-title{font-size:20px;}
-	.gcard-sub{margin-top:2px;font-size:14px;}
-	.gcard-sub::after{margin-top:8px;}
-	.gcard-deco{display:none;}
-	.gcard-list,.gcard-row,.gcard-actions{gap:8px;}
-	.gcard-row{grid-template-columns:1fr;}
-	.gcard-item{padding:9px 10px;border-radius:12px;}
-	.gcard-item--addr{padding-left:9px;}
-	.gcard-ico{width:32px;height:32px;}
-	.gcard-ico svg{width:16px;height:16px;}
-	.gcard-label{font-size:11px;}
-	.gcard-actions{margin-top:10px;}
-	.gcard-btn{min-height:44px;padding:8px;gap:6px;font-size:14px;}
-	.gcard-btn .gcard-arrow{display:none;}
+	.gcard-sub{font-size:14px;}
+	.gcard-addr{margin-top:16px;gap:10px;}
+	.gcard-addr-value{font-size:16px;}
+	.gcard-contacts{grid-template-columns:1fr;margin-top:16px;padding-top:10px;gap:0;}
+	.gcard-actions{margin-top:14px;gap:8px;}
+	.gcard-btn{flex:1 1 0;min-height:44px;padding:9px 12px;}
 }
+/* narrowest phones: actions stay side by side without their icons; they stack only below 260px */
 @container (max-width:339px){
 	.gcard-btn svg{display:none;}
 }
 @container (max-width:259px){
-	.gcard-actions{grid-template-columns:1fr;}
+	.gcard-actions{flex-direction:column;}
+	.gcard-btn{flex:none;width:100%;}
 }
-@media (min-width:768px) and (max-width:1023px){.gcard{padding:20px;}.gcard-head{margin-bottom:14px;}}
-@media (prefers-reduced-motion:reduce){.gcard-item,.gcard-btn{transition:none;}}
+@media (prefers-reduced-motion:reduce){.gcard-btn{transition:none;}}
 </style>
-					<section class="gcard" aria-labelledby="gcard-titulo">
-						<div class="gcard-head">
-							<svg class="gcard-star" aria-hidden="true" viewBox="0 0 24 24"><path d="M12 2.8l2.8 5.8 6.4.9-4.6 4.5 1.1 6.3L12 17.3l-5.7 3 1.1-6.3-4.6-4.5 6.4-.9z" fill="#FFD21F" stroke="#032049" stroke-width="1.5" stroke-linejoin="round"/></svg>
-							<div>
-								<h3 id="gcard-titulo" class="gcard-title">{{t:contato.cartao_titulo}}</h3>
-								<p class="gcard-sub">{{t:contato.cartao_subtitulo}}</p>
+						<section class="gcard" aria-labelledby="gcard-titulo">
+							<h3 id="gcard-titulo" class="gcard-title">{{t:contato.cartao_titulo}}</h3>
+							<p class="gcard-sub">{{t:contato.cartao_subtitulo}}</p>
+							<div class="gcard-addr">
+								<svg class="gcard-ico" aria-hidden="true" viewBox="0 0 24 24"><path fill="currentColor" d="M12 2a7 7 0 0 0-7 7c0 5.2 7 13 7 13s7-7.8 7-13a7 7 0 0 0-7-7Zm0 9.6A2.6 2.6 0 1 1 12 6.4a2.6 2.6 0 0 1 0 5.2Z"/></svg>
+								<div class="gcard-text"><span class="gcard-label">Endereço</span><p class="gcard-addr-value"><span class="gcard-nw">{{s:endereco.logradouro}}&nbsp;—</span> <span class="gcard-nw">{{s:endereco.bairro}}</span><br><span class="gcard-nw">{{s:endereco.cidade}} / {{s:endereco.uf}}&nbsp;—</span> <span class="gcard-nw">CEP {{s:endereco.cep}}</span></p></div>
 							</div>
-							<svg class="gcard-deco" aria-hidden="true" viewBox="0 0 54 34" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"><path d="M2 30c8-2 14-8 22-9s12 3 18-2" stroke-dasharray="3 4"/><path d="M44 4v8M40 8h8"/><path d="M50 16v4M48 18h4"/></svg>
-						</div>
-						<div class="gcard-list">
-							<div class="gcard-item gcard-item--addr">
-								<span class="gcard-ico gcard-ico--soft"><svg aria-hidden="true" viewBox="0 0 24 24"><path fill="currentColor" d="M12 2a7 7 0 0 0-7 7c0 5.2 7 13 7 13s7-7.8 7-13a7 7 0 0 0-7-7Zm0 9.6A2.6 2.6 0 1 1 12 6.4a2.6 2.6 0 0 1 0 5.2Z"/></svg></span>
-								<span class="gcard-text"><span class="gcard-label">Endereço</span><span class="gcard-value"><span class="gcard-nw">{{s:endereco.logradouro}}&nbsp;—</span> <span class="gcard-nw">{{s:endereco.bairro}}</span><br><span class="gcard-nw">{{s:endereco.cidade}} / {{s:endereco.uf}}&nbsp;—</span> <span class="gcard-nw">CEP {{s:endereco.cep}}</span></span></span>
+							<ul class="gcard-contacts">
+								<li><a class="gcard-link" href="{{x:tel}}"><svg class="gcard-ico" aria-hidden="true" viewBox="0 0 24 24"><path fill="currentColor" d="M6.6 10.8a15.1 15.1 0 0 0 6.6 6.6l2.2-2.2c.3-.3.7-.4 1-.2 1.1.4 2.3.6 3.6.6.6 0 1 .4 1 1V20c0 .6-.4 1-1 1A17 17 0 0 1 3 4c0-.6.4-1 1-1h3.5c.6 0 1 .4 1 1 0 1.3.2 2.5.6 3.6.1.3 0 .7-.2 1l-2.3 2.2Z"/></svg><span class="gcard-text"><span class="gcard-label">Telefone</span><span class="gcard-value gcard-value--nowrap">Tel.: {{s:telefone}}</span></span></a></li>
+								<li><a class="gcard-link" href="{{s:instagram_url}}" target="_blank" rel="noopener"><svg class="gcard-ico" aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3.5" y="3.5" width="17" height="17" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.3" cy="6.7" r="1.1" fill="currentColor" stroke="none"/></svg><span class="gcard-text"><span class="gcard-label">Instagram</span><span class="gcard-value">{{s:instagram}}<span class="gcard-sr"> (abre em nova aba)</span></span></span></a></li>
+								<li><a class="gcard-link" href="mailto:{{s:email}}"><svg class="gcard-ico" aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linejoin="round"><rect x="3" y="5.5" width="18" height="13" rx="2.5"/><path d="m4 7.5 8 6 8-6"/></svg><span class="gcard-text"><span class="gcard-label">E-mail</span><span class="gcard-value">{{s:email}}</span></span></a></li>
+							</ul>
+							<div class="gcard-actions">
+								<a class="gcard-btn gcard-btn--sec" href="{{x:maps}}" target="_blank" rel="noopener"><svg aria-hidden="true" viewBox="0 0 24 24"><path fill="currentColor" d="M12 2a7 7 0 0 0-7 7c0 5.2 7 13 7 13s7-7.8 7-13a7 7 0 0 0-7-7Zm0 9.6A2.6 2.6 0 1 1 12 6.4a2.6 2.6 0 0 1 0 5.2Z"/></svg>Como chegar<span class="gcard-sr"> (abre o Google Maps em nova aba)</span></a>
+								<a class="gcard-btn gcard-btn--pri" href="fale-com-a-gente/index.html">Fale conosco<svg aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
 							</div>
-							<div class="gcard-row">
-								<a class="gcard-item" href="{{x:tel}}">
-									<span class="gcard-ico"><svg aria-hidden="true" viewBox="0 0 24 24"><path fill="currentColor" d="M6.6 10.8a15.1 15.1 0 0 0 6.6 6.6l2.2-2.2c.3-.3.7-.4 1-.2 1.1.4 2.3.6 3.6.6.6 0 1 .4 1 1V20c0 .6-.4 1-1 1A17 17 0 0 1 3 4c0-.6.4-1 1-1h3.5c.6 0 1 .4 1 1 0 1.3.2 2.5.6 3.6.1.3 0 .7-.2 1l-2.3 2.2Z"/></svg></span>
-									<span class="gcard-text"><span class="gcard-label">Telefone</span><span class="gcard-value gcard-value--nowrap">Tel.: {{s:telefone}}</span></span>
-								</a>
-								<a class="gcard-item" href="{{s:instagram_url}}" target="_blank" rel="noopener">
-									<span class="gcard-ico"><svg aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3.5" y="3.5" width="17" height="17" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.3" cy="6.7" r="1.1" fill="currentColor" stroke="none"/></svg></span>
-									<span class="gcard-text"><span class="gcard-label">Instagram</span><span class="gcard-value">{{s:instagram}}<span class="gcard-sr"> (abre em nova aba)</span></span></span>
-								</a>
-							</div>
-							<a class="gcard-item" href="mailto:{{s:email}}">
-								<span class="gcard-ico"><svg aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linejoin="round"><rect x="3" y="5.5" width="18" height="13" rx="2.5"/><path d="m4 7.5 8 6 8-6"/></svg></span>
-								<span class="gcard-text"><span class="gcard-label">E-mail</span><span class="gcard-value">{{s:email}}</span></span>
-							</a>
-						</div>
-						<div class="gcard-actions">
-							<a class="gcard-btn gcard-btn--sec" href="{{x:maps}}" target="_blank" rel="noopener"><svg aria-hidden="true" viewBox="0 0 24 24"><path fill="currentColor" d="M12 2a7 7 0 0 0-7 7c0 5.2 7 13 7 13s7-7.8 7-13a7 7 0 0 0-7-7Zm0 9.6A2.6 2.6 0 1 1 12 6.4a2.6 2.6 0 0 1 0 5.2Z"/></svg>Como chegar<span class="gcard-sr"> (abre o Google Maps em nova aba)</span><svg class="gcard-arrow" aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
-							<a class="gcard-btn gcard-btn--pri" href="fale-com-a-gente/index.html">Fale conosco<svg class="gcard-arrow" aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
-						</div>
-					</section>
+						</section>
 				</div>
 					</div>
 				</div>
