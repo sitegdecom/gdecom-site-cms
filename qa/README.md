@@ -1,10 +1,10 @@
-# GDECOM — QA harness (pre-CMS baseline)
+# GDECOM — QA harness
 
 Test tooling only. Nothing in `qa/` is part of the published website.
 
-**Since the CMS migration the suite tests the generated site in `dist/`**: run `npm run build` at the repository root first
+**The suite tests the generated site in `dist/`**: run `npm run build` at the repository root first
 (or `npm test` at the root, which builds and then runs this suite). `QA_SITE_ROOT=<folder>` tests another folder.
-The baseline still describes the approved pre-CMS site, so with unchanged content `dist/` must match it byte-for-byte.
+The baseline describes the final approved pre-launch site (see `baseline/` below): with unchanged content `dist/` must match it byte-for-byte.
 
 ## Requirements
 - Node.js 18+
@@ -31,9 +31,13 @@ Exit code is `1` if any check fails; the full report is written to `qa/output/re
 - `tests/integrity.js` — SHA-256 of the 14 HTML pages and protected shared CSS/JS vs `baseline/integrity.json`.
 - `tests/browser.js` — HTTP status, console, failed local requests, overflow, broken images, H1/headings, page height, image boxes and chosen `srcset` candidates vs `baseline/layout.json` (±2px).
 - `tests/interaction.js` — desktop navigation + Programas submenu (Tab, Escape, focus return, single navigation), mobile menu (Enter, Space, Escape, tap, tap-outside, single navigation), Home carousel lightbox, inline lightboxes, focus restoration, scroll preservation, footer Privacy Policy link, 404 and Privacy Policy specifics.
-- `baseline/` — recorded from the approved pre-CMS state (baseline commit `04f5031`).
+- `baseline/` — recorded from the final approved pre-launch state (built from commit `06e01a2`: CMS version plus the approved
+  Vôlei and Home changes). The first baseline, from the pre-CMS site (commit `04f5031`), is in the git history.
 
 ## Notes
 - Geometry excludes header/submenu images (they follow the sticky header) and carousel slides (they move); their `srcset` choice is still checked.
 - The 404 page's own "Failed to load resource: 404" console line is expected and ignored only for the 404 test URL.
 - Third-party request failures (Google Fonts/Maps when offline) are reported as notes, not failures.
+- Known intermittent measurement: once, the Arte article at 360x800 measured 31px taller than its baseline (15329 vs 15298px)
+  while its HTML/CSS were byte-identical. It did not reproduce in 20 later isolated measurements (fonts always loaded), so the
+  test logic was left unchanged. If it reappears, re-run before treating it as a regression.
