@@ -28,6 +28,13 @@ const telHref = (site) => 'tel:+55' + String(site.telefone).replace(/\D/g, '');
 // Resolve a Pages CMS reference value (slug, file name or file path) to an article slug.
 const refSlug = (v) => String(v || '').replace(/\\/g, '/').split('/').pop().replace(/\.md$/i, '');
 
+const INLINE_CONTEXT = /<(p|span|h[1-6]|a|li|figcaption)\b[^>]*>\s*$/;
+function unwrapParagraphs(html) {
+	const m = html.match(/^(\s*)<p(?:\s[^>]*)?>([\s\S]*)<\/p>(\s*)$/);
+	if (!m) return html;
+	return m[1] + m[2].replace(/<\/p>\s*<p(?:\s[^>]*)?>/g, '<br>') + m[3];
+}
+
 async function render(template, meta, content, ctx) {
 	const { site, siteEntities, articles, errors } = ctx;
 	const prefix = meta.depth === null ? '/' : '../'.repeat(meta.depth);
@@ -45,7 +52,12 @@ async function render(template, meta, content, ctx) {
 		} else if (type === 'h') {
 			const raw = get(content, key);
 			if (raw === undefined || raw === null || String(raw).trim() === '') { errors.push(`${ctx.pageLabel}: texto obrigatório vazio (${key})`); v = ''; }
-			else v = H.sanitize(String(raw));
+			else {
+				v = H.sanitize(String(raw));
+				// The Pages CMS editor wraps rich text in <p>. When the template already puts the field inside a paragraph-like
+				// element, that wrapper would nest (<p><p>…</p></p>): unwrap it, turning extra paragraphs into line breaks.
+				if (INLINE_CONTEXT.test(template.slice(Math.max(0, m.index - 300), m.index))) v = unwrapParagraphs(v);
+			}
 		} else if (type === 'i') {
 			const slot = meta.slots[key];
 			const val = get(content, key) || {};
