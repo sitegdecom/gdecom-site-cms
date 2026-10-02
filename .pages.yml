@@ -383,6 +383,39 @@ content:
           min: 2
           max: 2
         description: 'Lista com 2 itens fixos: troque o conteúdo, a quantidade não muda para preservar o layout.'
+      - name: transparencia
+        label: Seção Transparência (Prestação de Contas)
+        type: object
+        fields:
+          - name: chamada
+            label: Chamada acima do título
+            type: string
+            required: true
+          - name: titulo
+            label: Título
+            type: string
+            required: true
+          - name: texto
+            label: Texto
+            type: text
+            required: true
+          - name: documentos
+            label: Cartões (Editais, Relatórios, Prestação de Contas)
+            type: object
+            fields:
+              - name: titulo
+                label: Título
+                type: string
+                required: true
+              - name: descricao
+                label: Descrição
+                type: text
+                required: true
+            description: 'Lista com 3 itens fixos: troque o conteúdo, a quantidade não muda para preservar o layout.'
+            list:
+              min: 3
+              max: 3
+        description: Seção da página inicial com os 3 cartões que levam à página Transparência.
       - name: galeria
         label: Galeria de fotos (carrossel)
         type: object
@@ -816,6 +849,100 @@ content:
             description: Texto corrido da página, depois de "Bloco de texto". Use "Título 2" e "Título 3" do editor para subtítulos.
             options:
               format: html
+  - name: pagina-transparencia
+    label: Transparência
+    description: Página de editais, relatórios e prestação de contas. Os cartões da página inicial levam às três seções desta página. O e-mail de contato vem dos dados institucionais.
+    type: file
+    path: content/transparencia.json
+    format: json
+    fields:
+      - name: seo
+        label: Busca e compartilhamento
+        type: object
+        fields:
+          - name: titulo
+            label: Título da aba e do Google
+            type: string
+            required: true
+            description: 'Aparece na aba do navegador e nos resultados de busca. Ideal: até 60 caracteres.'
+          - name: descricao
+            label: Descrição para o Google e redes sociais
+            type: text
+            required: true
+            description: 'Resumo da página usado pelo Google e no compartilhamento. Ideal: até 160 caracteres.'
+          - name: titulo_social
+            label: Título ao compartilhar (redes sociais)
+            type: string
+            required: true
+        hidden: true
+      - name: topo
+        label: Topo da página
+        type: object
+        fields:
+          - name: chamada
+            label: Chamada acima do título
+            type: string
+            required: true
+          - name: titulo
+            label: Título
+            type: string
+            required: true
+      - name: introducao
+        label: Introdução
+        type: rich-text
+        required: true
+        options:
+          format: html
+      - name: editais
+        label: Editais
+        type: object
+        fields:
+          - name: titulo
+            label: Título
+            type: string
+            required: true
+          - name: texto
+            label: Texto
+            type: rich-text
+            required: true
+            description: Liste aqui os editais (com links para os arquivos) quando estiverem disponíveis.
+            options:
+              format: html
+      - name: relatorios
+        label: Relatórios
+        type: object
+        fields:
+          - name: titulo
+            label: Título
+            type: string
+            required: true
+          - name: texto
+            label: Texto
+            type: rich-text
+            required: true
+            description: Liste aqui os relatórios (com links para os arquivos) quando estiverem disponíveis.
+            options:
+              format: html
+      - name: prestacao_de_contas
+        label: Prestação de Contas
+        type: object
+        fields:
+          - name: titulo
+            label: Título
+            type: string
+            required: true
+          - name: texto
+            label: Texto
+            type: rich-text
+            required: true
+            description: Liste aqui os documentos de prestação de contas (com links para os arquivos) quando estiverem disponíveis.
+            options:
+              format: html
+      - name: contato_texto
+        label: Frase de contato (antes do e-mail)
+        type: text
+        required: true
+        description: O e-mail exibido depois desta frase vem dos dados institucionais.
   - name: programa-atendimento
     label: Programa — Atendimento Educacional Integrado
     description: Textos e imagens da página do programa.

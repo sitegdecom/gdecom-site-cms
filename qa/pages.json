@@ -158,6 +158,19 @@
       "interactions": ["programas-submenu", "mobile-menu", "inline-lightbox", "instagram-cta"]
     },
     {
+      "id": "transparencia",
+      "name": "Transparência",
+      "file": "transparencia/index.html",
+      "url": "/transparencia/",
+      "http": 200,
+      "h1": 1,
+      "type": "legal",
+      "robots": "noindex, nofollow",
+      "lightbox": "none",
+      "gallery": false,
+      "interactions": ["programas-submenu", "mobile-menu"]
+    },
+    {
       "id": "privacidade",
       "name": "Política de Privacidade",
       "file": "politica-de-privacidade/index.html",

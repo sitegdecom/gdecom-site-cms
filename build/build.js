@@ -23,6 +23,7 @@ const PAGES = [
 	{ label: 'Programa Maior Cuidado', template: 'artigos/programa-maior-cuidado-atencao-vinculo-e-protecao-no-cotidiano/index.html', content: 'content/programas/maior-cuidado.json' },
 	{ label: 'Qualificação Profissional', template: 'artigos/qualificacao-profissional-cursos-gratuitos-que-ampliam-oportunidades/index.html', content: 'content/programas/qualificacao.json' },
 	{ label: 'SCFV', template: 'artigos/scfv-para-adolescentes-de-15-a-17-anos-convivencia-escuta-e-protagonismo/index.html', content: 'content/programas/scfv.json' },
+	{ label: 'Transparência', template: 'transparencia/index.html', content: 'content/transparencia.json' },
 	{ label: 'Política de Privacidade', template: 'politica-de-privacidade/index.html', content: null },
 	{ label: 'Página 404', template: '404.html', content: null }
 ];

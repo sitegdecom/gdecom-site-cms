@@ -259,6 +259,60 @@
      "required": true
     },
     {
+     "path": "transparencia.chamada",
+     "type": "string",
+     "label": "Transparência — etiqueta",
+     "required": true
+    },
+    {
+     "path": "transparencia.titulo",
+     "type": "string",
+     "label": "Transparência — título",
+     "required": true
+    },
+    {
+     "path": "transparencia.texto",
+     "type": "text",
+     "label": "Transparência — texto",
+     "required": true
+    },
+    {
+     "path": "transparencia.documentos.0.titulo",
+     "type": "string",
+     "label": "Cartão — título",
+     "required": true
+    },
+    {
+     "path": "transparencia.documentos.0.descricao",
+     "type": "text",
+     "label": "Cartão — descrição",
+     "required": true
+    },
+    {
+     "path": "transparencia.documentos.1.titulo",
+     "type": "string",
+     "label": "Cartão — título",
+     "required": true
+    },
+    {
+     "path": "transparencia.documentos.1.descricao",
+     "type": "text",
+     "label": "Cartão — descrição",
+     "required": true
+    },
+    {
+     "path": "transparencia.documentos.2.titulo",
+     "type": "string",
+     "label": "Cartão — título",
+     "required": true
+    },
+    {
+     "path": "transparencia.documentos.2.descricao",
+     "type": "text",
+     "label": "Cartão — descrição",
+     "required": true
+    },
+    {
      "path": "galeria.titulo",
      "type": "string",
      "label": "Galeria (carrossel) — título da seção",
@@ -2142,6 +2196,96 @@
      "type": "rich-text",
      "label": "Texto do artigo",
      "required": true
+    }
+   ]
+  },
+  "content/transparencia.json": {
+   "label": "Transparência",
+   "kind": "generic",
+   "fields": [
+    {
+     "path": "seo.titulo",
+     "type": "string",
+     "label": "Título da aba e do Google",
+     "required": true,
+     "description": "Aparece na aba do navegador e nos resultados de busca. Ideal: até 60 caracteres."
+    },
+    {
+     "path": "seo.descricao",
+     "type": "text",
+     "label": "Descrição para o Google e redes sociais",
+     "required": true,
+     "description": "Resumo da página usado pelo Google e no compartilhamento. Ideal: até 160 caracteres."
+    },
+    {
+     "path": "seo.titulo_social",
+     "type": "string",
+     "label": "Título no compartilhamento (redes sociais)",
+     "required": true
+    },
+    {
+     "path": "topo.chamada",
+     "type": "string",
+     "label": "Chamada acima do título",
+     "required": true
+    },
+    {
+     "path": "topo.titulo",
+     "type": "string",
+     "label": "Título da página",
+     "required": true
+    },
+    {
+     "path": "introducao",
+     "type": "rich-text",
+     "label": "Introdução",
+     "required": true
+    },
+    {
+     "path": "editais.titulo",
+     "type": "string",
+     "label": "Título",
+     "required": true
+    },
+    {
+     "path": "editais.texto",
+     "type": "rich-text",
+     "label": "Texto",
+     "required": true,
+     "description": "Liste aqui os editais (com links para os arquivos) quando estiverem disponíveis."
+    },
+    {
+     "path": "relatorios.titulo",
+     "type": "string",
+     "label": "Título",
+     "required": true
+    },
+    {
+     "path": "relatorios.texto",
+     "type": "rich-text",
+     "label": "Texto",
+     "required": true,
+     "description": "Liste aqui os relatórios (com links para os arquivos) quando estiverem disponíveis."
+    },
+    {
+     "path": "prestacao_de_contas.titulo",
+     "type": "string",
+     "label": "Título",
+     "required": true
+    },
+    {
+     "path": "prestacao_de_contas.texto",
+     "type": "rich-text",
+     "label": "Texto",
+     "required": true,
+     "description": "Liste aqui os documentos de prestação de contas (com links para os arquivos) quando estiverem disponíveis."
+    },
+    {
+     "path": "contato_texto",
+     "type": "text",
+     "label": "Frase de contato (antes do e-mail)",
+     "required": true,
+     "description": "O e-mail exibido depois desta frase vem dos dados institucionais."
     }
    ]
   }

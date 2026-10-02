@@ -103,6 +103,25 @@
       "resumo": "Nenhuma comunidade se transforma sozinha. Conheça como parcerias ampliam projetos, fortalecem serviços e aproximam direitos das pessoas."
     }
   ],
+  "transparencia": {
+    "chamada": "Prestação de Contas",
+    "titulo": "Confiança também se constrói com informação acessível.",
+    "texto": "O GDECOM valoriza a transparência em suas ações, mantendo documentos, editais, registros e informações institucionais disponíveis para a comunidade, parceiros e órgãos de controle.",
+    "documentos": [
+      {
+        "titulo": "Editais",
+        "descricao": "Chamadas públicas, processos seletivos e documentos de participação."
+      },
+      {
+        "titulo": "Relatórios",
+        "descricao": "Registros institucionais, ações realizadas e atualizações periódicas."
+      },
+      {
+        "titulo": "Prestação de Contas",
+        "descricao": "Informações organizadas para comunidade, parceiros e órgãos de controle."
+      }
+    ]
+  },
   "galeria": {
     "titulo": "A vida do GDECOM em movimento. ",
     "texto": "Um recorte vivo das ações, encontros e projetos que mostram o GDECOM acontecendo na prática, com crianças, adolescentes, jovens, famílias e comunidades construindo caminhos de cuidado, pertencimento e transformação.",

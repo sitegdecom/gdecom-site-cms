@@ -14,6 +14,7 @@ Este guia é para a equipe do GDECOM. Não é preciso saber programar, usar term
 | **Artigos** | Artigos existentes e **novos artigos** |
 | **Programa — …** (5 programas) | Topo da página, textos, blocos de texto e imagem, galerias, ilustração final, WhatsApp/Instagram do programa |
 | **Nossa história / Fale com a gente / Vôlei** | Textos e imagens dessas páginas |
+| **Transparência** | Página de editais, relatórios e prestação de contas: introdução e o texto de cada seção. Quando houver documentos, liste-os na seção certa com o link para o arquivo. Os 3 cartões da página inicial (seção "Prestação de Contas") levam a essas seções |
 
 ## Editar um texto
 1. Abra a área desejada, altere o campo e clique em **Salvar**.

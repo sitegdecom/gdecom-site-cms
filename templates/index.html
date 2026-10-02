@@ -649,6 +649,92 @@ img:is([sizes=auto i],[sizes^="auto," i]){contain-intrinsic-size:3000px 1500px}
 				</div>
 					</div>
 				</div>
+		<style>
+/* Transparência / Prestação de Contas (approved visual: design/reference/prestacao-de-contas-inicial.png, repository only).
+   Intro on the left + 3 link cards on the right, on the 1140px home grid. Values follow the Home patterns: star pill as in
+   "Trabalho em rede", Nunito Sans 900 navy heading, Inter 300 text, white cards with 20px radius and soft shadow.
+   Background #F8FAFF matches the start of the Galeria gradient right below. Cards lead to the Transparência page sections. */
+/* two soft glows (blue top-right, warm bottom-left) that fade out inside the section: no hard edges against the neighbours */
+.transp{position:relative;background:radial-gradient(440px 300px at 88% 40%,#EAF0FB 0%,rgba(234,240,251,0) 70%),radial-gradient(360px 220px at 6% 70%,rgba(255,210,31,.12) 0%,rgba(255,210,31,0) 70%),#F8FAFF;padding:92px 0 100px;}
+.transp-inner{position:relative;z-index:1;box-sizing:border-box;width:min(1140px,100% - 48px);margin:0 auto;display:grid;grid-template-columns:minmax(0,42fr) minmax(0,58fr);gap:44px;align-items:center;}
+.transp-pill{display:inline-flex;align-items:center;gap:8px;margin:0 0 22px;padding:8px 15px;border:1px solid rgba(6,59,122,.21);border-radius:30px;background:rgba(6,59,122,.11);font-family:'Nunito Sans',Arial,sans-serif;font-size:15px;font-weight:800;line-height:1.3;color:#063B7A;}
+.transp-pill svg{flex:none;width:14px;height:14px;fill:#FFD21F;}
+.transp-title{margin:0;font-family:'Nunito Sans',Arial,sans-serif;font-weight:900;font-size:clamp(30px,2.9vw,40px);line-height:1.12;letter-spacing:-.01em;color:#063B7A;}
+.transp-title::after{content:"";display:block;width:56px;height:5px;margin-top:20px;border-radius:5px;background:#FFD21F;}
+.transp-text{margin:20px 0 0;max-width:520px;font-family:'Inter',Arial,sans-serif;font-size:17px;font-weight:300;line-height:1.65;color:#1E2A3A;}
+.transp-cards{list-style:none;margin:0;padding:0;display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:20px;}
+.transp-card{position:relative;display:flex;flex-direction:column;height:100%;box-sizing:border-box;padding:28px 24px 24px;border-radius:20px;background:#fff;border:1px solid #E7EDF7;box-shadow:0 14px 30px -22px rgba(6,59,122,.45);transition:transform .2s,box-shadow .2s,border-color .2s;}
+.transp-card:hover{transform:translateY(-4px);border-color:#D3E0F3;box-shadow:0 22px 40px -24px rgba(6,59,122,.55);}
+.transp-card:focus-within{border-color:#063B7A;}
+.transp-ico{display:inline-flex;align-items:center;justify-content:center;width:60px;height:60px;border-radius:50%;background:#F9C330;box-shadow:0 0 0 8px rgba(255,210,31,.16);color:#fff;}
+.transp-ico svg{width:28px;height:28px;}
+.transp-card h3{margin:26px 0 0;font-family:'Nunito Sans',Arial,sans-serif;font-weight:900;font-size:18px;line-height:1.2;letter-spacing:.02em;text-transform:uppercase;color:#063B7A;}
+.transp-card h3::after{content:"";display:block;width:28px;height:4px;margin-top:12px;border-radius:4px;background:#FFD21F;}
+/* the title link covers the whole card (one tab stop, short accessible name) */
+.transp-link{color:inherit;text-decoration:none;}
+.transp-link::before{content:"";position:absolute;inset:0;border-radius:20px;}
+.transp-link:focus-visible{outline:none;}
+.transp-link:focus-visible::before{outline:3px solid #063B7A;outline-offset:3px;}
+.transp-card p{margin:14px 0 22px;font-family:'Inter',Arial,sans-serif;font-size:15px;font-weight:400;line-height:1.55;color:#4A5568;}
+.transp-arrow{display:inline-flex;align-items:center;justify-content:center;width:40px;height:40px;margin-top:auto;border-radius:50%;background:#FFF4CC;color:#B07A00;transition:background-color .2s,color .2s;}
+.transp-arrow svg{width:18px;height:18px;}
+.transp-card:hover .transp-arrow,.transp-card:focus-within .transp-arrow{background:#FFD21F;color:#063B7A;}
+/* narrower desktops/tablets: intro above, the three cards in one row below */
+@media (max-width:1099px){
+	.transp{padding:72px 0 80px;}
+	.transp-inner{grid-template-columns:1fr;gap:36px;}
+	.transp-text{max-width:680px;}
+}
+@media (max-width:767px){
+	.transp-cards{gap:16px;}
+	.transp-card{padding:24px 20px 20px;}
+	.transp-card h3{font-size:17px;}
+}
+/* phones: everything in one column; cards keep the same internal layout, a bit more compact */
+@media (max-width:639px){
+	.transp{padding:56px 0 64px;}
+	.transp-inner{width:calc(100% - 40px);gap:28px;}
+	.transp-cards{grid-template-columns:1fr;gap:14px;}
+	.transp-card{display:grid;grid-template-columns:auto 1fr;column-gap:18px;align-items:start;padding:20px;}
+	.transp-card > :not(.transp-ico){grid-column:2;}
+	.transp-ico{grid-row:1 / span 3;width:52px;height:52px;box-shadow:0 0 0 6px rgba(255,210,31,.16);}
+	.transp-ico svg{width:24px;height:24px;}
+	.transp-card h3{margin-top:4px;}
+	.transp-card p{margin:10px 0 14px;}
+	.transp-arrow{width:36px;height:36px;}
+	.transp-text{font-size:16px;}
+}
+@media (prefers-reduced-motion:reduce){.transp-card,.transp-arrow{transition:none;}.transp-card:hover{transform:none;}}
+		</style>
+		<section class="transp" aria-labelledby="transp-titulo">
+			<div class="transp-inner">
+				<div class="transp-intro">
+					<p class="transp-pill"><svg aria-hidden="true" viewBox="0 0 576 512"><path d="M259.3 17.8L194 150.2 47.9 171.5c-26.2 3.8-36.7 36.1-17.7 54.6l105.7 103-25 145.5c-4.5 26.3 23.2 46 46.4 33.7L288 439.6l130.7 68.7c23.2 12.2 50.9-7.4 46.4-33.7l-25-145.5 105.7-103c19-18.5 8.5-50.8-17.7-54.6L382 150.2 316.7 17.8c-11.7-23.6-45.6-23.9-57.4 0z"/></svg>{{t:transparencia.chamada}}</p>
+					<h2 id="transp-titulo" class="transp-title">{{t:transparencia.titulo}}</h2>
+					<p class="transp-text">{{t:transparencia.texto}}</p>
+				</div>
+				<ul class="transp-cards">
+					<li class="transp-card">
+						<span class="transp-ico" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M14 3H7a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V8z"/><path d="M14 3v5h5M9 13h6M9 17h6M9 9h2"/></svg></span>
+						<h3><a class="transp-link" href="transparencia/index.html#editais">{{t:transparencia.documentos.0.titulo}}</a></h3>
+						<p>{{t:transparencia.documentos.0.descricao}}</p>
+						<span class="transp-arrow" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span>
+					</li>
+					<li class="transp-card">
+						<span class="transp-ico" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 6h10M10 12h10M10 18h10M3.5 6l1.5 1.5L8 4.5M3.5 12l1.5 1.5L8 10.5M3.5 18l1.5 1.5L8 16.5"/></svg></span>
+						<h3><a class="transp-link" href="transparencia/index.html#relatorios">{{t:transparencia.documentos.1.titulo}}</a></h3>
+						<p>{{t:transparencia.documentos.1.descricao}}</p>
+						<span class="transp-arrow" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span>
+					</li>
+					<li class="transp-card">
+						<span class="transp-ico" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="4" y="4" width="16" height="16" rx="3"/><path d="m8.5 12.5 2.5 2.5 4.5-5"/></svg></span>
+						<h3><a class="transp-link" href="transparencia/index.html#prestacao-de-contas">{{t:transparencia.documentos.2.titulo}}</a></h3>
+						<p>{{t:transparencia.documentos.2.descricao}}</p>
+						<span class="transp-arrow" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span>
+					</li>
+				</ul>
+			</div>
+		</section>
 		<div class="elementor-element elementor-element-aaee65c e-flex e-con-boxed e-con e-parent" data-id="aaee65c" data-element_type="container" data-e-type="container" data-settings="{&quot;background_background&quot;:&quot;gradient&quot;}">
 					<div class="e-con-inner">
 					<h2 data-interaction-id="ce8df52" class="H2Azul e-ce8df52-743a715 e-heading-base" data-e-type="widget" data-id="ce8df52">{{t:galeria.titulo}}</h2>

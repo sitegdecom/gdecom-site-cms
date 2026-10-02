@@ -1,0 +1,25 @@
+{
+  "seo": {
+    "titulo": "Transparência e prestação de contas | GDECOM",
+    "descricao": "Editais, relatórios e prestação de contas do GDECOM: informações institucionais organizadas para a comunidade, parceiros e órgãos de controle.",
+    "titulo_social": "Transparência e prestação de contas – GDECOM"
+  },
+  "topo": {
+    "chamada": "Prestação de Contas",
+    "titulo": "Transparência"
+  },
+  "introducao": "<p>O GDECOM valoriza a transparência em suas ações. Nesta página reunimos editais, relatórios e informações de prestação de contas, disponíveis para a comunidade, parceiros e órgãos de controle.</p>",
+  "editais": {
+    "titulo": "Editais",
+    "texto": "<p>Chamadas públicas, processos seletivos e documentos de participação.</p><p>Os editais do GDECOM serão publicados nesta seção assim que estiverem disponíveis.</p>"
+  },
+  "relatorios": {
+    "titulo": "Relatórios",
+    "texto": "<p>Registros institucionais, ações realizadas e atualizações periódicas.</p><p>Os relatórios do GDECOM serão publicados nesta seção assim que estiverem disponíveis.</p>"
+  },
+  "prestacao_de_contas": {
+    "titulo": "Prestação de Contas",
+    "texto": "<p>Informações organizadas para a comunidade, parceiros e órgãos de controle.</p><p>Os documentos de prestação de contas do GDECOM serão publicados nesta seção assim que estiverem disponíveis.</p>"
+  },
+  "contato_texto": "Para solicitar documentos ou tirar dúvidas sobre editais, relatórios e prestação de contas, escreva para"
+}
