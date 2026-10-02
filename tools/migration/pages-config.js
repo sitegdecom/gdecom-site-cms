@@ -14,8 +14,8 @@ const GROUPS = {
 	seo: 'Busca e compartilhamento', topo: 'Topo da página', hero: 'Topo (mensagem principal)', quem_somos: 'Quem somos', servicos: 'Seção Programas',
 	programas: 'Cartões dos programas', atendimento: 'Atendimento Educacional Integrado', creche: 'Creche Patatí-Patatá', maior_cuidado: 'Programa Maior Cuidado',
 	qualificacao: 'Qualificação Profissional', scfv: 'SCFV', projetos: 'Projetos em destaque', volei: 'Vôlei', conecsons: 'CONECSONS-CRJ', parcerias: 'Seção Parcerias',
-	vozes: 'Cartões de artigos (Parcerias)', transparencia: 'Seção Transparência (Prestação de Contas)', documentos: 'Cartões (Editais, Relatórios, Prestação de Contas)',
-	editais: 'Editais', relatorios: 'Relatórios', prestacao_de_contas: 'Prestação de Contas', galeria: 'Galeria de fotos (carrossel)', fotos: 'Fotos do carrossel', chamada_historia: 'Faixa com foto (Nossa história)',
+	vozes: 'Cartões de artigos (Parcerias)', transparencia: 'Seção Transparência', documentos: 'Cartões (Documentos Institucionais, Relatórios, Prestação de Contas)',
+	documentos_institucionais: 'Documentos Institucionais', relatorios: 'Relatórios', prestacao_de_contas: 'Prestação de Contas', galeria: 'Galeria de fotos (carrossel)', fotos: 'Fotos do carrossel', chamada_historia: 'Faixa com foto (Nossa história)',
 	contato: 'Contato', conteudo: 'Conteúdo da página', chamada: 'Botão final', cartoes: 'Cartões de contato', formulario: 'Formulário', chamada_final: 'Chamada final',
 	imagem_principal: 'Imagem principal', gallery: 'Galeria de fotos', pillars: 'Pilares', dimensions: 'Dimensões', pair: 'Destaques lado a lado',
 	final_visual: 'Ilustração final', cta: 'Caixa de contato', figure: 'Foto com legenda', split_text: 'Bloco de texto', endereco: 'Endereço'
@@ -72,7 +72,7 @@ const GROUP_HELP = {
 	chamada: 'Botão no fim da página que leva ao perfil do programa.',
 	cta: 'Quadro no fim da página com o contato do programa pelo WhatsApp.',
 	transparencia: 'Seção da página inicial com os 3 cartões que levam à página Transparência.',
-	documentos: 'Os 3 cartões levam, na ordem, às seções Editais, Relatórios e Prestação de Contas da página Transparência.'
+	documentos: 'Os 3 cartões levam, na ordem, às seções Documentos Institucionais, Relatórios e Prestação de Contas da página Transparência.'
 };
 
 // ---- field builders
@@ -156,7 +156,7 @@ const content = [
 	entry('pagina-historia', 'Nossa história', 'content/historia.json', 'Textos e imagens da página Nossa história.'),
 	entry('pagina-contato', 'Fale com a gente', 'content/contato.json', 'Textos da página de contato. Endereço, telefone, e-mail e Instagram são dados institucionais e só podem ser alterados pela administração do site.'),
 	entry('pagina-volei', 'Vôlei', 'content/volei.json', 'Textos e imagens da página do projeto de Vôlei.'),
-	entry('pagina-transparencia', 'Transparência', 'content/transparencia.json', 'Página de editais, relatórios e prestação de contas. Os cartões da página inicial levam às três seções desta página. O e-mail de contato vem dos dados institucionais.'),
+	entry('pagina-transparencia', 'Transparência', 'content/transparencia.json', 'Página de documentos institucionais, relatórios e prestação de contas. Os cartões da página inicial levam às três seções desta página. O e-mail de contato vem dos dados institucionais.'),
 	entry('programa-atendimento', 'Programa — Atendimento Educacional Integrado', 'content/programas/atendimento.json', 'Textos e imagens da página do programa.'),
 	entry('programa-creche', 'Programa — Creche Patatí-Patatá', 'content/programas/creche.json', 'Textos, imagens, galeria e contato pelo WhatsApp da página da Creche.'),
 	entry('programa-maior-cuidado', 'Programa — Programa Maior Cuidado', 'content/programas/maior-cuidado.json', 'Textos e imagens da página do programa.'),

@@ -384,7 +384,7 @@ content:
           max: 2
         description: 'Lista com 2 itens fixos: troque o conteúdo, a quantidade não muda para preservar o layout.'
       - name: transparencia
-        label: Seção Transparência (Prestação de Contas)
+        label: Seção Transparência
         type: object
         fields:
           - name: chamada
@@ -400,7 +400,7 @@ content:
             type: text
             required: true
           - name: documentos
-            label: Cartões (Editais, Relatórios, Prestação de Contas)
+            label: Cartões (Documentos Institucionais, Relatórios, Prestação de Contas)
             type: object
             fields:
               - name: titulo
@@ -851,7 +851,7 @@ content:
               format: html
   - name: pagina-transparencia
     label: Transparência
-    description: Página de editais, relatórios e prestação de contas. Os cartões da página inicial levam às três seções desta página. O e-mail de contato vem dos dados institucionais.
+    description: Página de documentos institucionais, relatórios e prestação de contas. Os cartões da página inicial levam às três seções desta página. O e-mail de contato vem dos dados institucionais.
     type: file
     path: content/transparencia.json
     format: json
@@ -893,8 +893,8 @@ content:
         required: true
         options:
           format: html
-      - name: editais
-        label: Editais
+      - name: documentos_institucionais
+        label: Documentos Institucionais
         type: object
         fields:
           - name: titulo
@@ -905,7 +905,7 @@ content:
             label: Texto
             type: rich-text
             required: true
-            description: Liste aqui os editais (com links para os arquivos) quando estiverem disponíveis.
+            description: Liste aqui os documentos institucionais (com links para os arquivos) quando estiverem disponíveis.
             options:
               format: html
       - name: relatorios

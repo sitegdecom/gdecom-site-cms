@@ -104,13 +104,13 @@
     }
   ],
   "transparencia": {
-    "chamada": "Prestação de Contas",
+    "chamada": "Transparência",
     "titulo": "Confiança também se constrói com informação acessível.",
-    "texto": "O GDECOM valoriza a transparência em suas ações, mantendo documentos, editais, registros e informações institucionais disponíveis para a comunidade, parceiros e órgãos de controle.",
+    "texto": "O GDECOM valoriza a transparência em suas ações, mantendo documentos, registros e informações institucionais disponíveis para a comunidade, parceiros e órgãos de controle.",
     "documentos": [
       {
-        "titulo": "Editais",
-        "descricao": "Chamadas públicas, processos seletivos e documentos de participação."
+        "titulo": "Documentos Institucionais",
+        "descricao": "Estatuto, atas, certidões e outros documentos que apresentam a organização institucional do GDECOM."
       },
       {
         "titulo": "Relatórios",

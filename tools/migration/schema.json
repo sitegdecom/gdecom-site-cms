@@ -2242,17 +2242,17 @@
      "required": true
     },
     {
-     "path": "editais.titulo",
+     "path": "documentos_institucionais.titulo",
      "type": "string",
      "label": "Título",
      "required": true
     },
     {
-     "path": "editais.texto",
+     "path": "documentos_institucionais.texto",
      "type": "rich-text",
      "label": "Texto",
      "required": true,
-     "description": "Liste aqui os editais (com links para os arquivos) quando estiverem disponíveis."
+     "description": "Liste aqui os documentos institucionais (com links para os arquivos) quando estiverem disponíveis."
     },
     {
      "path": "relatorios.titulo",

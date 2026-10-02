@@ -1,17 +1,17 @@
 {
   "seo": {
     "titulo": "Transparência e prestação de contas | GDECOM",
-    "descricao": "Editais, relatórios e prestação de contas do GDECOM: informações institucionais organizadas para a comunidade, parceiros e órgãos de controle.",
+    "descricao": "Documentos institucionais, relatórios e prestação de contas do GDECOM: informações institucionais organizadas para a comunidade, parceiros e órgãos de controle.",
     "titulo_social": "Transparência e prestação de contas – GDECOM"
   },
   "topo": {
     "chamada": "Prestação de Contas",
     "titulo": "Transparência"
   },
-  "introducao": "<p>O GDECOM valoriza a transparência em suas ações. Nesta página reunimos editais, relatórios e informações de prestação de contas, disponíveis para a comunidade, parceiros e órgãos de controle.</p>",
-  "editais": {
-    "titulo": "Editais",
-    "texto": "<p>Chamadas públicas, processos seletivos e documentos de participação.</p><p>Os editais do GDECOM serão publicados nesta seção assim que estiverem disponíveis.</p>"
+  "introducao": "<p>O GDECOM valoriza a transparência em suas ações. Nesta página reunimos documentos institucionais, relatórios e informações de prestação de contas, disponíveis para a comunidade, parceiros e órgãos de controle.</p>",
+  "documentos_institucionais": {
+    "titulo": "Documentos Institucionais",
+    "texto": "<p>Neste espaço serão disponibilizados documentos que apresentam a estrutura e a organização institucional do GDECOM, como estatuto, atas, certidões e outros registros de interesse público, à medida que estiverem disponíveis para publicação.</p>"
   },
   "relatorios": {
     "titulo": "Relatórios",
@@ -21,5 +21,5 @@
     "titulo": "Prestação de Contas",
     "texto": "<p>Informações organizadas para a comunidade, parceiros e órgãos de controle.</p><p>Os documentos de prestação de contas do GDECOM serão publicados nesta seção assim que estiverem disponíveis.</p>"
   },
-  "contato_texto": "Para solicitar documentos ou tirar dúvidas sobre editais, relatórios e prestação de contas, escreva para"
+  "contato_texto": "Para solicitar documentos ou tirar dúvidas sobre documentos institucionais, relatórios e prestação de contas, escreva para"
 }
