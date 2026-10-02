@@ -715,11 +715,6 @@
      "description": "Parágrafos, subtítulos e listas desta parte da página."
     },
     {
-     "path": "conteudo.split.split",
-     "type": "image-object",
-     "label": "Bloco texto e imagem — Imagem Bloco texto e imagem"
-    },
-    {
      "path": "conteudo.split.h2",
      "type": "string",
      "label": "Bloco texto e imagem — H2",

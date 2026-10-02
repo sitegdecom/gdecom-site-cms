@@ -119,6 +119,8 @@ function nest(fields, data) {
 			if (n.def && !n.children.size) return leaf(n.def, n.key, parentKey, siblings, v);
 			const f = { name: n.key, label: label(n.key, parentKey, siblings, true), type: 'object', fields: toFields(n, n.key, v) };
 			if (GROUP_HELP[n.key]) f.description = GROUP_HELP[n.key];
+			// a split block whose image was removed is just text
+			if (/^split(_\d+)?$/.test(n.key) && !f.fields.some((x) => x.fields && x.fields[0] && x.fields[0].type === 'image')) f.label = 'Bloco de texto';
 			if (n.list) { const c = counts[n.list]; f.list = { min: c, max: c }; f.description = `Lista com ${c} itens fixos: troque o conteúdo, a quantidade não muda para preservar o layout.`; }
 			// SEO of fixed pages is technical configuration maintained by the administrator: kept in the schema
 			// (so Pages CMS preserves the values when saving) but hidden from the editor.

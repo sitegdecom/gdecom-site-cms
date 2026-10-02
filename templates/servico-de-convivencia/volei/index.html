@@ -174,11 +174,6 @@ img:is([sizes=auto i],[sizes^="auto," i]){contain-intrinsic-size:3000px 1500px}
 .volei-hero-tagline{position:relative;z-index:2;max-width:620px;margin:14px auto 0;padding-bottom:8px;font-family:'Caveat','Segoe Script','Bradley Hand',cursive;font-weight:700;font-size:clamp(19px,2.4vw,24px);color:#fff;text-align:center;}
 .volei-hero-tagline::after{content:"";position:absolute;left:50%;transform:translateX(-50%);bottom:0;width:110px;height:3px;border-radius:3px;background:#FFD21F;}
 @media(max-width:700px){.volei-hero-star-a{display:none;}.volei-hero-star-b{top:88px;right:5%;width:15px;height:15px;}}
-.volei-split{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr);gap:36px;align-items:start;margin:44px 0;}
-.volei-split-img{display:block;width:100%;height:auto;}
-.volei-split .volei-split-img{border-radius:16px;box-shadow:0 14px 30px rgba(6,59,122,.16);}
-.volei-split-text h2{margin-top:0;}
-@media(max-width:820px){.volei-split{grid-template-columns:1fr;gap:18px;margin:32px 0;}.volei-split-img{order:-1;}}
 .artigo-body-wrap{max-width:760px;margin:-84px auto 0;padding:0 24px 70px;position:relative;z-index:2;}
 .artigo-img{width:100%;height:auto;display:block;border-radius:16px;box-shadow:0 24px 50px rgba(6,59,122,.22);margin-bottom:42px;object-fit:cover;background:#eee;}
 .artigo-content{background:#fff;font-family:'Nunito Sans',Arial,sans-serif;color:#33383d;}
@@ -195,10 +190,6 @@ img:is([sizes=auto i],[sizes^="auto," i]){contain-intrinsic-size:3000px 1500px}
 @media (max-width:600px){.artigo-body-wrap{margin-top:-56px;}}
 </style>
 
-<style>
-/* stacked split (<=820px): image capped at 480px, centred (coordenadora-soraya-veiga.jpg is 580px wide); phones unaffected */
-@media (max-width:820px){.volei-split .volei-split-img{max-width:480px;margin:0 auto;}}
-</style>
 <main id="main-content">
 		<div class="artigo-hero">
   <span class="volei-hero-star volei-hero-star-a" aria-hidden="true"><svg aria-hidden="true" viewBox="0 0 576 512" xmlns="http://www.w3.org/2000/svg"><path d="M259.3 17.8L194 150.2 47.9 171.5c-26.2 3.8-36.7 36.1-17.7 54.6l105.7 103-25 145.5c-4.5 26.3 23.2 46 46.4 33.7L288 439.6l130.7 68.7c23.2 12.2 50.9-7.4 46.4-33.7l-25-145.5 105.7-103c19-18.5 8.5-50.8-17.7-54.6L382 150.2 316.7 17.8c-11.7-23.6-45.6-23.9-57.4 0z"/></svg></span>
@@ -213,10 +204,7 @@ img:is([sizes=auto i],[sizes^="auto," i]){contain-intrinsic-size:3000px 1500px}
 
 {{h:conteudo.texto_1}}
 
-<div class="volei-split">
-  {{i:conteudo.split.split}}
-  <div class="volei-split-text">
-    <h2 class="wp-block-heading">{{t:conteudo.split.h2}}</h2>
+<h2 class="wp-block-heading">{{t:conteudo.split.h2}}</h2>
 
 
 
@@ -237,8 +225,6 @@ img:is([sizes=auto i],[sizes^="auto," i]){contain-intrinsic-size:3000px 1500px}
 
 
 <p class="wp-block-paragraph">{{t:conteudo.split.p_5}}</p>
-  </div>
-</div>
 
 
 

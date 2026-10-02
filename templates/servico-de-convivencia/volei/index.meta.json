@@ -16,16 +16,6 @@
    "widths": [],
    "sizes": null,
    "dims": "natural"
-  },
-  "conteudo.split.split": {
-   "label": "Bloco texto e imagem — Imagem Bloco texto e imagem",
-   "originalTag": "<img width=\"580\" height=\"699\" class=\"volei-split-img\" src=\"../../assets/wp-content/uploads/2026/09/volei/coordenadora-soraya-veiga.jpg\" alt=\"Educadora do GDECOM sorrindo durante atividade com adolescentes\" loading=\"lazy\">",
-   "originalSrc": "/assets/wp-content/uploads/2026/09/volei/coordenadora-soraya-veiga.jpg",
-   "originalAltDecoded": "Educadora do GDECOM sorrindo durante atividade com adolescentes",
-   "altEntities": {},
-   "widths": [],
-   "sizes": null,
-   "dims": "natural"
   }
  },
  "computed": {}

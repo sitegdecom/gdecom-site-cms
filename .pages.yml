@@ -518,7 +518,7 @@ content:
         type: object
         fields:
           - name: split
-            label: Bloco com texto e imagem 1
+            label: Bloco de texto
             type: object
             fields:
               - name: texto
@@ -545,7 +545,7 @@ content:
             label: Trecho de texto 1
             type: rich-text
             required: true
-            description: Texto corrido da página, depois de "Bloco com texto e imagem 1" e antes de "Bloco com texto e imagem 2". Use "Título 2" e "Título 3" do editor para subtítulos.
+            description: Texto corrido da página, depois de "Bloco de texto" e antes de "Bloco com texto e imagem 2". Use "Título 2" e "Título 3" do editor para subtítulos.
             options:
               format: html
           - name: split_2
@@ -584,11 +584,11 @@ content:
             label: Trecho de texto 2
             type: rich-text
             required: true
-            description: Texto corrido da página, depois de "Bloco com texto e imagem 2" e antes de "Bloco com texto e imagem 3". Use "Título 2" e "Título 3" do editor para subtítulos.
+            description: Texto corrido da página, depois de "Bloco com texto e imagem 2" e antes de "Bloco de texto". Use "Título 2" e "Título 3" do editor para subtítulos.
             options:
               format: html
           - name: split_3
-            label: Bloco com texto e imagem 3
+            label: Bloco de texto
             type: object
             fields:
               - name: texto
@@ -611,7 +611,7 @@ content:
             label: Trecho de texto 3
             type: rich-text
             required: true
-            description: Texto corrido da página, depois de "Bloco com texto e imagem 3". Use "Título 2" e "Título 3" do editor para subtítulos.
+            description: Texto corrido da página, depois de "Bloco de texto". Use "Título 2" e "Título 3" do editor para subtítulos.
             options:
               format: html
   - name: pagina-contato
@@ -782,33 +782,13 @@ content:
             label: Trecho de texto 1
             type: rich-text
             required: true
-            description: Texto corrido da página, antes de "Bloco com texto e imagem 1". Use "Título 2" e "Título 3" do editor para subtítulos.
+            description: Texto corrido da página, antes de "Bloco de texto". Use "Título 2" e "Título 3" do editor para subtítulos.
             options:
               format: html
           - name: split
-            label: Bloco com texto e imagem 1
+            label: Bloco de texto
             type: object
             fields:
-              - name: split
-                label: Imagem do bloco
-                type: object
-                fields:
-                  - name: imagem
-                    label: Imagem
-                    type: image
-                    required: true
-                    description: 'Envie uma foto em JPG, PNG ou WebP, com até 12 MB. Não precisa diminuir nem converter a foto: o site prepara tudo sozinho.'
-                    options:
-                      extensions:
-                        - jpg
-                        - jpeg
-                        - png
-                        - webp
-                  - name: texto_alternativo
-                    label: Texto alternativo (descrição da imagem)
-                    type: string
-                    required: true
-                    description: 'Obrigatório. Descreva em uma frase o que aparece na foto, por exemplo: "Crianças pintando um painel no pátio". Ajuda quem usa leitor de tela.'
               - name: h2
                 label: Título do bloco
                 type: string
@@ -837,7 +817,7 @@ content:
             label: Trecho de texto 2
             type: rich-text
             required: true
-            description: Texto corrido da página, depois de "Bloco com texto e imagem 1". Use "Título 2" e "Título 3" do editor para subtítulos.
+            description: Texto corrido da página, depois de "Bloco de texto". Use "Título 2" e "Título 3" do editor para subtítulos.
             options:
               format: html
   - name: programa-atendimento
