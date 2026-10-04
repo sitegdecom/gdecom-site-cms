@@ -1143,6 +1143,7 @@
    "h1:Transparência",
    "h2:Documentos Institucionais",
    "h2:Relatórios",
+   "h3:Relatório de Transparência e Igualdade Salarial",
    "h2:Prestação de Contas"
   ],
   "refs": [
@@ -1177,6 +1178,7 @@
    "../assets/wp-content/uploads/2026/05/logo-branca-gdecom-1024x570.png",
    "../assets/wp-content/uploads/2026/05/logo-branca-gdecom-400.webp",
    "../assets/wp-content/uploads/2026/05/logo-branca-gdecom-600.webp",
+   "../assets/wp-content/uploads/2026/10/transparencia/relatorio-igualdade-salarial-2026-2s.png",
    "../assets/wp-content/uploads/elementor/css/base-desktop.css",
    "../assets/wp-content/uploads/elementor/css/base-mobile.css",
    "../assets/wp-content/uploads/elementor/css/global-19-frontend-desktop.css",
@@ -1195,7 +1197,7 @@
    "../qualificacao-menu-144.webp",
    "../scfv-menu-144.webp"
   ],
-  "imgCount": 7,
+  "imgCount": 9,
   "srcsetCount": 2,
   "robots": "noindex, nofollow"
  },
