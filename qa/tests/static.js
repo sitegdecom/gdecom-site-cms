@@ -114,6 +114,46 @@ async function run(R) {
 			R.check(`[${id}] image / srcset counts match baseline (${was.imgCount}/${was.srcsetCount})`, now.imgCount === was.imgCount && now.srcsetCount === was.srcsetCount, { now: [now.imgCount, now.srcsetCount] });
 		}
 	}
+	checkSitemap(R);
+	checkRobotsTxt(R);
+}
+
+// sitemap.xml: strict UTF-8 sitemaps.org document listing exactly the canonical URL of every HTTP-200 page of the manifest.
+function checkSitemap(R) {
+	const file = path.join(SITE_ROOT, 'sitemap.xml');
+	if (!R.check('[sitemap] sitemap.xml exists', fs.existsSync(file))) return;
+	const buf = fs.readFileSync(file), xml = buf.toString('utf8');
+	R.check('[sitemap] UTF-8 without BOM', Buffer.from(xml, 'utf8').equals(buf) && buf[0] !== 0xef);
+	const shape = /^<\?xml version="1\.0" encoding="UTF-8"\?>\n<urlset xmlns="http:\/\/www\.sitemaps\.org\/schemas\/sitemap\/0\.9">\n(?:\t<url><loc>[^<>&"']+<\/loc><\/url>\n)*<\/urlset>\n$/;
+	R.check('[sitemap] well-formed XML: declaration, sitemaps.org urlset, only <url><loc> entries', shape.test(xml), xml.slice(0, 300));
+	const locs = [...xml.matchAll(/<loc>([^<]*)<\/loc>/g)].map((m) => m[1]);
+	const expected = MANIFEST.filter((e) => e.http === 200).map((e) => SITE_URL + e.url);
+	const dup = locs.filter((u, i) => locs.indexOf(u) !== i);
+	R.check(`[sitemap] no duplicate URLs (${locs.length})`, dup.length === 0, dup);
+	R.check(`[sitemap] exactly the ${expected.length} public pages of the manifest`, locs.length === expected.length && expected.every((u) => locs.includes(u)), { missing: expected.filter((u) => !locs.includes(u)), extra: locs.filter((u) => !expected.includes(u)) });
+	const e404 = MANIFEST.find((e) => e.id === '404');
+	R.check('[sitemap] does not list the 404 page', !locs.some((u) => u.endsWith('/404.html') || u === SITE_URL + e404.url));
+	R.check(`[sitemap] every URL is on ${SITE_URL}/`, locs.every((u) => u.startsWith(SITE_URL + '/')), locs.filter((u) => !u.startsWith(SITE_URL + '/')));
+	const badForm = locs.filter((u) => !u.endsWith('/') || /index\.html|[?#]|\/\/[^/]*\/\//.test(u));
+	R.check('[sitemap] every URL is a canonical directory URL (ends with "/", no index.html, query or fragment)', badForm.length === 0, badForm);
+	const notCanonical = locs.filter((u) => {
+		const f = path.join(SITE_ROOT, decodeURI(u.slice(SITE_URL.length)), 'index.html');
+		if (!fs.existsSync(f)) return true;
+		const c = [...stripComments(fs.readFileSync(f, 'utf8')).matchAll(/<link[^>]+rel=["']canonical["'][^>]*>/gi)].map((m) => attr(m[0], 'href'));
+		return c.length !== 1 || c[0] !== u;
+	});
+	R.check('[sitemap] every URL is an existing built page whose canonical is that same URL', notCanonical.length === 0, notCanonical);
+}
+
+// robots.txt: allows crawling and points to the sitemap; never blocks the whole site.
+function checkRobotsTxt(R) {
+	const file = path.join(SITE_ROOT, 'robots.txt');
+	if (!R.check('[robots.txt] robots.txt exists', fs.existsSync(file))) return;
+	const lines = fs.readFileSync(file, 'utf8').split(/\r?\n/).map((l) => l.trim());
+	R.check('[robots.txt] has "User-agent: *"', lines.includes('User-agent: *'));
+	R.check('[robots.txt] has "Allow: /"', lines.includes('Allow: /'));
+	R.check(`[robots.txt] has "Sitemap: ${SITE_URL}/sitemap.xml"`, lines.includes(`Sitemap: ${SITE_URL}/sitemap.xml`));
+	R.check('[robots.txt] has no "Disallow: /"', !lines.some((l) => /^disallow:\s*\/\s*$/i.test(l)), lines);
 }
 
 function recordBaseline() {

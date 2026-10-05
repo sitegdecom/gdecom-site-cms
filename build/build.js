@@ -115,6 +115,16 @@ function addSeoHead(rel, html, site, errors) {
 	return html;
 }
 
+// sitemap.xml: the canonical URL of every generated page except the 404, in build order. No lastmod/changefreq/priority.
+function sitemapXml(outputs) {
+	const urls = outputs.map(([rel]) => rel).filter((rel) => rel !== '404.html').map((rel) => SITE_URL + '/' + rel.replace(/index\.html$/, ''));
+	const esc = (s) => s.replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;');
+	return '<?xml version="1.0" encoding="UTF-8"?>\n<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">\n' +
+		[...new Set(urls)].map((u) => `\t<url><loc>${esc(u)}</loc></url>\n`).join('') + '</urlset>\n';
+}
+// robots.txt: allows everything and points to the sitemap. Indexing itself is still controlled by the pages' meta robots.
+const ROBOTS_TXT = `User-agent: *\nAllow: /\n\nSitemap: ${SITE_URL}/sitemap.xml\n`;
+
 (async () => {
 	const t0 = Date.now();
 	const errors = [];
@@ -157,6 +167,10 @@ function addSeoHead(rel, html, site, errors) {
 		fs.writeFileSync(path.join(DIST, rel), html);
 	}
 	for (const [rel, html] of outputs) checkRefs(html, rel, errors);
+	for (const [rel, body] of [['sitemap.xml', sitemapXml(outputs)], ['robots.txt', ROBOTS_TXT]]) {
+		if (fs.existsSync(path.join(DIST, rel))) errors.push(`${rel}: o arquivo é gerado pela publicação e não deve existir no repositório`);
+		else fs.writeFileSync(path.join(DIST, rel), body);
+	}
 
 	if (errors.length) {
 		console.error('\n✗ A publicação foi interrompida para proteger o site. Corrija no Pages CMS:\n');
