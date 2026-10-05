@@ -31,6 +31,8 @@ const ARTICLE_MODEL = 'artigos/_modelo.html'; // template used by new articles (
 // Repository paths that are not part of the published website.
 const NOT_SITE = new Set(['.git', 'node_modules', 'dist', 'qa', 'build', 'tools', 'templates', 'content', '_archive_do_not_deploy', '.playwright-mcp', '.pages.yml', 'design', 'package.json', 'package-lock.json', '.gitignore', 'README.md', 'CMS.md']);
 const SLUG_RE = /^[a-z0-9]+(?:-[a-z0-9]+)*$/;
+// Official address of the website (no www). Canonical, og:url and social images are absolute URLs on it.
+const SITE_URL = 'https://gdecom.org.br';
 
 function copySite(src, dst) {
 	for (const f of fs.readdirSync(src)) {
@@ -73,6 +75,46 @@ function checkRefs(html, outRel, errors) {
 	}
 }
 
+// Home structured data (schema.org NGO + WebSite), built only from the institutional data in content/site.json.
+function homeJsonLd(site) {
+	const org = SITE_URL + '/#organization';
+	const data = {
+		'@context': 'https://schema.org',
+		'@graph': [
+			{
+				'@type': 'NGO', '@id': org, name: 'GDECOM', alternateName: site.nome_publico, legalName: site.razao_social, taxID: site.cnpj,
+				url: SITE_URL + '/', logo: { '@type': 'ImageObject', url: SITE_URL + '/assets/wp-content/uploads/2026/04/Logo-Gedecom-001.png' },
+				foundingDate: '1980', email: site.email, telephone: site.telefone,
+				address: { '@type': 'PostalAddress', streetAddress: site.endereco.logradouro + ', ' + site.endereco.bairro, addressLocality: site.endereco.cidade, addressRegion: site.endereco.uf, postalCode: site.endereco.cep, addressCountry: 'BR' },
+				sameAs: [site.instagram_url]
+			},
+			{ '@type': 'WebSite', '@id': SITE_URL + '/#website', url: SITE_URL + '/', name: 'GDECOM', inLanguage: 'pt-BR', publisher: { '@id': org } }
+		]
+	};
+	return '<script type="application/ld+json">' + JSON.stringify(data).replace(/</g, '\\u003c') + '</script>\n';
+}
+
+// Technical SEO for a generated page (head only): canonical, og:url, og:site_name, og:locale, absolute social images and,
+// on the Home, JSON-LD. The 404 page gets none of these. Robots meta tags are left exactly as the templates define them.
+function addSeoHead(rel, html, site, errors) {
+	if (rel === '404.html') return html;
+	const url = SITE_URL + '/' + rel.replace(/index\.html$/, '');
+	const once = (re, label) => { const n = (html.match(new RegExp(re.source, 'g')) || []).length; if (n !== 1) errors.push(`${rel}: esperado 1 ${label} no <head>, encontrado ${n}`); return n === 1; };
+	if (/rel=["']canonical["']|property=["']og:url["']/i.test(html)) { errors.push(`${rel}: canonical/og:url já presentes no modelo`); return html; }
+	const robotsRe = /<meta name=["']robots["'][^>]*>\n/, ogTypeRe = /<meta property="og:type"[^>]*>\n/;
+	if (!once(robotsRe, 'meta robots') || !once(ogTypeRe, 'og:type')) return html;
+	html = html.replace(robotsRe, (m) => m + `<link rel="canonical" href="${url}" />\n`);
+	html = html.replace(ogTypeRe, (m) => m + `<meta property="og:url" content="${url}" />\n<meta property="og:site_name" content="GDECOM" />\n<meta property="og:locale" content="pt_BR" />\n`);
+	html = html.replace(/(<meta (?:property="og:image"|name="twitter:image") content=")([^"]+)(")/g, (m, a, src, b) => {
+		if (/^https?:/i.test(src)) return m;
+		const file = path.posix.normalize(path.posix.join(path.posix.dirname(rel), decodeURI(src)));
+		if (file.startsWith('..') || !fs.existsSync(path.join(DIST, file))) { errors.push(`${rel}: imagem social não encontrada (${src})`); return m; }
+		return a + SITE_URL + encodeURI('/' + file) + b;
+	});
+	if (rel === 'index.html') html = html.replace(/<\/head>/i, (m) => homeJsonLd(site) + m);
+	return html;
+}
+
 (async () => {
 	const t0 = Date.now();
 	const errors = [];
@@ -107,6 +149,7 @@ function checkRefs(html, outRel, errors) {
 		outputs.push([`artigos/${slug}/index.html`, await render(html, meta, art, { ...ctx, pageLabel: 'Artigo "' + (art.titulo || slug) + '"' })]);
 	}
 
+	for (const o of outputs) o[1] = addSeoHead(o[0], o[1], site, errors);
 	for (const [rel, html] of outputs) {
 		const left = html.match(/\{\{[a-z]:[^}]+\}\}/);
 		if (left) errors.push(`${rel}: marcador de modelo não resolvido ${left[0]}`);

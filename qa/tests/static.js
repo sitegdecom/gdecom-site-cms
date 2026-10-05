@@ -7,6 +7,7 @@ const { SITE_ROOT } = require('../lib/server');
 
 const BASELINE = path.join(QA_ROOT, 'baseline', 'structure.json');
 const PRIVACY_FOOTER_TARGET = 'politica-de-privacidade/index.html';
+const SITE_URL = 'https://gdecom.org.br';
 
 const stripComments = (h) => h.replace(/<!--[\s\S]*?-->/g, '');
 const attr = (tag, name) => { const m = tag.match(new RegExp('\\s' + name + '\\s*=\\s*("([^"]*)"|\'([^\']*)\')', 'i')); return m ? (m[2] !== undefined ? m[2] : m[3]) : null; };
@@ -44,7 +45,9 @@ function collectPage(entry) {
 	return {
 		raw, refs: [...refs].sort(), ids, headings, imgs, robots, links, footer, mainText,
 		imgCount: imgs.length, srcsetCount: imgs.filter((t) => attr(t, 'srcset')).length,
-		canonical: /<link[^>]+rel=["']canonical["']/i.test(h), ogUrl: /property=["']og:url["']/i.test(h)
+		canonical: [...h.matchAll(/<link[^>]+rel=["']canonical["'][^>]*>/gi)].map((m) => attr(m[0], 'href')),
+		ogUrl: [...h.matchAll(/<meta[^>]+property=["']og:url["'][^>]*>/gi)].map((m) => attr(m[0], 'content')),
+		socialImages: [...h.matchAll(/<meta[^>]+(?:property=["']og:image["']|name=["']twitter:image["'])[^>]*>/gi)].map((m) => attr(m[0], 'content'))
 	};
 }
 
@@ -89,7 +92,11 @@ async function run(R) {
 		R.check(`[${id}] every <img> has an alt attribute`, noAlt.length === 0, noAlt);
 
 		R.check(`[${id}] robots = "${entry.robots}"`, d.robots === entry.robots, 'found ' + d.robots);
-		R.check(`[${id}] no canonical / og:url (domain not configured)`, !d.canonical && !d.ogUrl, { canonical: d.canonical, ogUrl: d.ogUrl });
+		// Official domain: one absolute canonical = og:url per page (none on the 404); social images absolute and on the site.
+		const expectedUrl = entry.id === '404' ? null : SITE_URL + entry.url;
+		R.check(`[${id}] canonical = og:url = ${expectedUrl || 'none'}`, expectedUrl ? d.canonical.length === 1 && d.canonical[0] === expectedUrl && d.ogUrl.length === 1 && d.ogUrl[0] === expectedUrl : !d.canonical.length && !d.ogUrl.length, { canonical: d.canonical, ogUrl: d.ogUrl });
+		const badImgs = d.socialImages.filter((u) => !u.startsWith(SITE_URL + '/') || !fs.existsSync(path.join(SITE_ROOT, decodeURI(u.slice(SITE_URL.length)))));
+		R.check(`[${id}] og:image / twitter:image are absolute ${SITE_URL} URLs of existing files (${d.socialImages.length})`, badImgs.length === 0, badImgs);
 
 		const expectedFooter = entry.id === '404' ? '/politica-de-privacidade/' : '../'.repeat(entry.file.split('/').length - 1) + PRIVACY_FOOTER_TARGET;
 		R.check(`[${id}] footer Privacy Policy link -> ${expectedFooter}`, d.footer === expectedFooter && fs.existsSync(resolveRef(entry.file, d.footer)), 'found ' + d.footer);
