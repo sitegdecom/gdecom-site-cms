@@ -199,7 +199,7 @@ async function specials(R, browser, origin) {
 	R.check('[privacidade] page exists with its title', (await pg.title()) === PRIVACY_TITLE, await pg.title());
 	R.check('[privacidade] no visible update/publication date', !/(última atualização|atualizad[ao] em|publicad[ao] em|\b\d{1,2}º? de (janeiro|fevereiro|março|abril|maio|junho|julho|agosto|setembro|outubro|novembro|dezembro) de \d{4})/i.test(txt));
 	R.check('[privacidade] no sentence referring to a date at the top of the page', !/(data da última|início desta página)/i.test(txt));
-	R.check('[privacidade] robots = noindex, nofollow (staging)', (await pg.getAttribute('meta[name="robots"]', 'content')) === 'noindex, nofollow');
+	R.check('[privacidade] no meta robots (indexable)', (await pg.locator('meta[name="robots"]').count()) === 0);
 	await ctx.close();
 }
 

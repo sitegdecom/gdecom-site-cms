@@ -47,7 +47,9 @@ function collectPage(entry) {
 		imgCount: imgs.length, srcsetCount: imgs.filter((t) => attr(t, 'srcset')).length,
 		canonical: [...h.matchAll(/<link[^>]+rel=["']canonical["'][^>]*>/gi)].map((m) => attr(m[0], 'href')),
 		ogUrl: [...h.matchAll(/<meta[^>]+property=["']og:url["'][^>]*>/gi)].map((m) => attr(m[0], 'content')),
-		socialImages: [...h.matchAll(/<meta[^>]+(?:property=["']og:image["']|name=["']twitter:image["'])[^>]*>/gi)].map((m) => attr(m[0], 'content'))
+		socialImages: [...h.matchAll(/<meta[^>]+(?:property=["']og:image["']|name=["']twitter:image["'])[^>]*>/gi)].map((m) => attr(m[0], 'content')),
+		// Every crawler directive in the page: meta robots / <bot> name variants and http-equiv X-Robots-Tag.
+		crawlerMetas: [...h.matchAll(/<meta\b[^>]*>/gi)].map((m) => m[0]).filter((t) => /^(robots|[a-z-]*bot[a-z-]*)$/i.test(attr(t, 'name') || '') || /^x-robots-tag$/i.test(attr(t, 'http-equiv') || ''))
 	};
 }
 
@@ -91,7 +93,11 @@ async function run(R) {
 		const noAlt = d.imgs.filter((t) => attr(t, 'alt') === null).map((t) => attr(t, 'src'));
 		R.check(`[${id}] every <img> has an alt attribute`, noAlt.length === 0, noAlt);
 
-		R.check(`[${id}] robots = "${entry.robots}"`, d.robots === entry.robots, 'found ' + d.robots);
+		R.check(`[${id}] robots = ${entry.robots === null ? 'none (indexable)' : '"' + entry.robots + '"'}`, d.robots === entry.robots, 'found ' + d.robots);
+		// Public pages are indexable and followable; the 404 keeps exactly one "noindex".
+		const restrictive = d.crawlerMetas.filter((t) => /noindex|nofollow|\bnone\b/i.test(attr(t, 'content') || ''));
+		if (entry.http === 200) R.check(`[${id}] no noindex / nofollow / none in any robots meta or X-Robots-Tag meta`, restrictive.length === 0, restrictive);
+		else R.check(`[${id}] only crawler directive is <meta name="robots" content="noindex">`, d.crawlerMetas.length === 1 && attr(d.crawlerMetas[0], 'name') === 'robots' && attr(d.crawlerMetas[0], 'content') === 'noindex', d.crawlerMetas);
 		// Official domain: one absolute canonical = og:url per page (none on the 404); social images absolute and on the site.
 		const expectedUrl = entry.id === '404' ? null : SITE_URL + entry.url;
 		R.check(`[${id}] canonical = og:url = ${expectedUrl || 'none'}`, expectedUrl ? d.canonical.length === 1 && d.canonical[0] === expectedUrl && d.ogUrl.length === 1 && d.ogUrl[0] === expectedUrl : !d.canonical.length && !d.ogUrl.length, { canonical: d.canonical, ogUrl: d.ogUrl });
@@ -116,6 +122,10 @@ async function run(R) {
 	}
 	checkSitemap(R);
 	checkRobotsTxt(R);
+	// The build must not add response headers (Cloudflare Pages _headers) that restrict indexing.
+	const headersFile = path.join(SITE_ROOT, '_headers');
+	const headers = fs.existsSync(headersFile) ? fs.readFileSync(headersFile, 'utf8') : '';
+	R.check('[headers] no X-Robots-Tag header rule published by the build (_headers)', !/x-robots-tag/i.test(headers), headers.slice(0, 300));
 }
 
 // sitemap.xml: strict UTF-8 sitemaps.org document listing exactly the canonical URL of every HTTP-200 page of the manifest.

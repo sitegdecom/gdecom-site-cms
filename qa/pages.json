@@ -9,7 +9,7 @@
       "http": 200,
       "h1": 1,
       "type": "home",
-      "robots": "noindex, nofollow",
+      "robots": null,
       "lightbox": "home-carousel",
       "gallery": false,
       "interactions": ["programas-submenu", "mobile-menu", "home-carousel-lightbox", "contact-card-links", "google-maps-link"]
@@ -22,7 +22,7 @@
       "http": 200,
       "h1": 1,
       "type": "institutional",
-      "robots": "noindex, nofollow",
+      "robots": null,
       "lightbox": "none",
       "gallery": false,
       "interactions": ["programas-submenu", "mobile-menu"]
@@ -35,7 +35,7 @@
       "http": 200,
       "h1": 1,
       "type": "contact",
-      "robots": "noindex, nofollow",
+      "robots": null,
       "lightbox": "none",
       "gallery": false,
       "interactions": ["programas-submenu", "mobile-menu", "mailto-contact-form", "google-maps-embed", "contact-card-links"]
@@ -48,7 +48,7 @@
       "http": 200,
       "h1": 1,
       "type": "program",
-      "robots": "noindex, nofollow",
+      "robots": null,
       "lightbox": "inline",
       "gallery": true,
       "interactions": ["programas-submenu", "mobile-menu", "inline-lightbox", "whatsapp-cta"]
@@ -61,7 +61,7 @@
       "http": 200,
       "h1": 1,
       "type": "article",
-      "robots": "noindex, nofollow",
+      "robots": null,
       "lightbox": "inline",
       "gallery": false,
       "interactions": ["programas-submenu", "mobile-menu", "inline-lightbox"]
@@ -74,7 +74,7 @@
       "http": 200,
       "h1": 1,
       "type": "article",
-      "robots": "noindex, nofollow",
+      "robots": null,
       "lightbox": "inline",
       "gallery": false,
       "interactions": ["programas-submenu", "mobile-menu", "inline-lightbox"]
@@ -87,7 +87,7 @@
       "http": 200,
       "h1": 1,
       "type": "program",
-      "robots": "noindex, nofollow",
+      "robots": null,
       "lightbox": "none",
       "gallery": false,
       "interactions": ["programas-submenu", "mobile-menu", "instagram-cta"]
@@ -100,7 +100,7 @@
       "http": 200,
       "h1": 1,
       "type": "article",
-      "robots": "noindex, nofollow",
+      "robots": null,
       "lightbox": "inline",
       "gallery": false,
       "interactions": ["programas-submenu", "mobile-menu", "inline-lightbox"]
@@ -113,7 +113,7 @@
       "http": 200,
       "h1": 1,
       "type": "program",
-      "robots": "noindex, nofollow",
+      "robots": null,
       "lightbox": "none",
       "gallery": true,
       "interactions": ["programas-submenu", "mobile-menu"]
@@ -126,7 +126,7 @@
       "http": 200,
       "h1": 1,
       "type": "article",
-      "robots": "noindex, nofollow",
+      "robots": null,
       "lightbox": "inline",
       "gallery": false,
       "interactions": ["programas-submenu", "mobile-menu", "inline-lightbox"]
@@ -139,7 +139,7 @@
       "http": 200,
       "h1": 1,
       "type": "program",
-      "robots": "noindex, nofollow",
+      "robots": null,
       "lightbox": "inline",
       "gallery": true,
       "interactions": ["programas-submenu", "mobile-menu", "inline-lightbox", "whatsapp-cta"]
@@ -152,7 +152,7 @@
       "http": 200,
       "h1": 1,
       "type": "program",
-      "robots": "noindex, nofollow",
+      "robots": null,
       "lightbox": "inline",
       "gallery": true,
       "interactions": ["programas-submenu", "mobile-menu", "inline-lightbox", "instagram-cta"]
@@ -165,7 +165,7 @@
       "http": 200,
       "h1": 1,
       "type": "legal",
-      "robots": "noindex, nofollow",
+      "robots": null,
       "lightbox": "inline",
       "gallery": false,
       "interactions": ["programas-submenu", "mobile-menu", "inline-lightbox"]
@@ -178,7 +178,7 @@
       "http": 200,
       "h1": 1,
       "type": "legal",
-      "robots": "noindex, nofollow",
+      "robots": null,
       "lightbox": "none",
       "gallery": false,
       "interactions": ["programas-submenu", "mobile-menu"]

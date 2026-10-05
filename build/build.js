@@ -95,15 +95,16 @@ function homeJsonLd(site) {
 }
 
 // Technical SEO for a generated page (head only): canonical, og:url, og:site_name, og:locale, absolute social images and,
-// on the Home, JSON-LD. The 404 page gets none of these. Robots meta tags are left exactly as the templates define them.
+// on the Home, JSON-LD. The 404 page gets none of these. Robots meta tags are left exactly as the templates define them
+// (public pages have none, so they are indexable; only the 404 template has "noindex").
 function addSeoHead(rel, html, site, errors) {
 	if (rel === '404.html') return html;
 	const url = SITE_URL + '/' + rel.replace(/index\.html$/, '');
 	const once = (re, label) => { const n = (html.match(new RegExp(re.source, 'g')) || []).length; if (n !== 1) errors.push(`${rel}: esperado 1 ${label} no <head>, encontrado ${n}`); return n === 1; };
 	if (/rel=["']canonical["']|property=["']og:url["']/i.test(html)) { errors.push(`${rel}: canonical/og:url já presentes no modelo`); return html; }
-	const robotsRe = /<meta name=["']robots["'][^>]*>\n/, ogTypeRe = /<meta property="og:type"[^>]*>\n/;
-	if (!once(robotsRe, 'meta robots') || !once(ogTypeRe, 'og:type')) return html;
-	html = html.replace(robotsRe, (m) => m + `<link rel="canonical" href="${url}" />\n`);
+	const descRe = /<meta name="description"[^>]*>\n/, ogTypeRe = /<meta property="og:type"[^>]*>\n/;
+	if (!once(descRe, 'meta description') || !once(ogTypeRe, 'og:type')) return html;
+	html = html.replace(descRe, (m) => `<link rel="canonical" href="${url}" />\n` + m);
 	html = html.replace(ogTypeRe, (m) => m + `<meta property="og:url" content="${url}" />\n<meta property="og:site_name" content="GDECOM" />\n<meta property="og:locale" content="pt_BR" />\n`);
 	html = html.replace(/(<meta (?:property="og:image"|name="twitter:image") content=")([^"]+)(")/g, (m, a, src, b) => {
 		if (/^https?:/i.test(src)) return m;
@@ -122,7 +123,7 @@ function sitemapXml(outputs) {
 	return '<?xml version="1.0" encoding="UTF-8"?>\n<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">\n' +
 		[...new Set(urls)].map((u) => `\t<url><loc>${esc(u)}</loc></url>\n`).join('') + '</urlset>\n';
 }
-// robots.txt: allows everything and points to the sitemap. Indexing itself is still controlled by the pages' meta robots.
+// robots.txt: allows everything and points to the sitemap. Indexing itself is controlled by the pages' meta robots.
 const ROBOTS_TXT = `User-agent: *\nAllow: /\n\nSitemap: ${SITE_URL}/sitemap.xml\n`;
 
 (async () => {
